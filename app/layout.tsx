@@ -20,14 +20,86 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Podium - Organisme de formation",
+  title: {
+    default: "Organisme de formation QVCT Lyon & Rhône-Alpes | Podium",
+    template: "%s | Podium",
+  },
   description:
-    "Podium, votre organisme de formation spécialisé en QVCT, management et sécurité. Formations, ateliers et événements pour améliorer la qualité de vie au travail.",
-  generator: "v0.dev",
+    "Podium accompagne les entreprises de Lyon et de toute la région Rhône-Alpes avec des formations QVCT, ateliers prévention et événements ludiques. Interventions sur site, devis gratuit sous 12h.",
+  metadataBase: new URL("https://www.ofpodium.fr"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://www.ofpodium.fr",
+    siteName: "Podium — Organisme de formation QVCT",
+    title: "Organisme de formation QVCT Lyon & Rhône-Alpes | Podium",
+    description:
+      "Formations QVCT, ateliers prévention et événements sur mesure pour vos équipes. Podium intervient dans toute la région Rhône-Alpes.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
+  },
+}
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Podium — Organisme de formation QVCT",
+  url: "https://www.ofpodium.fr",
+  telephone: "0770003672",
+  email: "nicolas@ofpodium.fr",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "36 rue des Apôtres",
+    addressLocality: "Ambérieu-en-Bugey",
+    postalCode: "01500",
+    addressRegion: "Ain",
+    addressCountry: "FR",
+  },
+  areaServed: [
+    { "@type": "City", name: "Lyon" },
+    { "@type": "City", name: "Villeurbanne" },
+    { "@type": "City", name: "Grenoble" },
+    { "@type": "City", name: "Annecy" },
+    { "@type": "City", name: "Chambéry" },
+    { "@type": "City", name: "Valence" },
+    { "@type": "City", name: "Bourg-en-Bresse" },
+    { "@type": "City", name: "Ambérieu-en-Bugey" },
+    { "@type": "AdministrativeArea", name: "Ain" },
+    { "@type": "AdministrativeArea", name: "Rhône" },
+    { "@type": "AdministrativeArea", name: "Isère" },
+    { "@type": "AdministrativeArea", name: "Savoie" },
+    { "@type": "AdministrativeArea", name: "Haute-Savoie" },
+    { "@type": "AdministrativeArea", name: "Drôme" },
+    { "@type": "AdministrativeArea", name: "Auvergne-Rhône-Alpes" },
+  ],
+  knowsAbout: [
+    "QVCT",
+    "Qualité de vie et conditions de travail",
+    "Prévention des risques professionnels",
+    "Bien-être au travail",
+    "Formation en entreprise",
+    "Ateliers prévention",
+    "Escape game sécurité",
+    "Gestes et postures",
+    "TMS",
+    "RPS",
+  ],
+  priceRange: "€€",
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "18:00",
   },
 }
 
@@ -37,7 +109,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="fr" className={`${inter.variable} ${poppins.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body className="font-sans antialiased">
         <SecondaryNav />
         <Navigation />
