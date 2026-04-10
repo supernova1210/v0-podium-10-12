@@ -98,6 +98,7 @@ const localBusinessSchema = {
     "Safety Day",
     "Formation en entreprise",
     "Ateliers prévention",
+    "Journée prévention",
     "Escape game sécurité",
     "Gestes et postures",
     "TMS",
