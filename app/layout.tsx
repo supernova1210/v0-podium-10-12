@@ -91,6 +91,8 @@ const localBusinessSchema = {
   ],
   knowsAbout: [
     "QVCT",
+    "Prévention",
+    "Organisme de formation",
     "Qualité de vie et conditions de travail",
     "Prévention des risques professionnels",
     "Bien-être au travail",
