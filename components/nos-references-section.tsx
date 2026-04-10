@@ -104,14 +104,6 @@ export default function NosReferencesSection() {
             </div>
           ))}
         </div>
-
-        {/* Bottom decorative text */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Et bien d'autres partenaires qui nous accompagnent dans notre mission
-          </p>
-        </div>
-      </div>
     </section>
   )
 }
