@@ -104,6 +104,7 @@ export default function NosReferencesSection() {
             </div>
           ))}
         </div>
+      </div>
     </section>
   )
 }

@@ -38,7 +38,7 @@ export default function FormationsManagementHeroSection() {
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Découvrez nos formations innovantes en management pour des équipes performantes et épanouies !
+              Podium accompagne vos managers à Lyon et en Rhône-Alpes avec des formations concrètes et engageantes : animation de réunion, communication non violente, leadership, gestion des conflits. Des programmes sur mesure, animés dans vos locaux.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

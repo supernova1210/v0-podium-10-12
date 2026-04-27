@@ -2,36 +2,42 @@
 
 import { useState } from "react"
 import { ChevronDown, Plus } from "lucide-react"
+import Image from "next/image"
 
 const faqData = [
   {
-    question: "Qu'est-ce qu'une formation QVCT et à qui s'adresse-t-elle ?",
+    question: "Qu'est-ce qu'une journée RSE en entreprise ?",
     answer:
-      "Une formation QVCT (Qualité de Vie et Conditions de Travail) est un dispositif structuré qui aide les entreprises à améliorer le bien-être de leurs salariés, prévenir les risques professionnels et renforcer l'engagement des équipes. Elle s'adresse aux RH, managers, référents sécurité et à tout collaborateur impliqué dans les démarches de prévention.",
+      "Une journée RSE est un événement organisé dans vos locaux pour sensibiliser et mobiliser vos collaborateurs autour des enjeux de responsabilité sociétale. Elle combine ateliers interactifs, mises en situation et formats participatifs pour ancrer une culture RSE concrète et partagée.",
   },
   {
-    question: "Comment financer une formation QVCT ?",
+    question: "Quels ateliers peut-on intégrer à la journée RSE ?",
     answer:
-      "Plusieurs dispositifs permettent de financer une formation QVCT : OPCO, plan de développement des compétences de l'entreprise, CPF selon les cas. Contactez-nous pour qu'on vous oriente vers la solution la plus adaptée à votre situation.",
+      "Podium propose une large sélection d'ateliers RSE : fresque du climat, mur des addictions, sensibilisation au handicap, tri des déchets, mobilité douce, bien-être et santé au travail, diversité et inclusion. Nous construisons le programme selon vos engagements et votre secteur d'activité.",
   },
   {
-    question: "Quelle est la différence entre une formation QVCT et un atelier QVT ?",
+    question: "La journée RSE peut-elle se tenir en demi-journée ?",
     answer:
-      "Un atelier QVT est une session courte (2 à 4 heures), ludique et participative, idéale pour sensibiliser vos équipes. Une formation QVCT est un dispositif plus approfondi (1 à plusieurs jours), avec des objectifs pédagogiques précis, un programme certifiant et un suivi des acquis.",
+      "Oui, tout à fait. Nous adaptons le nombre d'ateliers et le contenu selon le temps disponible. Une demi-journée permet déjà d'aborder plusieurs thématiques RSE de façon structurée et impactante.",
   },
   {
-    question: "Podium propose-t-il des formations QVCT à Lyon et en Rhône-Alpes ?",
+    question: "Combien de collaborateurs peuvent participer à la journée RSE ?",
     answer:
-      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse et bien d'autres villes. Toutes nos formations se déroulent directement dans vos locaux.",
+      "Pas de limite. Que vous réunissiez une petite équipe ou plusieurs centaines de collaborateurs, nous organisons des rotations pour que chacun puisse participer dans les meilleures conditions.",
   },
   {
-    question: "Quels résultats peut-on attendre d'une formation QVCT ?",
+    question: "Podium organise-t-il des journées RSE à Lyon et en Rhône-Alpes ?",
     answer:
-      "Les entreprises qui déploient une démarche QVCT constatent en général une réduction de l'absentéisme, une amélioration de l'engagement des collaborateurs et une diminution des accidents du travail. Les effets dépendent du programme choisi et de l'implication de l'encadrement.",
+      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse et les environs. Nous venons directement dans vos locaux avec tout le matériel nécessaire.",
+  },
+  {
+    question: "Comment organiser une journée RSE avec Podium ?",
+    answer:
+      "Contactez-nous via notre formulaire ou au 07 70 00 36 72. Nous échangeons sur vos objectifs, vos engagements RSE et vos contraintes, puis nous vous proposons un programme sur mesure. Devis gratuit sous 12h.",
   },
 ]
 
-export default function FormationsQvctFAQ() {
+export default function FaqJourneeRseSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const toggleFAQ = (index: number) => {
@@ -39,8 +45,12 @@ export default function FormationsQvctFAQ() {
   }
 
   return (
-    <section id="faq" className="scroll-mt-20 py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="relative py-16 md:py-24 bg-gray-50 overflow-hidden">
+      <div className="absolute left-8 top-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+        <Image src="/images/fleche-jaune.png" alt="Decorative arrow" fill className="object-contain" />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#061952] text-center mb-12">
             Questions fréquentes

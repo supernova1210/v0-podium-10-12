@@ -27,7 +27,7 @@ export default function EvenementsHeroSection() {
           {/* Text content */}
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-6xl font-bold text-[#061952] leading-[1.1] tracking-tight">
-              Libérez le potentiel de votre équipe
+              Journées Sécurité, RSE et séminaires pour vos équipes
             </h1>
 
             <BadgesGrid>
@@ -54,6 +54,11 @@ export default function EvenementsHeroSection() {
             <p className="text-lg text-gray-600 leading-relaxed">
               Des événements interactifs conçus pour renforcer l'esprit d'équipe, développer les compétences et ancrer
               durablement les bons réflexes.
+            </p>
+
+            <p className="text-sm text-gray-500 leading-relaxed">
+              Podium intervient à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute
+              la région Rhône-Alpes, dans vos locaux ou dans le lieu de votre choix.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

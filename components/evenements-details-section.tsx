@@ -18,35 +18,35 @@ const eventDetails: EventDetail[] = [
     id: "journee-securite",
     title: "Journée Sécurité",
     description:
-      "La sécurité au travail, c'est sérieux, mais ça peut aussi être fun ! Une journée sécurité ludique, c'est l'occasion de sensibiliser vos collaborateurs de manière originale et mémorable. En alliant apprentissage et divertissement, vous favorisez l'engagement de tous et renforcez la culture de la sécurité au sein de votre entreprise. Grâce à des activités ludiques et interactives, les collaborateurs assimilent plus facilement les règles de sécurité et acquièrent de bons réflexes.",
+      "Organisez une journée sécurité en entreprise qui marque les esprits. Podium conçoit des formats ludiques et interactifs — escape game sécurité, gestes qui sauvent, mur des addictions, gestes et postures — pour ancrer durablement les réflexes de prévention des risques professionnels. Intervention sur site à Lyon et dans toute la région Rhône-Alpes, pour toutes les tailles d'équipes.",
     image: "/images/journee-securite-evenement-podium.jpg",
-    imageAlt: "Formation sécurité en entreprise",
+    imageAlt: "Journée sécurité en entreprise animée par Podium à Lyon",
     href: "/nos-evenements/journee-securite",
   },
   {
     id: "journee-rse",
     title: "Journée RSE",
     description:
-      "Engagez vos collaborateurs autour de valeurs fortes et donnez un sens profond à votre démarche RSE. O.F PODIUM vous propose des team buildings axés sur la prise de conscience et l'action collective. Relevez des défis concrets, sensibilisez vos équipes aux enjeux environnementaux et sociétaux !",
+      "Engagez concrètement vos équipes dans votre démarche de responsabilité sociétale. Podium et l'Agence Déclic co-construisent votre journée RSE avec des ateliers participatifs adaptés à vos enjeux : environnement, inclusion, handicap, bien-être au travail. Un format modulable, animé dans vos locaux à Lyon et en Auvergne-Rhône-Alpes.",
     image: "/interactive-workshop-with-team-collaboration.png",
-    imageAlt: "Atelier RSE collaboratif",
+    imageAlt: "Atelier RSE collaboratif animé par Podium en entreprise",
     href: "/nos-evenements/journee-rse",
   },
   {
     id: "semaine-qvt",
     title: "Semaine QVT",
     description:
-      "Cette semaine est l'occasion de créer des moments forts et impactants pour les salariés. La durée de cet événement permet de varier et d'innover dans les choix des activités tout en gardant un fil conducteur. C'est également l'opportunité de transmettre les valeurs et les engagements de l'entreprise à partir de la mise en place d'ateliers traitants les mêmes sujets.",
+      "La semaine QVT est l'occasion d'organiser plusieurs jours d'ateliers autour de la qualité de vie au travail, avec un fil conducteur fort et une progression cohérente. Prévention des TMS, bien-être, cohésion, gestion du stress : chaque jour apporte une nouvelle thématique et renforce l'engagement durable de vos collaborateurs.",
     image: "/images/seminaire-podium-1.jpg",
-    imageAlt: "Semaine qualité de vie au travail",
+    imageAlt: "Semaine qualité de vie au travail organisée par Podium",
   },
   {
     id: "journee-seminaire",
     title: "Journée séminaire",
     description:
-      "Dites adieu aux séminaires monotones ! O.F PODIUM réinvente vos journées de travail collectif en y injectant une dose de fun et de ludique. Dans un cadre stimulant et participatif, favorisez l'échange, la créativité et l'émergence d'idées nouvelles. Ensemble, transformant chaque session de travail en une expérience enrichissante et mémorable.",
+      "Transformez votre séminaire d'entreprise en un moment de travail collectif vivant et mémorable. Podium intervient à Lyon et en Rhône-Alpes pour co-animer vos journées de travail : ateliers de cohésion d'équipe, intelligence collective, prise de parole, formats participatifs. Moins de réunions passives, plus d'énergie et de résultats.",
     image: "/images/seminaire-podium-2.jpg",
-    imageAlt: "Journée séminaire d'entreprise",
+    imageAlt: "Séminaire d'entreprise animé par Podium à Lyon et en Rhône-Alpes",
     href: "/nos-evenements/journee-seminaire",
   },
 ]

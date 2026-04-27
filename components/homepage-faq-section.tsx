@@ -6,38 +6,38 @@ import Image from "next/image"
 
 const faqData = [
   {
-    question: "Qu'est-ce qu'un atelier QVT en entreprise ?",
+    question: "Qu'est-ce que la QVCT et pourquoi est-ce important pour mon entreprise ?",
     answer:
-      "Un atelier QVT (Qualité de Vie au Travail) est une session courte, ludique et participative, animée directement dans vos locaux. Il vise à sensibiliser vos collaborateurs sur des thèmes comme la prévention des TMS, la gestion du stress, les gestes et postures ou le bien-être au travail. Podium propose des formats de 2 à 4 heures, adaptés à tous les profils et tous les secteurs.",
+      "La QVCT (Qualité de Vie et Conditions de Travail) désigne l'ensemble des actions menées pour améliorer le bien-être des salariés, prévenir les risques professionnels et renforcer l'engagement des équipes. Pour les entreprises de Lyon et de toute la région Rhône-Alpes, investir dans la QVCT permet de réduire l'absentéisme, d'améliorer la performance collective et de fidéliser les talents.",
   },
   {
-    question: "Quels ateliers QVT Podium propose-t-il ?",
+    question: "Dans quelles villes Podium intervient-il ?",
     answer:
-      "Podium propose une large gamme d'ateliers : escape game sécurité, réveil musculaire, gestes et postures, théâtre d'improvisation, prévention des addictions, yoga et bulle d'oxygène, et bien d'autres. Chaque atelier est conçu pour allier apprentissage concret et expérience mémorable.",
+      "Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Villeurbanne, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse, Saint-Étienne, Villefranche-sur-Saône et bien d'autres villes. Nous nous déplaçons directement dans vos locaux pour toutes nos formations, ateliers et événements.",
   },
   {
-    question: "Combien de participants peuvent participer à un atelier QVT ?",
+    question: "Les formations Podium sont-elles certifiées Qualiopi ?",
     answer:
-      "Nos ateliers sont adaptables à toutes les tailles de groupe, généralement de 8 à 30 participants. Pour les événements plus larges (journées sécurité, séminaires), nous pouvons intervenir auprès de plusieurs centaines de collaborateurs en organisant des rotations.",
+      "Oui, Podium est un organisme de formation certifié Qualiopi. Cette certification garantit la qualité de nos processus et vous permet de financer vos formations via votre OPCO ou d'autres dispositifs de financement de la formation professionnelle.",
   },
   {
-    question: "Podium intervient-il à Lyon et en Rhône-Alpes ?",
+    question: "Quelle est la différence entre un atelier QVT et une formation QVCT ?",
     answer:
-      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Villeurbanne, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse, Saint-Étienne et bien d'autres villes. Nos formateurs se déplacent directement dans vos locaux, sans frais supplémentaires selon la zone.",
+      "Un atelier QVT est une session courte (2 à 4 heures), ludique et participative, idéale pour sensibiliser vos équipes sur des thèmes comme la prévention des TMS, la gestion du stress ou le bien-être au travail. Une formation QVCT est un dispositif plus structuré (1 à plusieurs jours), avec des objectifs pédagogiques précis, un programme certifiant et un suivi des acquis.",
   },
   {
-    question: "Quelle est la durée d'un atelier QVT ?",
+    question: "Comment obtenir un devis pour une intervention de Podium ?",
     answer:
-      "La durée varie selon le format choisi : de 1h30 pour une session flash à une demi-journée complète (4h). Nous construisons le programme en fonction de vos contraintes organisationnelles et de vos objectifs.",
+      "Contactez-nous via notre formulaire en ligne ou par téléphone au 07 70 00 36 72. Nous vous répondons sous 12h et construisons avec vous un programme sur mesure adapté à vos besoins, à la taille de vos équipes et à votre budget.",
   },
   {
-    question: "Comment réserver un atelier QVT pour mon entreprise ?",
+    question: "Peut-on financer les formations Podium avec l'OPCO ?",
     answer:
-      "Contactez-nous via notre formulaire en ligne ou au 07 70 00 36 72. Nous vous répondons sous 12h avec une proposition adaptée à vos besoins, votre secteur et votre budget. Devis gratuit et sans engagement.",
+      "Oui, en tant qu'organisme certifié Qualiopi, nos formations sont éligibles aux financements OPCO (Opérateurs de Compétences). Nous vous accompagnons dans les démarches administratives pour faciliter la prise en charge de vos formations QVCT.",
   },
 ]
 
-export default function FAQSection() {
+export default function HomepageFAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const toggleFAQ = (index: number) => {
@@ -52,9 +52,12 @@ export default function FAQSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#061952] text-center mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#061952] text-center mb-4">
             Questions fréquentes
           </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Tout ce que vous souhaitez savoir sur nos formations QVCT et nos interventions en Rhône-Alpes.
+          </p>
 
           <div className="space-y-4">
             {faqData.map((faq, index) => (

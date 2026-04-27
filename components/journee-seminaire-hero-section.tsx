@@ -26,24 +26,28 @@ export default function JourneeSeminaireHeroSection() {
 
           {/* Text content - Left Column */}
           <div className="space-y-6 lg:col-span-3">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#061952] leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#061952] leading-tight">
               La journée{" "}
               <span className="relative">
                 séminaire
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-[#FFD25D] rounded-full"></div>
               </span>
-            </h2>
+            </h1>
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p className="font-semibold text-[#061952]">
-                Faites de votre séminaire un moment utile, vivant et inspirant
+                Faites de votre séminaire d’entreprise un moment utile, vivant et inspirant
               </p>
 
               <p>
                 Avec O.F PODIUM, votre journée de travail devient bien plus qu’une succession de réunions. C’est une
                 expérience collective, dynamique et enrichissante, où chaque temps fort est conçu pour renforcer la
-                cohésion d’équipe, favoriser la prise de parole et redonner du sens au travail ensemble. Nous
-                transformons vos séminaires d’entreprise en véritables journées apprenantes et participatives
+                cohésion d’équipe, favoriser la prise de parole et redonner du sens au travail ensemble.
+              </p>
+
+              <p className="text-sm text-gray-500">
+                Podium intervient à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute
+                la région Rhône-Alpes, dans vos locaux ou dans le lieu de votre choix.
               </p>
             </div>
 

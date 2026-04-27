@@ -16,28 +16,28 @@ export default function LesBeneficesSecuriteSection() {
       icon: Target,
       title: "Engagement renforcé",
       description:
-        "Des formats interactifs et immersifs pour capter l'attention et faire participer activement les équipes.",
+        "Les ateliers de prévention Podium sont conçus pour sortir vos équipes de la passivité. Escape game sécurité, mises en situation, challenges collectifs : chaque format capte l'attention et crée une vraie participation.",
     },
     {
       id: "entreprise-2",
       icon: Award,
       title: "Changement des comportements",
       description:
-        "Les participants expérimentent, prennent conscience, et adoptent les bons réflexes.",
+        "Une journée sécurité efficace ne se résume pas à des diapositives. En vivant les situations, vos collaborateurs intègrent les bons réflexes de prévention des risques professionnels de façon naturelle et durable.",
     },
     {
       id: "entreprise-3",
       icon: Users,
       title: "Mémorisation durable",
       description:
-        "Les messages sont ancrés grâce à l'expérience vécue, loin des simples rappels théoriques.",
+        "Le cerveau retient ce qu'il a vécu. En combinant l'action, l'émotion et le collectif, nos ateliers de sensibilisation à la sécurité au travail ancrent les messages bien au-delà d'une simple formation théorique.",
     },
     {
       id: "entreprise-4",
       icon: Users,
       title: "Image employeur boostée",
       description:
-        "Un signal fort envoyé à vos collaborateurs, partenaires et clients : vous agissez concrètement.",
+        "Organiser une journée sécurité sur mesure, c'est aussi envoyer un signal fort à vos collaborateurs sur votre engagement QVCT. Un investissement visible, apprécié, et qui renforce l'attractivité de l'entreprise.",
     },
   ]
 
@@ -47,28 +47,28 @@ export default function LesBeneficesSecuriteSection() {
       icon: Lightbulb,
       title: "Sortez des sentiers battus",
       description:
-        "Osez des formats créatifs, inattendus et mémorables. Rien à voir avec une formation classique.",
+        "Nos journées sécurité n'ont rien d'une conférence classique. Escape game, mur des addictions, réveil musculaire, secourir sans panique : des formats inattendus qui marquent les esprits et donnent envie de participer.",
     },
     {
       id: "collaborateurs-2",
       icon: HandHeart,
       title: "Intervenants experts",
       description:
-        "Des professionnels qualifiés pour animer, transmettre et inspirer vos équipes.",
+        "Chaque atelier est animé par un professionnel formé à la prévention des risques. Podium intervient à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute la région Rhône-Alpes, directement dans vos locaux.",
     },
     {
       id: "collaborateurs-3",
       icon: Heart,
       title: "Le sport comme levier",
       description:
-        "Bouger, coopérer, ressentir : l'activité physique comme vecteur de prévention et de cohésion.",
+        "L'activité physique favorise la prise de conscience corporelle, réduit les TMS et renforce la cohésion d'équipe. Chez Podium, le mouvement est un outil de prévention à part entière, pas un simple bonus.",
     },
     {
       id: "collaborateurs-4",
       icon: Heart,
       title: "Jeux & challenges",
       description:
-        "Des quiz, des épreuves, des mises en situation : l'apprentissage devient concret, vivant et fun.",
+        "Quiz sur les risques professionnels, épreuves en équipe, défis pratiques : la sensibilisation à la sécurité au travail devient un moment concret, vivant et ancré dans la réalité de vos équipes.",
     },
   ]
 

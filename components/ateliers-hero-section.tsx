@@ -49,13 +49,18 @@ export default function AteliersHeroSection() {
           {/* Text content */}
           <div className="space-y-6 max-w-[500px]">
             <h1 className="text-4xl lg:text-6xl font-bold text-[#061952] leading-[1.1] tracking-tight">
-              Découvrez nos ateliers ludiques
+              Ateliers QVT & prévention pour vos équipes
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
               Des ateliers interactifs et engageants conçus pour sensibiliser, former et fédérer vos équipes. Chaque
               atelier combine pédagogie active, moments ludiques et apprentissages concrets pour une expérience
               mémorable et impactante.
+            </p>
+
+            <p className="text-sm text-gray-500 leading-relaxed">
+              Podium intervient à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute la région Rhône-Alpes,
+              directement dans vos locaux.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

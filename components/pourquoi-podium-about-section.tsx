@@ -53,8 +53,12 @@ export default function PourquoiPodiumAboutSection() {
                 discours : ils embarquent, motivent et adaptent chaque contenu à votre réalité terrain.
               </p>
 
+              <p className="text-sm text-gray-500">
+                Podium intervient à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute la région Auvergne-Rhône-Alpes, directement dans vos locaux.
+              </p>
+
               <p className="font-semibold text-[#061952]">
-                Notre mission ? Créer des moments qui fort, qui fédèrent et qui donnent envie de faire autrement !
+                Notre mission : créer des moments forts, qui fédèrent et qui donnent envie de faire autrement.
               </p>
             </div>
 

@@ -6,17 +6,17 @@ export default function FormationsManagementApproche() {
     {
       icon: Shield,
       title: "Développer le leadership et la communication",
-      description: "Renforcer l’écoute, l’assertivité et la clarté des messages.",
+      description: "Écoute active, communication non violente (CNV), assertivité : vos managers apprennent à transmettre des messages clairs, à désamorcer les tensions et à créer un climat de confiance dans leurs équipes.",
     },
     {
       icon: Users,
       title: "Gérer efficacement les équipes et les projets",
-      description: "Structurer les priorités, déléguer avec confiance, suivre l’avancement.",
+      description: "Animer une réunion, structurer les priorités, déléguer avec discernement : nos formations management donnent aux encadrants des outils concrets pour piloter leurs équipes au quotidien, à Lyon comme en région Rhône-Alpes.",
     },
     {
       icon: MapPin,
       title: "Formations adaptées aux enjeux actuels du management",
-      description: "Cas concrets, outils modernes, pratiques immédiatement transférables en entreprise.",
+      description: "Posture professionnelle, gestion de l’agressivité, valorisation des savoir-être : chaque formation Podium part des situations réelles vécues par vos managers, avec des cas pratiques directement transférables en entreprise.",
     },
   ]
 

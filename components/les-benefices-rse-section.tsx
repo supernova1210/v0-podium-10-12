@@ -16,21 +16,21 @@ export default function LesBeneficesRseSection() {
       icon: Target,
       title: "Expertise et solutions RSE clés en main",
       description:
-        "O.F PODIUM et l'Agence Déclic apportent leur savoir-faire et proposent des activités RSE variées et impactantes, simplifiant l'organisation pour l'entreprise et garantissant une journée réussie et alignée avec ses objectifs de développement durable.",
+        "O.F PODIUM et l'Agence Déclic conçoivent votre journée RSE de A à Z : sélection des ateliers, logistique, animation et bilan. Vous obtenez une journée alignée avec vos objectifs de développement durable, sans charge organisationnelle pour vos équipes. Nous intervenons à Lyon et dans toute la région Rhône-Alpes.",
     },
     {
       id: "entreprise-2",
       icon: Award,
       title: "Renforcement de l'image et de la marque employeur",
       description:
-        "En s'associant à des acteurs spécialisés, l'entreprise démontre un engagement RSE crédible et renforce son attractivité auprès des clients, partenaires et futurs talents.",
+        "Organiser une journée RSE avec des partenaires spécialisés, c'est démontrer un engagement concret et crédible. Cela renforce votre attractivité auprès des talents, clients et partenaires, et contribue à votre démarche de responsabilité sociétale d'entreprise.",
     },
     {
       id: "entreprise-3",
       icon: Users,
       title: "Mobilisation et engagement des équipes facilités",
       description:
-        "Les animations proposées par O.F PODIUM sont conçues pour être ludiques et participatives, favorisant l'adhésion des collaborateurs et stimulant une culture d'entreprise responsable de manière engageante.",
+        "Les ateliers RSE de Podium sont conçus pour susciter l'adhésion, pas la contrainte. Fresque du climat, sensibilisation au handicap, tri des déchets, mobilité durable : des formats ludiques et participatifs qui ancrent une vraie culture responsable dans vos équipes.",
     },
   ]
 
@@ -40,21 +40,21 @@ export default function LesBeneficesRseSection() {
       icon: Lightbulb,
       title: "Sensibilisation concrète et ludique aux enjeux RSE",
       description:
-        "Les activités proposées permettent aux collaborateurs de mieux comprendre les défis environnementaux et sociaux de manière interactive et engageante.",
+        "Les ateliers permettent à chaque collaborateur de toucher du doigt les enjeux environnementaux et sociaux qui concernent leur quotidien professionnel. La pédagogie active remplace les discours : on comprend mieux ce qu'on a vécu.",
     },
     {
       id: "collaborateurs-2",
       icon: HandHeart,
       title: "Opportunité d'agir et de contribuer positivement",
       description:
-        "Participer à une journée RSE offre aux employés la possibilité de s'impliquer concrètement dans des actions ayant un impact positif, renforçant leur sentiment d'utilité et leur fierté d'appartenance à une entreprise responsable.",
+        "Une journée RSE bien animée transforme les intentions en engagement. Vos collaborateurs repartent avec des réflexes concrets, une meilleure compréhension des enjeux et le sentiment de faire partie d'une entreprise qui agit vraiment.",
     },
     {
       id: "collaborateurs-3",
       icon: Heart,
       title: "Renforcement du lien social et de la cohésion",
       description:
-        "Les activités collectives et conviviales organisées par O.F PODIUM et l'agence Déclic favorisent les échanges entre collègues, renforcent l'esprit d'équipe et contribuent à un environnement de travail plus positif.",
+        "Les ateliers collectifs organisés par O.F PODIUM et l'Agence Déclic sont aussi des moments de partage et de coopération. Ils renforcent les liens entre collègues, favorisent le dialogue et contribuent à une meilleure qualité de vie au travail.",
     },
   ]
 

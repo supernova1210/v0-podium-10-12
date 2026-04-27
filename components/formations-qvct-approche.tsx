@@ -6,17 +6,17 @@ export default function FormationsQvctApproche() {
     {
       icon: Shield,
       title: "Limiter et prévenir les TMS",
-      description: "Techniques et bonnes pratiques pour réduire les troubles musculo-squelettiques",
+      description: "Nos formations QVCT apprennent à vos équipes à adopter les bons gestes et postures pour réduire les troubles musculo-squelettiques, première cause d'arrêt de travail en France. Un investissement prévention concret et mesurable.",
     },
     {
       icon: Users,
       title: "Assurer la pérennité des effectifs",
-      description: "Maintenir l'engagement et la motivation des équipes sur le long terme",
+      description: "Absentéisme, désengagement, burn-out : nos programmes QVCT à Lyon et en Rhône-Alpes aident les entreprises à construire un environnement de travail durable, où les collaborateurs restent motivés et en bonne santé.",
     },
     {
       icon: MapPin,
       title: "Formations sur site pour une meilleure projection",
-      description: "Interventions directement dans votre environnement de travail",
+      description: "Nous intervenons directement dans vos locaux, à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute la région Auvergne-Rhône-Alpes. Vos équipes apprennent dans leur environnement réel, ce qui favorise l'ancrage et l'application immédiate.",
     },
   ]
 

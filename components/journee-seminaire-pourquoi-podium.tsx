@@ -30,8 +30,7 @@ export default function JourneeSeminairePourquoiPodium() {
             Pourquoi être accompagné par PODIUM ?
           </h2>
           <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Une journée de travail réussi, c’est une journée qui fait sens, qui crée du lien et qui donne envie d’avancer ensemble. Quand l’animation est vivante, le rythme juste et les échanges authentiques, chaque participant repart avec plus d’énergie et de motivation.
-            Notre ambition : faire de vos séminaires un vrai levier de cohésion et de performance collective.
+            Un séminaire d’entreprise réussi, c’est une journée qui fait sens, crée du lien et donne envie d’avancer ensemble. Podium conçoit et anime vos séminaires à Lyon et dans toute la région Rhône-Alpes avec des ateliers sur mesure : cohésion d’équipe, prise de parole, intelligence collective, bien-être au travail. Quand l’animation est vivante et le rythme bien cadencé, chaque participant repart avec plus d’énergie et de motivation.
           </p>
         </div>
 

@@ -26,13 +26,13 @@ export default function JourneeRseHeroSection() {
 
           {/* Text content - Left Column */}
           <div className="space-y-6 lg:col-span-3">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#061952] leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#061952] leading-tight">
               La journée{" "}
               <span className="relative">
                 RSE
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-[#FFD25D] rounded-full"></div>
               </span>
-            </h2>
+            </h1>
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p className="font-semibold text-[#061952]">
@@ -40,7 +40,12 @@ export default function JourneeRseHeroSection() {
               </p>
 
               <p>
-                Organisez une journée interactive et inspirante pour sensibiliser, mobiliser et fédérer vos collaborateurs autour des enjeux de responsabilité sociétale.
+                Organisez une journée RSE interactive et inspirante pour sensibiliser, mobiliser et fédérer vos collaborateurs autour des enjeux de responsabilité sociétale.
+              </p>
+
+              <p className="text-sm text-gray-500">
+                Podium intervient à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute
+                la région Rhône-Alpes, directement dans vos locaux.
               </p>
             </div>
 

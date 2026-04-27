@@ -33,11 +33,10 @@ export default function JeuAuCoeurSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8">Le jeu au cœur de nos ateliers</h2>
           <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Chaque atelier est unique, conçu sur-mesure pour répondre à vos besoins spécifiques. Grâce à une approche
-            ludique et innovante, nous transformons l'apprentissage en une expérience captivante et inclusive. Le jeu
-            devient bien plus qu'un simple divertissement : il s'impose comme un outil pédagogique puissant, favorisant
-            l'implication de tous. Nos ateliers allient créativité, interactivité et expertise pour faire passer des
-            messages sérieux avec légèreté et impact.
+            Chez Podium, le jeu n'est pas un gadget : c'est le moteur de l'apprentissage. Nos ateliers QVT et sécurité
+            à Lyon et en Rhône-Alpes s'appuient sur des formats interactifs — jeu de plateau, mur digital, blind test,
+            pratique sportive — pour ancrer les messages de prévention et de bien-être au travail durablement. Quand
+            on apprend en faisant, on retient vraiment.
           </p>
         </div>
 

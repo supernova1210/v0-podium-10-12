@@ -53,11 +53,16 @@ export default function FormationsQvctHeroSection() {
           {/* Text content */}
           <div className="space-y-6 max-w-[500px]">
             <h1 className="text-4xl lg:text-6xl font-bold text-[#061952] leading-[1.1] tracking-tight">
-              Boostez la qualité de vie au travail dans votre entreprise
+              Formations QVCT pour booster la qualité de vie au travail
             </h1>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Découvrez nos formations ludiques et innovantes pour des équipes engagées et épanouies !
+              Des formations ludiques et innovantes pour des équipes engagées et épanouies.
+            </p>
+
+            <p className="text-sm text-gray-500 leading-relaxed">
+              Podium intervient à Lyon, Grenoble, Annecy, Chambéry, Valence et dans toute
+              la région Rhône-Alpes, directement dans vos locaux.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

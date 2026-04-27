@@ -6,48 +6,38 @@ import Image from "next/image"
 
 const faqData = [
   {
-    question: "Pourquoi organiser un événement journée sécurité ?",
+    question: "Qu'est-ce qu'une journée sécurité en entreprise ?",
     answer:
-      "Organiser une journée sécurité permet de sensibiliser et d'impliquer concrètement vos équipes aux enjeux de la sécurité au travail. C'est l’occasion de renforcer la culture de prévention, de partager les bonnes pratiques, de former aux gestes qui sauvent et de créer un dialogue constructif pour un environnement de travail plus sûr.",
+      "Une journée sécurité est un événement organisé dans vos locaux pour sensibiliser vos équipes aux enjeux de la prévention et de la sécurité au travail. Elle réunit ateliers pratiques, mises en situation et formats ludiques pour ancrer durablement les bons réflexes.",
   },
   {
-    question: "Pourquoi organiser une journée RSE ?",
+    question: "Quels ateliers de prévention peut-on intégrer à la journée ?",
     answer:
-      "Une journée RSE permet de mobiliser et d'engager vos collaborateurs autour des valeurs de responsabilité sociétale de votre entreprise. Elle permet de sensibiliser aux impacts environnementaux et sociaux, de présenter vos initiatives, de favoriser l'échange et la participation, et de renforcer votre image auprès de vos parties prenantes.",
-  },
-  {
-    question: "Y a-t-il un réel impact à ludifier une journée de travail en séminaire ?",
-    answer:
-      "Oui, l'impact est significatif. La ludification (utilisation d'éléments de jeu) rend l'apprentissage et la participation plus engageants, mémorables et motivants. Dans un séminaire, des formats ludiques favorisent l'interaction, la créativité, la résolution de problèmes en équipe et une meilleure assimilation des messages clés.",
+      "Podium propose une large sélection d'ateliers : escape game sécurité, gestes et postures, mur des addictions, secourir sans panique, sensibilisation au handicap, réveil musculaire et bien d'autres. Nous construisons le programme selon vos priorités et votre secteur.",
   },
   {
     question: "Peut-on adapter le format en demi-journée ?",
     answer:
-      "Oui, tout à fait. Nous ajustons le nombre d’ateliers et les contenus selon le temps disponible. Une demi-journée permet déjà de couvrir plusieurs thématiques (sécurité, RSE, cohésion) de façon structurée et impactante.",
+      "Oui, tout à fait. Nous ajustons le nombre d'ateliers et le contenu selon le temps disponible. Une demi-journée permet déjà de couvrir plusieurs thématiques de prévention de façon efficace.",
   },
   {
-    question: "Est-ce que je dois trouver le lieu ou est-ce que Podium s’en occupe ?",
+    question: "Combien de participants peuvent prendre part à la journée sécurité ?",
     answer:
-      "Nous intervenons en priorité dans vos locaux, ce qui simplifie la logistique et renforce l’ancrage terrain. Si vous préférez un lieu externe, nous pouvons vous orienter vers des partenaires à Lyon et en Rhône-Alpes, ou effectuer un repérage selon vos souhaits.",
+      "Pas de limite. Que vous soyez une petite équipe ou plusieurs centaines de collaborateurs, nous organisons des rotations pour que tout le monde participe dans les meilleures conditions.",
   },
   {
-    question: "Comment se déroule la préparation de l’événement ?",
+    question: "Podium organise-t-il des journées sécurité à Lyon et en Rhône-Alpes ?",
     answer:
-      "Après un premier échange sur vos objectifs et vos contraintes, Podium vous soumet un programme sur mesure avec un planning détaillé. Nous co-construisons le contenu avec vous, puis nous prenons en charge l’animation et la logistique le jour J.",
+      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse et les environs. Nous venons directement dans vos locaux avec tout le matériel nécessaire.",
   },
   {
-    question: "Combien de personnes peuvent participer à un événement ?",
+    question: "Comment organiser une journée sécurité avec Podium ?",
     answer:
-      "Pas de limite. Que vous soyez une dizaine ou plusieurs centaines de collaborateurs, nous adaptons le format, le nombre d’intervenants et l’organisation des rotations pour garantir une expérience fluide et de qualité pour chacun.",
-  },
-  {
-    question: "Podium organise-t-il des événements à Lyon et en Rhône-Alpes ?",
-    answer:
-      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse et les environs. Nous nous déplaçons dans vos locaux ou dans le lieu de votre choix.",
+      "Contactez-nous via notre formulaire ou au 07 70 00 36 72. Nous échangeons sur vos objectifs, vos équipes et vos contraintes, puis nous vous proposons un programme sur mesure. Devis gratuit sous 12h.",
   },
 ]
 
-export default function FAQSection() {
+export default function FaqJourneeSecuriteSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const toggleFAQ = (index: number) => {

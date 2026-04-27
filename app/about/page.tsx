@@ -8,9 +8,19 @@ import { ContactezNousSection } from "@/components/contactez-nous-section"
 import AboutLocalNavigation from "@/components/about-local-navigation"
 
 export const metadata: Metadata = {
-  title: "À propos - Podium",
+  title: "À propos de Podium — Organisme de formation QVCT Lyon & Rhône-Alpes",
   description:
-    "Découvrez Podium, notre équipe, notre pédagogie et nos valeurs. Un organisme de formation spécialisé en QVCT, management et sécurité.",
+    "Découvrez Podium, organisme de formation spécialisé en QVCT, management et sécurité au travail. Basé à Lyon, nous intervenons dans toute la région Auvergne-Rhône-Alpes avec une pédagogie active et ludique.",
+  alternates: {
+    canonical: "https://www.ofpodium.fr/about",
+  },
+  openGraph: {
+    title: "À propos de Podium — Organisme de formation QVCT Lyon & Rhône-Alpes",
+    description:
+      "Podium, organisme de formation en QVCT, management et sécurité. Pédagogie active et ludique, intervention dans vos locaux à Lyon et en Rhône-Alpes.",
+    url: "https://www.ofpodium.fr/about",
+    type: "website",
+  },
 }
 
 export default function AboutPage() {

@@ -5,19 +5,34 @@ import { ChevronDown, Plus } from "lucide-react"
 
 const faqData = [
   {
-    question: "Qu'est-ce que le management ?",
+    question: "À qui s'adressent les formations management de Podium ?",
     answer:
-      "Le management est l'art de diriger, organiser et coordonner les activités d'une équipe ou d'une organisation pour atteindre des objectifs spécifiques. Il implique la planification, la prise de décision, la motivation des employés et l'évaluation des performances.",
+      "Nos formations management s'adressent aux managers de proximité, chefs d'équipe, coordinateurs et toute personne amenée à animer, motiver ou structurer une équipe. Elles conviennent aussi aux entreprises souhaitant développer la posture managériale de leurs collaborateurs à potentiel.",
   },
   {
-    question: "Quels sont les bénéfices d'une formation en management ?",
+    question: "Quels thèmes couvrent vos formations management ?",
     answer:
-      "Une formation en management permet de développer des compétences essentielles telles que le leadership, la communication, la résolution de problèmes et la gestion d'équipe. Elle aide les managers à améliorer leur efficacité, à motiver leurs équipes et à atteindre de meilleurs résultats pour leur organisation.",
+      "Podium propose des formations sur l'animation de réunion, la communication non violente (CNV), la gestion de l'agressivité, le leadership, la confiance en soi et la posture professionnelle. Chaque programme est modulable selon les besoins et le niveau de vos équipes.",
   },
   {
-    question: "Comment choisir la bonne formation en management ?",
+    question: "Quelle est la durée d'une formation management ?",
     answer:
-      "Pour choisir la bonne formation en management, identifiez d'abord vos besoins spécifiques et ceux de votre organisation. Recherchez des formations qui offrent un bon équilibre entre théorie et pratique, et qui sont dispensées par des formateurs expérimentés. N'hésitez pas à demander des références et à lire les témoignages d'anciens participants.",
+      "La durée varie selon le programme : de la demi-journée pour un format flash à plusieurs jours pour un parcours complet. Nous construisons le calendrier en fonction de vos contraintes organisationnelles et de vos objectifs de montée en compétences.",
+  },
+  {
+    question: "Comment financer une formation management ?",
+    answer:
+      "Plusieurs dispositifs permettent de financer une formation management : OPCO, plan de développement des compétences, CPF selon les cas. Contactez-nous pour être orienté vers la solution la plus adaptée à votre situation et votre secteur.",
+  },
+  {
+    question: "Podium propose-t-il des formations management à Lyon et en Rhône-Alpes ?",
+    answer:
+      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse et les environs. Toutes nos formations se déroulent directement dans vos locaux, avec du matériel pédagogique fourni.",
+  },
+  {
+    question: "Qu'est-ce qui différencie les formations Podium des formations classiques ?",
+    answer:
+      "Chez Podium, la pédagogie active remplace les cours magistraux. Jeux de rôle, mises en situation, outils ludiques et formateurs terrain : chaque formation est conçue pour que les participants repartent avec des compétences directement applicables.",
   },
 ]
 
