@@ -8,7 +8,7 @@ const faqData = [
   {
     question: "Qu'est-ce que la QVCT et pourquoi est-ce important pour mon entreprise ?",
     answer:
-      "La QVCT (Qualité de Vie et Conditions de Travail) désigne l'ensemble des actions menées pour améliorer le bien-être des salariés, prévenir les risques professionnels — dont les TMS (troubles musculo-squelettiques) — et renforcer l'engagement des équipes. Pour les entreprises de Lyon et de toute la région Rhône-Alpes, investir dans la QVCT permet de réduire l'absentéisme, d'améliorer la performance collective et de fidéliser les talents.",
+      "La QVCT (Qualité de Vie et Conditions de Travail) désigne l'ensemble des actions menées pour améliorer le bien-être des salariés, prévenir les risques professionnels, dont les TMS (troubles musculo-squelettiques), et renforcer l'engagement des équipes. Pour les entreprises de Lyon et de toute la région Rhône-Alpes, investir dans la QVCT permet de réduire l'absentéisme, d'améliorer la performance collective et de fidéliser les talents.",
   },
   {
     question: "Dans quelles villes Podium intervient-il ?",
