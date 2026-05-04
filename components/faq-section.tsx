@@ -8,7 +8,7 @@ const faqData = [
   {
     question: "Qu'est-ce qu'un atelier QVT en entreprise ?",
     answer:
-      "Un atelier QVT (Qualité de Vie au Travail) est une session courte, ludique et participative, animée directement dans vos locaux. Il vise à sensibiliser vos collaborateurs sur des thèmes comme la prévention des TMS, la gestion du stress, les gestes et postures ou le bien-être au travail. Podium propose des formats de 2 à 4 heures, adaptés à tous les profils et tous les secteurs.",
+      "Un atelier QVT (Qualité de Vie au Travail) est une session courte, ludique et participative, animée directement dans vos locaux. Il vise à sensibiliser vos collaborateurs sur des thèmes comme la prévention des TMS, la gestion du stress, les gestes et postures ou le bien-être au travail. Podium propose des formats sur mesure à partir de 30 minutes par atelier, adaptés à tous les profils et tous les secteurs.",
   },
   {
     question: "Quels ateliers QVT Podium propose-t-il ?",
@@ -18,17 +18,17 @@ const faqData = [
   {
     question: "Combien de participants peuvent participer à un atelier QVT ?",
     answer:
-      "Nos ateliers sont adaptables à toutes les tailles de groupe, généralement de 8 à 30 participants. Pour les événements plus larges (journées sécurité, séminaires), nous pouvons intervenir auprès de plusieurs centaines de collaborateurs en organisant des rotations.",
+      "Nos ateliers accueillent généralement de 6 à 16 participants par groupe. Pour les événements plus larges (journées sécurité, séminaires), nous créons plusieurs groupes et proposons des formations libres avec ou sans rotation, permettant d'intervenir auprès d'un grand nombre de collaborateurs.",
   },
   {
     question: "Podium intervient-il à Lyon et en Rhône-Alpes ?",
     answer:
-      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Villeurbanne, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse, Saint-Étienne et bien d'autres villes. Nos formateurs se déplacent directement dans vos locaux, sans frais supplémentaires selon la zone.",
+      "Oui, Podium intervient dans toute la région Auvergne-Rhône-Alpes : Lyon, Villeurbanne, Grenoble, Annecy, Chambéry, Valence, Bourg-en-Bresse, Saint-Étienne, Saint-Vulbas et bien d'autres villes. Nos formateurs se déplacent directement dans vos locaux, sans frais supplémentaires selon la zone.",
   },
   {
     question: "Quelle est la durée d'un atelier QVT ?",
     answer:
-      "La durée varie selon le format choisi : de 1h30 pour une session flash à une demi-journée complète (4h). Nous construisons le programme en fonction de vos contraintes organisationnelles et de vos objectifs.",
+      "La durée varie selon le format choisi : à partir de 3 minutes pour une session flash jusqu'à une demi-journée (3h). Nous construisons le déroulé en fonction de vos contraintes organisationnelles et de vos objectifs.",
   },
   {
     question: "Comment réserver un atelier QVT pour mon entreprise ?",
