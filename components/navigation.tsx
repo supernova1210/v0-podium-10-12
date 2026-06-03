@@ -33,6 +33,7 @@ const evenementsDropdown = {
   events: [
     { label: "Journée Sécurité", href: "/nos-evenements/journee-securite" },
     { label: "Journée RSE", href: "/nos-evenements/journee-rse" },
+    { label: "Semaine QVCT", href: "/nos-evenements/semaine-qvct" },
     { label: "Journée Séminaire", href: "/nos-evenements/journee-seminaire" },
   ],
 }

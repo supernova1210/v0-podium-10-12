@@ -33,12 +33,13 @@ const eventDetails: EventDetail[] = [
     href: "/nos-evenements/journee-rse",
   },
   {
-    id: "semaine-qvt",
-    title: "Semaine QVT",
+    id: "semaine-qvct",
+    title: "Semaine QVCT",
     description:
-      "La semaine QVT est l'occasion d'organiser plusieurs jours d'ateliers autour de la qualité de vie au travail, avec un fil conducteur fort et une progression cohérente. Prévention des TMS, bien-être, cohésion, gestion du stress : chaque jour apporte une nouvelle thématique et renforce l'engagement durable de vos collaborateurs.",
-    image: "/images/seminaire-podium-1.jpg",
-    imageAlt: "Semaine qualité de vie au travail organisée par Podium",
+      "La semaine QVCT est l'occasion d'organiser plusieurs jours d'ateliers autour de la qualité de vie et des conditions de travail, avec un fil conducteur fort et une progression cohérente. Prévention des TMS, bien-être, cohésion, gestion du stress : chaque atelier est pensé pour répondre à vos enjeux terrain, à vos métiers et à vos contraintes d'organisation.",
+    image: "/images/atelier yoga.png",
+    imageAlt: "Semaine QVCT organisée par Podium à Lyon et en Rhône-Alpes",
+    href: "/nos-evenements/semaine-qvct",
   },
   {
     id: "journee-seminaire",
