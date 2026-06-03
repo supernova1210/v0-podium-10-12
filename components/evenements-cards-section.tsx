@@ -19,9 +19,10 @@ const services = [
   },
   {
     id: "semaineqvt",
-    title: "Semaine QVT",
-    subline: "Evenement en construction.",
-    image: "/images/seminaire-podium-1.jpg",
+    title: "Semaine QVCT",
+    subline: "Organisez une semaine sur mesure autour de la qualité de vie au travail.",
+    image: "/images/atelier yoga.png",
+    href: "/nos-evenements/semaine-qvct",
   },
   {
     id: "journeeseminaire",
