@@ -13,7 +13,7 @@ const rseWorkshops = [
   },
   {
     id: "sante-mentale",
-    title: "Santé mentale",
+    title: "Santé mentale : gérer son stress",
     category: "QVT",
     duration: "à partir de 20 min",
     participants: "À partir de 4 participants",

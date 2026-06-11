@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { PodiumButton } from "@/components/ui/podium-button"
-import { Shield, Monitor, Brain } from "lucide-react"
+import { Shield, Monitor, Brain, HeartHandshake } from "lucide-react"
 
 export default function FormationsQvctCards() {
   const formations = [
@@ -25,6 +25,13 @@ export default function FormationsQvctCards() {
       image: "/images/accompagnement-podium-coaching.jpg",
       href: "/formation-valoriser-posture-professionnelle",
     },
+    {
+      icon: HeartHandshake,
+      title: "Formation santé mentale",
+      description: "Repérez les signes de mal-être chez un collègue et adoptez une posture d'écoute pour prévenir les risques psychosociaux.",
+      image: "/images/atelier-theatre-entreprise.jpg",
+      href: "/formation-sante-mentale-detecter-mal-etre",
+    },
   ]
 
   return (
@@ -39,7 +46,7 @@ export default function FormationsQvctCards() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {formations.map((formation, index) => (
               <Card
                 key={index}

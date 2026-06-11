@@ -3,21 +3,20 @@ import { PodiumButton } from "@/components/ui/podium-button"
 import { Download, Target, Book, FileText } from "lucide-react"
 import Image from "next/image"
 
-export default function FormationArmProgramme() {
+export default function FormationSanteMentaleProgramme() {
   const objectifs = [
-    "Concevoir des situations d’échauffement ludique en adéquation avec les besoins de ses collaborateurs et du domaine d’activité.",
-    "Durant sa pratique, créer un cadre sécurisé pour proposer des situations adaptées et bienveillantes.",
-    "Développer un regard critique pour faire évoluer sa posture et le dispositif dans le temps et en correspondance avec son public.",
+    "Identifier les signaux précoces de mal-être chez un usager ou une collègue.",
+    "Distinguer les faits observables et les interprétations.",
+    "Adopter une posture d’écoute professionnelle et sécurisante.",
+    "Savoir réagir de manière adaptée et transmettre l’information.",
+    "Contribuer à la prévention des risques psychosociaux au sein de la structure.",
   ]
 
   const programme = [
-    "Analyser et interpréter les enjeux liés aux TMS et à l’échauffement en entreprise.",
-    "Ressentir et évaluer les effets des situations d’échauffement ludique.",
-    "Concevoir les profils types de son public et leurs gestion.",
-    "Faire évoluer ses techniques de communication pour fédérer un groupe.",
-    "Adapter les lieux d'échauffement aux réalités de l'entreprise et du groupe.",
-    "Développer une posture d’ambassadeur d’échauffement ludique au travers de mise en situations.",
-    "S’auto-évaluer au travers d’une grille pour faire progresser sa posture.",
+    "Repérer les signes de mal-être chez une collègue.",
+    "Détecter les signaux d’alerte chez un usager à domicile.",
+    "Adapter sa posture professionnelle face à une personne vulnérable.",
+    "S’entraîner avec des situations terrain et des outils pratiques.",
   ]
 
   const modalites = [
@@ -29,11 +28,11 @@ export default function FormationArmProgramme() {
     {
       icon: "/images/picto-temps.png",
       title: "Durée :",
-      subtitle: "7h",
+      subtitle: "3h",
     },
     {
       icon: "/images/picto-participants.png",
-      title: "6 à 12 participants",
+      title: "4 à 12 participants",
     },
     {
       icon: "/images/picto_prix.png",
@@ -138,17 +137,17 @@ export default function FormationArmProgramme() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
-              Pour découvrir le programme complet et l'ensemble des activités, téléchargez la maquette.
+              Pour découvrir le programme complet et l'ensemble des activités, téléchargez la fiche formation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-3xl mx-auto">
               <PodiumButton
-                href="/documents/formation-reveil-musculaire.pdf"
+                href="/documents/fiche-formation-sante-mentale-module3-2026.pdf"
                 target="_blank"
                 showArrow={false}
                 className="whitespace-nowrap px-6 py-3"
               >
-                <span>Télécharger la maquette (PDF)</span>
+                <span>Télécharger la fiche formation (PDF)</span>
                 <Download className="w-5 h-5 ml-3 flex-shrink-0" />
               </PodiumButton>
             </div>

@@ -140,27 +140,17 @@ export default function FormationVppProgramme() {
 
           <div className="mt-12 text-center">
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
-              Pour découvrir le programme complet et l'ensemble des activités, téléchargez la maquette.
+              Pour découvrir le programme complet et l'ensemble des activités, téléchargez la fiche formation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-3xl mx-auto">
               <PodiumButton
-                href="/documents/programme-valoriser-sa-posture-professionnelle-3-30h.pdf"
+                href="/documents/fiche-formation-valoriser-posture-pro-2026.pdf"
                 target="_blank"
                 showArrow={false}
                 className="whitespace-nowrap px-6 py-3"
               >
-                <span>Télécharger la maquette 3h30 (PDF)</span>
-                <Download className="w-5 h-5 ml-3 flex-shrink-0" />
-              </PodiumButton>
-
-              <PodiumButton
-                href="/documents/programme-valoriser-sa-posture-professionnelle-7h.pdf"
-                target="_blank"
-                showArrow={false}
-                className="whitespace-nowrap px-6 py-3"
-              >
-                <span>Télécharger la maquette 7h (PDF)</span>
+                <span>Télécharger la fiche formation (PDF)</span>
                 <Download className="w-5 h-5 ml-3 flex-shrink-0" />
               </PodiumButton>
             </div>

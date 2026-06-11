@@ -8,26 +8,25 @@ import {
   Badge,
   HeroButtons,
 } from "@/components/workshop-hero"
-import FormationArmApproche from "@/components/formation-arm-approche"
-import FormationArmProgramme from "@/components/formation-arm-programme"
-import FormationArmTriptyque from "@/components/formation-arm-triptyque"
-import FormationArmFAQ from "@/components/formation-arm-faq"
+import FormationSanteMentaleApproche from "@/components/formation-sante-mentale-approche"
+import FormationSanteMentaleProgramme from "@/components/formation-sante-mentale-programme"
+import FormationSanteMentaleFAQ from "@/components/formation-sante-mentale-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
 export const metadata: Metadata = {
-  title: "Formation Ambassadeur Réveil Musculaire – Podium",
+  title: "Formation Santé Mentale – Détecter une personne en détresse – Podium",
   description:
-    "Devenez Ambassadeur du Réveil Musculaire et changez les habitudes au travail !",
+    "Apprenez à repérer les signes de mal-être chez un collègue ou un usager, à adopter une posture d'écoute sécurisante et à réagir de manière adaptée pour prévenir les risques psychosociaux.",
   openGraph: {
-    title: "Formation Ambassadeur Réveil Musculaire – Podium",
+    title: "Formation Santé Mentale – Détecter une personne en détresse – Podium",
     description:
-      "Devenez Ambassadeur du Réveil Musculaire et changez les habitudes au travail !",
+      "Apprenez à repérer les signes de mal-être chez un collègue ou un usager, à adopter une posture d'écoute sécurisante et à réagir de manière adaptée pour prévenir les risques psychosociaux.",
     type: "website",
   },
 }
 
-export default function FormationArmPage() {
+export default function FormationSanteMentalePage() {
   return (
     <main>
       {/* Hero Section */}
@@ -35,24 +34,25 @@ export default function FormationArmPage() {
         <HeroContent>
           <HeroText>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#061952] leading-tight break-words max-w-full">
-              Formation Ambassadeur Réveil Musculaire
+              Formation Santé Mentale : détecter une personne en détresse
             </h1>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Devenez Ambassadeur du Réveil Musculaire et changez les habitudes au travail !
+              Développez une posture professionnelle pour repérer les premiers signes de mal-être, écouter avec
+              justesse et réagir de manière adaptée face à un collègue ou un usager en difficulté.
             </p>
 
             <BadgesGrid>
               <Badge icon="clock">
                 <div>
                   <div className="font-semibold text-[#061952]">Durée</div>
-                  <div className="text-gray-600">7h</div>
+                  <div className="text-gray-600">3h</div>
                 </div>
               </Badge>
               <Badge icon="users">
                 <div>
                   <div className="font-semibold text-[#061952]">Participants</div>
-                  <div className="text-gray-600">6 à 12 personnes</div>
+                  <div className="text-gray-600">4 à 12 personnes</div>
                 </div>
               </Badge>
               <Badge icon="location">
@@ -78,23 +78,20 @@ export default function FormationArmPage() {
           </HeroText>
 
           <HeroImage
-            src="/images/reveil-musculaire-podium-atelier.jpg"
-            alt="Formation Ambasseur Réveil Musculaire – Podium"
+            src="/images/atelier-theatre-entreprise.jpg"
+            alt="Formation Santé Mentale – Détecter une personne en détresse – Podium"
           />
         </HeroContent>
       </WorkshopHero>
 
       {/* Notre approche */}
-      <FormationArmApproche />
+      <FormationSanteMentaleApproche />
 
       {/* Programme */}
-      <FormationArmProgramme />
-
-      {/* Triptyque Réveil Musculaire */}
-      <FormationArmTriptyque />
+      <FormationSanteMentaleProgramme />
 
       {/* FAQ */}
-      <FormationArmFAQ />
+      <FormationSanteMentaleFAQ />
 
       {/* Contact CTA */}
       <ContactezNousSection />

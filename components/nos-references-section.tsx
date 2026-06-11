@@ -48,6 +48,26 @@ const partners = [
     logo: "/images/logo-piroux.png",
     alt: "Piroux Groupe logo",
   },
+  {
+    name: "Balloffet",
+    logo: "/images/logo-balloffet.png",
+    alt: "Balloffet logo",
+  },
+  {
+    name: "Alfa3a",
+    logo: "/images/logo-alfa3a.png",
+    alt: "Alfa3a Accueillir Associer Accompagner logo",
+  },
+  {
+    name: "JBN Events",
+    logo: "/images/logo-jbn-events.png",
+    alt: "JBN Events logo",
+  },
+  {
+    name: "Le Réseau des Missions Locales",
+    logo: "/images/logo-reseau-missions-locales.png",
+    alt: "Le Réseau des Missions Locales logo",
+  },
 ]
 
 export default function NosReferencesSection() {

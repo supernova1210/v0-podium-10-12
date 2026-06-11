@@ -22,7 +22,7 @@ export default function AtelierMurDesAddictionsPage() {
           <HeroText>
             <AtelierLabel>ATELIER QVT</AtelierLabel>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-950 leading-tight break-words max-w-full">
-              Santé mentale
+              Santé mentale : gérer son stress au quotidien
             </h1>
 
             <BadgesGrid>

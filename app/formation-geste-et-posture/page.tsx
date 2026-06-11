@@ -46,7 +46,7 @@ export default function FormationGestePosturePage() {
               <Badge icon="clock">
                 <div>
                   <div className="font-semibold text-[#061952]">Durée</div>
-                  <div className="text-gray-600">3h30 ou 7h</div>
+                  <div className="text-gray-600">3,5h</div>
                 </div>
               </Badge>
               <Badge icon="users">

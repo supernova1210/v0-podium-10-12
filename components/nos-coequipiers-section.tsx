@@ -4,13 +4,6 @@ import Image from "next/image"
 export default function NosCoequipiersSection() {
   const teamMembers = [
     {
-      name: "Nicolas GAILLET",
-      description: "Coach sportif & formateur, passionné par les sports innovants et inclusifs",
-      image: "/images/team/nicolas-gaillet.png",
-      website: null,
-      linkedin: "https://www.linkedin.com/in/nicolas-gaillet-740885358/",
-    },
-    {
       name: "Julien PATANE",
       description: "Formateur management, préparateur mental de sportifs de haut niveau, kinésiologue",
       image: "/images/team/julien-patane.png",
@@ -44,6 +37,13 @@ export default function NosCoequipiersSection() {
       image: "/images/team/laury-mazella.png",
       website: null,
       linkedin: "https://www.linkedin.com/in/laury-mazzella-67639b273/",
+    },
+    {
+      name: "Schiphra MUTUBULE",
+      description: "Formatrice SST",
+      image: "/images/team/schiphra-mutubule.png",
+      website: null,
+      linkedin: "https://www.linkedin.com/in/schiphra-mutubule-138227217/",
     },
   ]
 
