@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Sensibilisation au Handicap Auditif",
+  description: "Un atelier immersif pour comprendre le handicap auditif et découvrir des solutions de communication simples. Animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/sensibiliser-au-handicap" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

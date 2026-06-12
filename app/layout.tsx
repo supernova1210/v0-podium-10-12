@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import SecondaryNav from "../components/secondary-nav"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
@@ -136,6 +137,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

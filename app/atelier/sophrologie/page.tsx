@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Sophrologie en entreprise",
+  description: "Initiation à des techniques simples de respiration pour gérer le stress et favoriser la concentration. Atelier QVCT animé sur site en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/sophrologie" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

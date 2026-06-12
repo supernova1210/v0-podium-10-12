@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Sport et Savoir-Être",
+  description: "Le sport pour développer esprit d’équipe, adaptation et communication à travers des mises en situation collectives. Animé en entreprise, Rhône-Alpes.",
+  alternates: { canonical: "/atelier/sport-transfert-savoir-etre" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

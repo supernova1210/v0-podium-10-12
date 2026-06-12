@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Sensibilisation au Handicap Visuel",
+  description: "Expérimenter les défis du handicap visuel et apprendre des techniques de guidage en binôme. Atelier immersif animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/sensibiliser-au-handicap-visuel" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

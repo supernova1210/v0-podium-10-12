@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Jeu de Plateau Géant en entreprise",
+  description: "Un jeu de plateau géant pour transmettre les règles de l’entreprise et valider les acquis par des quiz et défis collectifs. Animé en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/jeu-de-plateau-geant" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

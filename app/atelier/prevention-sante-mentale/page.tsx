@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Santé Mentale : gérer son stress au quotidien",
+  description: "Comprendre le stress, repérer ses signaux d’alerte et expérimenter des outils de régulation concrets. Atelier QVCT en entreprise, Lyon & Rhône-Alpes.",
+  alternates: { canonical: "/atelier/prevention-sante-mentale" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

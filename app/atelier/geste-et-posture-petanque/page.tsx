@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Gestes et Postures façon pétanque",
+  description: "La pétanque pour sensibiliser aux bonnes postures et prévenir les TMS en s’amusant. Atelier prévention animé en entreprise, Ain & Rhône-Alpes.",
+  alternates: { canonical: "/atelier/geste-et-posture-petanque" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

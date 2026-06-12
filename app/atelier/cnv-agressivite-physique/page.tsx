@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier CNV : gérer l’agressivité physique",
+  description: "Un atelier pratique pour poser un cadre, affirmer ses limites et désamorcer les situations tendues sans violence. Animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/cnv-agressivite-physique" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

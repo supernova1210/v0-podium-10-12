@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Gestion des Émotions par la sophrologie",
+  description: "Comprendre les mécanismes du stress et transformer ses émotions grâce à la sophrologie. Atelier QVCT animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/gestion-des-emotions-sophrologie" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

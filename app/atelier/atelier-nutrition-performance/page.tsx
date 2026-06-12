@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Nutrition et Performance en entreprise",
+  description: "Un atelier ludique pour comprendre l’impact de l’alimentation au travail et construire une assiette équilibrée. Animé sur site en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/atelier-nutrition-performance" },
+}
+
 export default function AtelierNutritionPerformancePage() {
   return (
     <main>

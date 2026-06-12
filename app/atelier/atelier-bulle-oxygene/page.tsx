@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Yoga Bulle d’Oxygène en entreprise",
+  description: "Une pause yoga en entreprise pour relâcher les tensions et recharger les équipes. Atelier QVCT animé sur site, à Lyon et dans toute la région Rhône-Alpes.",
+  alternates: { canonical: "/atelier/atelier-bulle-oxygene" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

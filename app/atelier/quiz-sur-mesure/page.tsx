@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Quiz Sur-Mesure avec buzzers",
+  description: "Un quiz interactif avec buzzers pour renforcer les connaissances et transmettre les règles internes de façon ludique. Animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/quiz-sur-mesure" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

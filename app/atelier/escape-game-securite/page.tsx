@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Escape Game Sécurité en entreprise",
+  description: "Un escape game connecté sur la sécurité au travail : défis en équipe, prévention des risques et cohésion. Animé sur site à Lyon et en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/escape-game-securite" },
+}
+
 export default function EscapeGameSecuritePage() {
   return (
     <main>

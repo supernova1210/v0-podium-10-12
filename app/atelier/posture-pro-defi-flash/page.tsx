@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Posture Pro : défi flash",
+  description: "Des défis courts et ludiques pour développer confiance, stabilité et savoir-être professionnel. Atelier QVCT animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/posture-pro-defi-flash" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

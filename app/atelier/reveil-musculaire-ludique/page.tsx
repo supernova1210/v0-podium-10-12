@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Réveil Musculaire Ludique",
+  description: "L’échauffement en équipe version jeu : musique, défis et routine collective pour prévenir les TMS. Atelier animé en entreprise, Ain & Rhône-Alpes.",
+  alternates: { canonical: "/atelier/reveil-musculaire-ludique" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

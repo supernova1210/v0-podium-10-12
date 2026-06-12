@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier CNV : gérer l’agressivité verbale",
+  description: "Jeux de rôle pour comprendre l’agressivité verbale et gérer les conflits avec calme et assertivité. Atelier animé en entreprise, Lyon & Rhône-Alpes.",
+  alternates: { canonical: "/atelier/cnv-agressivite-verbale" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

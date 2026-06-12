@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Le Mur des Addictions",
+  description: "Sensibilisation aux addictions au travail avec lunettes de simulation et mises en situation percutantes. Atelier prévention en entreprise, Rhône-Alpes.",
+  alternates: { canonical: "/atelier/le-mur-des-addictions" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

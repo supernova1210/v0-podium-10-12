@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Cohésion d’Équipe en entreprise",
+  description: "Un atelier collectif pour renforcer la cohésion d’équipe et l’état d’esprit positif. Intervention sur site à Lyon, dans l’Ain et en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/cles-cohesion-equipe" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

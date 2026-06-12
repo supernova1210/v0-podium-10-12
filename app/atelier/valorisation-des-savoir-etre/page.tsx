@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Valorisation des Savoir-Être",
+  description: "Défis collectifs et collaboratifs pour renforcer la cohésion et valoriser les savoir-être professionnels. Animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/valorisation-des-savoir-etre" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>

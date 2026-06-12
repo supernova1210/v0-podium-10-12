@@ -13,6 +13,14 @@ import { WorkshopTimeline, TimelineSteps, TimelineStep } from "@/components/work
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { PodiumButton } from "@/components/ui/podium-button"
 
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Atelier Secourir Sans Panique : bobologie",
+  description: "Apprendre les gestes simples face aux petites blessures du quotidien grâce à des mises en situation pratiques. Animé en entreprise en Rhône-Alpes.",
+  alternates: { canonical: "/atelier/secourir-sans-panique" },
+}
+
 export default function AtelierMurDesAddictionsPage() {
   return (
     <main>
