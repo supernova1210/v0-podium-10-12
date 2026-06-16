@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, Plus } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 
 const faqData = [
   {
@@ -27,57 +27,60 @@ const faqData = [
 ]
 
 export default function FormationPscFAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)
   }
 
   return (
-    <section id="faq" className="scroll-mt-20 py-20 bg-gray-50">
+    <section id="faq" className="scroll-mt-20 py-16 md:py-24 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#061952] text-center mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#FFD25D]" />
+            On répond à vos questions
+          </span>
+          <h2 className="font-poppins font-bold text-[#061952] tracking-tight text-3xl md:text-5xl mt-4">
             Questions fréquentes
           </h2>
+        </div>
 
-          <div className="space-y-4">
-            {faqData.map((faq, index) => (
+        <div className="max-w-3xl mx-auto grid gap-3.5">
+          {faqData.map((faq, index) => {
+            const open = openIndex === index
+            return (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md group"
+                className={`rounded-2xl bg-white overflow-hidden transition-all duration-300 border ${
+                  open ? "border-[#FFD25D] shadow-[0_4px_18px_rgba(6,25,82,0.06)]" : "border-gray-200"
+                }`}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+                  className="w-full flex items-center justify-between gap-5 px-6 py-5 text-left cursor-pointer"
                 >
-                  <h3 className="text-lg font-semibold text-[#061952] pr-4 group-hover:text-yellow-500 transition-colors duration-200">
-                    {faq.question}
-                  </h3>
-
-                  <div className="relative flex-shrink-0">
-                    <Plus className="w-5 h-5 text-[#061952] group-hover:text-yellow-500 transition-all duration-200 opacity-0 group-hover:opacity-100 absolute inset-0" />
-                    <ChevronDown
-                      className={`w-5 h-5 text-[#061952] group-hover:text-yellow-500 transition-all duration-300 ${
-                        openIndex === index ? "rotate-180 opacity-100" : "opacity-100 group-hover:opacity-0"
-                      }`}
-                    />
-                  </div>
+                  <span className="font-poppins font-medium text-[17px] text-[#061952]">{faq.question}</span>
+                  <span
+                    className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                      open ? "bg-[#FFD25D] rotate-180" : "bg-[#061952]/[0.06]"
+                    }`}
+                  >
+                    <ChevronDown className="w-[18px] h-[18px] text-[#061952]" />
+                  </span>
                 </button>
-
                 <div
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                    open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="px-6 pb-5">
-                    <div className="h-px bg-gray-200 mb-4"></div>
-                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
-                  </div>
+                  <p className="px-6 pb-6 pt-[18px] text-[15.5px] text-gray-600 leading-relaxed border-t border-gray-100">
+                    {faq.answer}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+            )
+          })}
         </div>
       </div>
     </section>
