@@ -90,10 +90,10 @@ export default function FormationPremiersSecoursCitoyenPage() {
             </div>
 
             {/* Right visual */}
-            <div className="relative max-w-xs sm:max-w-sm mx-auto lg:max-w-[420px] lg:ml-auto w-full">
-              <div className="absolute -top-5 -right-4 w-32 h-32 rounded-3xl bg-[#FFD25D] z-0 hidden sm:block" />
-              <div className="absolute -bottom-5 -left-5 w-24 h-24 rounded-3xl bg-[#061952] z-0 hidden sm:block" />
-              <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/3.7]">
+            <div className="relative max-w-sm mx-auto lg:max-w-[460px] lg:ml-auto w-full">
+              <div className="absolute -top-5 -right-4 w-36 h-36 rounded-3xl bg-[#FFD25D] z-0 hidden sm:block" />
+              <div className="absolute -bottom-5 -left-5 w-28 h-28 rounded-3xl bg-[#061952] z-0 hidden sm:block" />
+              <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/3.9]">
                 <Image
                   src="/images/atelier-secourir-sans-panique-bobologie.png"
                   alt="Formation Premiers Secours Citoyen – Podium"

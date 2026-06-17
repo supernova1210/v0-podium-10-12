@@ -31,12 +31,14 @@ const modalites = [
 
 export default function FormationPscProgramme() {
   return (
-    <section id="programme" className="scroll-mt-20 py-16 md:py-20 bg-[#fafbfe] relative overflow-hidden">
-      {/* habillage : grands carrés arrondis */}
-      <div aria-hidden className="absolute left-[-55px] top-24 hidden xl:block w-44 h-44 rounded-[36px] bg-[#FFD25D]/10" />
-      <div aria-hidden className="absolute left-14 top-52 hidden xl:block w-28 h-28 rounded-[26px] border-2 border-[#061952]/[0.07]" />
-      <div aria-hidden className="absolute right-[-45px] bottom-28 hidden xl:block w-48 h-48 rounded-[38px] border-2 border-[#FFD25D]/25" />
-      <div aria-hidden className="absolute right-16 bottom-16 hidden xl:block w-24 h-24 rounded-[24px] bg-[#061952]/[0.04]" />
+    <section id="programme" className="scroll-mt-20 py-16 md:py-20 bg-[#fafbfe] relative">
+      {/* habillage : grands carrés arrondis (couche isolée pour ne pas casser le sticky) */}
+      <div aria-hidden className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute left-[-55px] top-24 hidden xl:block w-44 h-44 rounded-[36px] bg-[#FFD25D]/15" />
+        <div className="absolute left-14 top-52 hidden xl:block w-28 h-28 rounded-[26px] border-2 border-[#061952]/25" />
+        <div className="absolute right-[-45px] bottom-28 hidden xl:block w-48 h-48 rounded-[38px] border-2 border-[#FFD25D]/30" />
+        <div className="absolute right-16 bottom-16 hidden xl:block w-24 h-24 rounded-[24px] bg-[#061952]/[0.10]" />
+      </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -172,10 +174,8 @@ export default function FormationPscProgramme() {
 
           {/* PDF block (prominent) */}
           <Reveal>
-            <div className="mt-12 relative overflow-hidden bg-[#061952] rounded-[28px] px-8 md:px-12 py-10 md:py-11 flex flex-col md:flex-row items-start md:items-center justify-between gap-7 shadow-[0_18px_50px_rgba(6,25,82,0.16)]">
-              <div aria-hidden className="absolute -top-12 right-40 hidden md:block w-40 h-40 rounded-[34px] border-2 border-[#FFD25D]/15" />
-              <div aria-hidden className="absolute -bottom-16 right-24 hidden md:block w-48 h-48 rounded-[38px] bg-white/[0.03]" />
-              <div className="relative max-w-xl">
+            <div className="mt-12 bg-[#061952] rounded-[28px] px-8 md:px-12 py-10 md:py-11 flex flex-col md:flex-row items-start md:items-center justify-between gap-7 shadow-[0_18px_50px_rgba(6,25,82,0.16)]">
+              <div className="max-w-xl">
                 <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#FFD25D] mb-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FFD25D]" />
                   Fiche formation
