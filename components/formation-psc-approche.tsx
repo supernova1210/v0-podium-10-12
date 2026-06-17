@@ -12,13 +12,10 @@ export default function FormationPscApproche() {
       <div className="container mx-auto px-4">
         <Reveal>
           <div className="relative overflow-hidden bg-[#061952] rounded-[36px] px-7 md:px-16 py-14 md:py-18 max-w-7xl mx-auto">
-            {/* motif déco : carrés */}
-            <div aria-hidden className="absolute top-8 right-10 hidden md:grid grid-cols-3 gap-2.5 opacity-90">
-              {Array.from({ length: 9 }).map((_, i) => (
-                <span key={i} className="w-3 h-3 rounded-[4px] bg-[#FFD25D]/30" />
-              ))}
-            </div>
-            <div aria-hidden className="absolute -bottom-8 -right-8 w-40 h-40 rounded-[28px] bg-white/[0.04]" />
+            {/* motif déco : grands carrés arrondis */}
+            <div aria-hidden className="absolute -top-12 -right-12 w-52 h-52 rounded-[40px] border-2 border-[#FFD25D]/20" />
+            <div aria-hidden className="absolute top-10 right-16 w-24 h-24 rounded-[26px] bg-[#FFD25D]/10 hidden md:block" />
+            <div aria-hidden className="absolute -bottom-14 -right-10 w-44 h-44 rounded-[36px] bg-white/[0.04]" />
 
             <div className="relative max-w-3xl">
               <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#FFD25D]">

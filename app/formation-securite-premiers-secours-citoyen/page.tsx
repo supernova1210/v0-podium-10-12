@@ -31,9 +31,9 @@ export default function FormationPremiersSecoursCitoyenPage() {
   return (
     <main>
       {/* ===== HERO ===== */}
-      <section className="relative overflow-hidden bg-white pt-8 pb-14 lg:pt-12 lg:pb-20">
+      <section className="relative overflow-hidden bg-white pt-6 pb-10 lg:pt-7 lg:pb-14">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-12 items-center max-w-7xl mx-auto">
             {/* Left */}
             <div>
               <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
@@ -41,7 +41,7 @@ export default function FormationPremiersSecoursCitoyenPage() {
                 Formation Sécurité · Certifiante
               </span>
 
-              <h1 className="font-poppins font-extrabold text-[#061952] tracking-tight leading-[1.05] text-4xl md:text-5xl lg:text-6xl mt-5 mb-6">
+              <h1 className="font-poppins font-extrabold text-[#061952] tracking-tight leading-[1.05] text-4xl md:text-5xl mt-4 mb-5">
                 Formation{" "}
                 <span className="relative inline-block">
                   <span className="relative z-10">Premiers Secours</span>
@@ -50,12 +50,12 @@ export default function FormationPremiersSecoursCitoyenPage() {
                 Citoyen
               </h1>
 
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl mb-8">
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-lg mb-6">
                 Apprenez les gestes qui sauvent : protéger une victime, alerter les secours et intervenir efficacement
                 face à une situation d'urgence, jusqu'à la prise en charge par les services de secours.
               </p>
 
-              <div className="flex flex-wrap gap-3.5 mb-9">
+              <div className="flex flex-wrap gap-3 mb-7">
                 {badges.map((b, i) => (
                   <div
                     key={i}
@@ -90,10 +90,10 @@ export default function FormationPremiersSecoursCitoyenPage() {
             </div>
 
             {/* Right visual */}
-            <div className="relative max-w-md mx-auto lg:max-w-none w-full">
-              <div className="absolute -top-6 -right-5 w-40 h-40 rounded-3xl bg-[#FFD25D] z-0 hidden sm:block" />
-              <div className="absolute -bottom-6 -left-6 w-28 h-28 rounded-3xl bg-[#061952] z-0 hidden sm:block" />
-              <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/4.4]">
+            <div className="relative max-w-xs sm:max-w-sm mx-auto lg:max-w-[420px] lg:ml-auto w-full">
+              <div className="absolute -top-5 -right-4 w-32 h-32 rounded-3xl bg-[#FFD25D] z-0 hidden sm:block" />
+              <div className="absolute -bottom-5 -left-5 w-24 h-24 rounded-3xl bg-[#061952] z-0 hidden sm:block" />
+              <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/3.7]">
                 <Image
                   src="/images/atelier-secourir-sans-panique-bobologie.png"
                   alt="Formation Premiers Secours Citoyen – Podium"
@@ -102,7 +102,7 @@ export default function FormationPremiersSecoursCitoyenPage() {
                   priority
                 />
               </div>
-              <div className="absolute z-20 bottom-8 -left-4 sm:-left-8 bg-white rounded-2xl px-4 py-3.5 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3 max-w-[240px]">
+              <div className="absolute z-20 bottom-6 -left-4 sm:-left-7 bg-white rounded-2xl px-4 py-3 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3 max-w-[230px]">
                 <span className="w-11 h-11 rounded-xl bg-[#061952] text-[#FFD25D] flex items-center justify-center flex-shrink-0">
                   <HeartPulse className="w-6 h-6" />
                 </span>
