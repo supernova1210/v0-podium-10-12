@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, Users, MapPin, ArrowRight, HeartPulse } from "lucide-react"
+import { ArrowRight, HeartPulse } from "lucide-react"
 import FormationPscApproche from "@/components/formation-psc-approche"
 import FormationPscProgramme from "@/components/formation-psc-programme"
 import FormationPscFAQ from "@/components/formation-psc-faq"
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
 }
 
 const badges = [
-  { icon: Clock, label: "Durée", value: "7 heures" },
-  { icon: Users, label: "Participants", value: "2 à 10 personnes" },
-  { icon: MapPin, label: "Lieu", value: "Intra-entreprise" },
+  { icon: "/images/picto-temps.png", label: "Durée", value: "7 heures" },
+  { icon: "/images/picto-participants.png", label: "Participants", value: "2 à 10 personnes" },
+  { icon: "/images/picto-zone.png", label: "Lieu", value: "Intra-entreprise" },
 ]
 
 export default function FormationPremiersSecoursCitoyenPage() {
   return (
     <main>
       {/* ===== HERO ===== */}
-      <section className="relative overflow-hidden bg-white py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-white pt-8 pb-14 lg:pt-12 lg:pb-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
             {/* Left */}
@@ -61,8 +61,8 @@ export default function FormationPremiersSecoursCitoyenPage() {
                     key={i}
                     className="flex items-center gap-3 bg-white border border-gray-200 rounded-2xl px-4 py-3 shadow-[0_4px_18px_rgba(6,25,82,0.06)]"
                   >
-                    <span className="w-10 h-10 rounded-xl bg-[#061952]/[0.07] text-[#061952] flex items-center justify-center">
-                      <b.icon className="w-5 h-5" />
+                    <span className="w-11 h-11 rounded-xl bg-[#FFD25D]/15 flex items-center justify-center flex-shrink-0">
+                      <Image src={b.icon} alt="" width={28} height={28} className="w-7 h-7 object-contain" />
                     </span>
                     <div>
                       <div className="text-xs text-gray-500 font-medium">{b.label}</div>

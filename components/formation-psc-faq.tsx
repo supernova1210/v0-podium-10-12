@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
+import Reveal from "@/components/reveal"
 
 const faqData = [
   {
@@ -34,17 +35,17 @@ export default function FormationPscFAQ() {
   }
 
   return (
-    <section id="faq" className="scroll-mt-20 py-16 md:py-24 bg-white border-t border-gray-100">
+    <section id="faq" className="scroll-mt-20 py-16 md:py-20 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <Reveal className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#FFD25D]" />
             On répond à vos questions
           </span>
-          <h2 className="font-poppins font-bold text-[#061952] tracking-tight text-3xl md:text-5xl mt-4">
+          <h2 className="font-poppins font-bold text-[#061952] tracking-tight text-3xl md:text-4xl mt-4">
             Questions fréquentes
           </h2>
-        </div>
+        </Reveal>
 
         <div className="max-w-3xl mx-auto grid gap-3.5">
           {faqData.map((faq, index) => {
