@@ -23,7 +23,7 @@ export default function PromoPopup({
   dates = "Du 15 au 19 juin 2026",
   description =
     "Cette semaine, on met la qualité de vie au travail à l'honneur : ateliers, animations et temps forts pour vos équipes. Découvrez le programme.",
-  image = "/images/olympiades-qvct-atelier.jpg",
+  image = "/images/cohesion-d-equipe.png",
   ctaLabel = "Découvrir la Semaine QVCT",
   ctaHref = "/nos-evenements/semaine-qvct",
   delay = 700,
@@ -113,7 +113,7 @@ export default function PromoPopup({
   return (
     <div
       onClick={closeModal}
-      className={`fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#061952]/60 backdrop-blur-sm transition-opacity duration-300 ${
+      className={`fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#061952]/55 backdrop-blur-[2px] transition-opacity duration-500 ease-out ${
         modalIn ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -122,12 +122,12 @@ export default function PromoPopup({
         role="dialog"
         aria-modal="true"
         aria-label={title}
-        className={`relative w-full max-w-lg bg-white rounded-[28px] overflow-hidden shadow-[0_40px_100px_rgba(6,25,82,0.35)] transition-all duration-300 ${
-          modalIn ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 translate-y-4"
+        className={`relative w-full max-w-xl bg-white rounded-[28px] overflow-hidden shadow-[0_40px_100px_rgba(6,25,82,0.35)] transition-all duration-500 ease-out ${
+          modalIn ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-[0.97] translate-y-2"
         }`}
       >
         {/* Image */}
-        <div className="relative h-44 sm:h-52 w-full">
+        <div className="relative h-52 sm:h-60 w-full">
           <Image src={image} alt={title} fill className="object-cover" />
           <button
             onClick={closeModal}
@@ -139,7 +139,7 @@ export default function PromoPopup({
         </div>
 
         {/* Content */}
-        <div className="relative p-7 sm:p-8">
+        <div className="relative p-8 sm:p-9">
           <div aria-hidden className="absolute -top-10 -right-10 w-32 h-32 rounded-[28px] bg-[#FFD25D]/15" />
           <div className="relative">
             <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
