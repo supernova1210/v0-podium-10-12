@@ -13,13 +13,20 @@ const mainRoutes = [
 ]
 
 const formationRoutes = [
-  "/formation-ambassadeur-reveil-musculaire",
-  "/formation-geste-et-posture",
-  "/formation-management-affirmer-confiance-cnv",
-  "/formation-management-lancer-dynamiser-reunion",
-  "/formation-management-technique-animation",
-  "/formation-sante-mentale-detecter-mal-etre",
-  "/formation-valoriser-posture-professionnelle",
+  // Sécurité
+  "/formation-securite-reveil-musculaire",
+  "/formation-securite-geste-et-posture",
+  "/formation-securite-animation-quart-heure",
+  "/formation-securite-gestes-qui-sauvent",
+  "/formation-securite-premiers-secours-citoyen",
+  // QVCT
+  "/formation-qvct-lancer-dynamiser-reunion",
+  "/formation-qvct-technique-animation",
+  "/formation-qvct-communication-non-violente",
+  "/formation-qvct-sante-mentale-agressivite-verbale",
+  "/formation-qvct-sante-mentale-situations-dangereuses",
+  "/formation-qvct-sante-mentale-detecter-mal-etre",
+  "/formation-qvct-valoriser-posture-professionnelle",
 ]
 
 const evenementRoutes = [

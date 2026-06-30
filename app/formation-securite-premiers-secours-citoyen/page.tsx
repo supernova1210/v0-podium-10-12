@@ -5,7 +5,6 @@ import FormationPscApproche from "@/components/formation-psc-approche"
 import FormationPscProgramme from "@/components/formation-psc-programme"
 import FormationPscFAQ from "@/components/formation-psc-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
-import PromoPopup from "@/components/promo-popup"
 
 export const metadata: Metadata = {
   title: "Formation Premiers Secours Citoyen – Podium",
@@ -31,9 +30,6 @@ const badges = [
 export default function FormationPremiersSecoursCitoyenPage() {
   return (
     <main>
-      {/* Pop-up promo + bandeau (test : Semaine QVCT) */}
-      <PromoPopup />
-
       {/* ===== HERO ===== */}
       <section className="relative overflow-hidden bg-white pt-6 pb-10 lg:pt-7 lg:pb-14">
         <div className="container mx-auto px-4">
