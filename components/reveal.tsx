@@ -6,9 +6,21 @@ interface RevealProps {
   children: ReactNode
   className?: string
   delay?: number
+  y?: number
+  x?: number
+  scale?: number
+  duration?: number
 }
 
-export default function Reveal({ children, className = "", delay = 0 }: RevealProps) {
+export default function Reveal({
+  children,
+  className = "",
+  delay = 0,
+  y = 32,
+  x = 0,
+  scale = 1,
+  duration = 700,
+}: RevealProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [show, setShow] = useState(false)
 
@@ -31,10 +43,14 @@ export default function Reveal({ children, className = "", delay = 0 }: RevealPr
   return (
     <div
       ref={ref}
-      style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-700 ease-out ${
-        show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      } ${className}`}
+      className={className}
+      style={{
+        transition: `opacity ${duration}ms ease-out, transform ${duration}ms cubic-bezier(0.22, 1, 0.36, 1)`,
+        transitionDelay: `${delay}ms`,
+        opacity: show ? 1 : 0,
+        transform: show ? "none" : `translate3d(${x}px, ${y}px, 0) scale(${scale})`,
+        willChange: "opacity, transform",
+      }}
     >
       {children}
     </div>

@@ -73,7 +73,7 @@ export default function QvctHero() {
             <div className="absolute -bottom-6 -left-5 w-24 h-24 rounded-3xl bg-[#57B3B7] z-0 hidden sm:block" />
             <div className="relative z-10 grid grid-cols-2 gap-3.5 h-[440px]">
               <div className="relative row-span-2 rounded-[24px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)]">
-                <Image src="/images/page-formation-qvct-podium-2.jpg" alt="Formation QVCT – Podium" fill className="object-cover" priority />
+                <Image src="/images/page-formation-qvct-podium-2.jpg" alt="Formation QVCT Podium" fill className="object-cover" priority />
               </div>
               <div className="relative rounded-[24px] overflow-hidden shadow-[0_18px_50px_rgba(6,25,82,0.12)]">
                 <Image src="/images/page-formation-qvct-podium-1.jpg" alt="Atelier bien-être au travail" fill className="object-cover" />

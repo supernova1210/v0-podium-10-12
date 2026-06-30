@@ -7,14 +7,14 @@ import FormationPscFAQ from "@/components/formation-psc-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 
 export const metadata: Metadata = {
-  title: "Formation Premiers Secours Citoyen – Podium",
+  title: "Formation Premiers Secours Citoyen | Podium",
   description:
     "Donnez à vos équipes les gestes qui sauvent avec la formation Premiers Secours Citoyen : protéger, alerter et intervenir face à une situation d'urgence. Certificat de compétences PSC.",
   alternates: {
     canonical: "https://www.ofpodium.fr/formation-securite-premiers-secours-citoyen",
   },
   openGraph: {
-    title: "Formation Premiers Secours Citoyen – Podium",
+    title: "Formation Premiers Secours Citoyen | Podium",
     description:
       "Donnez à vos équipes les gestes qui sauvent avec la formation Premiers Secours Citoyen : protéger, alerter et intervenir face à une situation d'urgence. Certificat de compétences PSC.",
     type: "website",
@@ -96,7 +96,7 @@ export default function FormationPremiersSecoursCitoyenPage() {
               <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/3.9]">
                 <Image
                   src="/images/atelier-secourir-sans-panique-bobologie.png"
-                  alt="Formation Premiers Secours Citoyen – Podium"
+                  alt="Formation Premiers Secours Citoyen | Podium"
                   fill
                   className="object-cover"
                   priority

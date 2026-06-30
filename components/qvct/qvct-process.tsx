@@ -86,7 +86,7 @@ export default function QvctProcess() {
           <div aria-hidden className="absolute left-7 top-2 bottom-2 w-0.5 bg-white/15" />
           <div className="space-y-7">
             {steps.map((step, i) => (
-              <Reveal key={i} delay={i * 130}>
+              <Reveal key={i} delay={i * 150} x={-64} y={8} scale={0.9} duration={750}>
                 <div className="relative flex items-start gap-6">
                   <span
                     className="relative z-10 w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg"
@@ -112,8 +112,8 @@ export default function QvctProcess() {
         {/* Piliers pédagogie */}
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {pillars.map((p, i) => (
-            <Reveal key={i} delay={i * 120}>
-              <div className="h-full bg-white/[0.06] border border-white/10 rounded-[22px] p-7 flex flex-col">
+            <Reveal key={i} delay={i * 130} y={48} scale={0.96} duration={750}>
+              <div className="group h-full bg-white/[0.06] border border-white/10 rounded-[22px] p-7 flex flex-col transition-all duration-300 hover:bg-white/[0.1] hover:-translate-y-1.5">
                 <h3 className="font-poppins font-semibold text-xl text-white mb-3">{p.title}</h3>
                 <p className="text-[15px] text-white/70 leading-relaxed flex-1">{p.description}</p>
                 <a

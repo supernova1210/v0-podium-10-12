@@ -53,10 +53,12 @@ export default function QvctAtouts() {
 
         <div className="grid md:grid-cols-3 gap-7 max-w-6xl mx-auto">
           {features.map((f, i) => (
-            <Reveal key={i} delay={i * 120}>
-              <div className="relative h-full bg-white rounded-[22px] border border-gray-100 p-8 shadow-[0_4px_18px_rgba(6,25,82,0.06)] overflow-hidden">
-                <div className={`absolute top-0 left-0 right-0 h-1.5 ${f.bar}`} />
-                <span className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 ${f.chip}`}>
+            <Reveal key={i} delay={i * 120} y={44} scale={0.95} duration={700}>
+              <div className="group relative h-full bg-white rounded-[22px] border border-gray-100 p-8 shadow-[0_4px_18px_rgba(6,25,82,0.06)] overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_22px_55px_rgba(6,25,82,0.14)]">
+                <div className={`absolute top-0 left-0 right-0 h-1.5 ${f.bar} transition-all duration-300 group-hover:h-2.5`} />
+                <span
+                  className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6 ${f.chip}`}
+                >
                   <f.icon className="w-7 h-7" />
                 </span>
                 <h3 className="font-poppins font-semibold text-xl text-[#061952] mb-3">{f.title}</h3>

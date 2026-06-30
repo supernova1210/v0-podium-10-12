@@ -55,7 +55,7 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    name: "Formation QVCT — Qualité de Vie et Conditions de Travail",
+    name: "Formation QVCT : Qualité de Vie et Conditions de Travail",
     description:
       "Formation sur la Qualité de Vie et Conditions de Travail. Programme sur mesure, pédagogie active, intervention en Rhône-Alpes.",
     provider: {
@@ -74,7 +74,7 @@ const schemas = [
       courseMode: "onsite",
       location: {
         "@type": "Place",
-        name: "Dans vos locaux — Lyon et Rhône-Alpes",
+        name: "Dans vos locaux, Lyon et Rhône-Alpes",
       },
     },
   },
