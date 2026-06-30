@@ -9,7 +9,7 @@ const mainRoutes = [
   "/nos-ateliers",
   "/nos-evenements",
   "/formations-qvct",
-  "/formations-management",
+  "/formations-securite",
 ]
 
 const formationRoutes = [

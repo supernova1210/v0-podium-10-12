@@ -16,7 +16,7 @@ const menuItems = [
 const formationsDropdown = {
   categories: [
     { label: "Formations QVCT", href: "/formations-qvct" },
-    { label: "Formations Management", href: "/formations-management" },
+    { label: "Formations Sécurité", href: "/formations-securite" },
   ],
 }
 

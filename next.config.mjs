@@ -14,6 +14,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/formations-management",
+        destination: "/formations-securite",
+        permanent: true,
+      },
+      {
         source: "/formation-ambassadeur-reveil-musculaire",
         destination: "/formation-securite-reveil-musculaire",
         permanent: true,

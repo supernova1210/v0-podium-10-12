@@ -18,6 +18,13 @@ const ACCENTS = {
     deco1: "bg-[#C9426B]/15",
     deco2: "border-[#57B3B7]/30",
   },
+  jaune: {
+    chip: "bg-[#FFD25D]/30 text-[#061952]",
+    hover: "group-hover:text-[#B8860B]",
+    arrow: "group-hover:bg-[#FFD25D] group-hover:text-[#061952] group-hover:border-[#FFD25D]",
+    deco1: "bg-[#FFD25D]/25",
+    deco2: "border-[#F4B609]/40",
+  },
 }
 
 interface FormationsGridProps {
