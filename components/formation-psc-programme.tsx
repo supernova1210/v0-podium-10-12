@@ -147,26 +147,26 @@ export default function FormationPscProgramme() {
               <div className="lg:sticky lg:top-24 relative overflow-hidden bg-[#061952] rounded-[22px] p-8 shadow-[0_18px_50px_rgba(6,25,82,0.16)]">
                 <div aria-hidden className="absolute -top-12 -right-12 w-36 h-36 rounded-[30px] border-2 border-[#FFD25D]/20" />
                 <div aria-hidden className="absolute -bottom-10 -left-10 w-28 h-28 rounded-[26px] bg-white/[0.04]" />
-                <h3 className="relative flex items-center gap-3 font-poppins font-semibold text-xl text-white mb-6">
+                <h3 className="relative flex items-center gap-3 font-poppins font-semibold text-2xl text-white mb-7">
                   Modalités
                 </h3>
                 <div className="relative grid grid-cols-2 gap-3 mb-7">
                   {modalites.map((m, i) => (
-                    <div key={i} className="bg-white/[0.06] border border-white/10 rounded-2xl px-4 py-5 text-center">
-                      <span className="w-12 h-12 rounded-full bg-white flex items-center justify-center mx-auto mb-3">
-                        <Image src={m.icon} alt="" width={30} height={30} className="w-7 h-7 object-contain" />
+                    <div key={i} className="bg-white/[0.06] border border-white/10 rounded-2xl px-4 py-6 text-center">
+                      <span className="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-3.5">
+                        <Image src={m.icon} alt="" width={34} height={34} className="w-8 h-8 object-contain" />
                       </span>
-                      <div className="font-poppins font-semibold text-sm text-white leading-tight">{m.title}</div>
-                      <div className="text-xs text-white/60 mt-0.5">{m.subtitle}</div>
+                      <div className="font-poppins font-semibold text-base text-white leading-tight">{m.title}</div>
+                      <div className="text-sm text-white/60 mt-1">{m.subtitle}</div>
                     </div>
                   ))}
                 </div>
                 <a
                   href="/contact"
-                  className="relative flex items-center justify-center gap-2 font-poppins font-semibold text-[15px] w-full px-6 py-3.5 rounded-full bg-[#FFD25D] text-[#061952] transition-all duration-300 hover:bg-[#FFC940]"
+                  className="relative flex items-center justify-center gap-2 font-poppins font-semibold text-base w-full px-6 py-4 rounded-full bg-[#FFD25D] text-[#061952] transition-all duration-300 hover:bg-[#FFC940]"
                 >
                   Demander un devis
-                  <ArrowRight className="w-[18px] h-[18px]" />
+                  <ArrowRight className="w-5 h-5" />
                 </a>
               </div>
             </aside>

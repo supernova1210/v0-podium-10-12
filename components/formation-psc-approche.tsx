@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react"
 import Reveal from "@/components/reveal"
 
 const stats = [
@@ -47,6 +48,16 @@ export default function FormationPscApproche() {
                     <div className="text-sm text-white/70">{s.l}</div>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-9">
+                <a
+                  href="https://calendly.com/nicolas-ofpodium/30min"
+                  className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full bg-[#FFD25D] text-[#061952] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
+                >
+                  Prendre rendez-vous
+                  <ArrowRight className="w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>

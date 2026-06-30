@@ -45,16 +45,16 @@ export default function FormationPremiersSecoursCitoyenPage() {
                 Formation Sécurité · Certifiante
               </span>
 
-              <h1 className="font-poppins font-extrabold text-[#061952] tracking-tight leading-[1.05] text-4xl md:text-5xl mt-4 mb-5">
+              <h1 className="font-poppins font-extrabold text-[#061952] tracking-tight leading-[1.04] text-5xl md:text-6xl mt-4 mb-5">
                 Formation{" "}
                 <span className="relative inline-block">
                   <span className="relative z-10">Premiers Secours</span>
-                  <span className="absolute left-0 right-0 bottom-1.5 h-3.5 bg-[#FFD25D] z-0 rounded-sm" />
+                  <span className="absolute left-0 right-0 bottom-1.5 h-4 bg-[#FFD25D] z-0 rounded-sm" />
                 </span>{" "}
                 Citoyen
               </h1>
 
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-lg mb-6">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl mb-7">
                 Apprenez les gestes qui sauvent : protéger une victime, alerter les secours et intervenir efficacement
                 face à une situation d'urgence, jusqu'à la prise en charge par les services de secours.
               </p>
@@ -63,14 +63,14 @@ export default function FormationPremiersSecoursCitoyenPage() {
                 {badges.map((b, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-3 bg-white border border-gray-200 rounded-2xl px-4 py-3 shadow-[0_4px_18px_rgba(6,25,82,0.06)]"
+                    className="flex items-center gap-3.5 bg-white border border-gray-200 rounded-2xl px-5 py-3.5 shadow-[0_4px_18px_rgba(6,25,82,0.06)]"
                   >
-                    <span className="w-11 h-11 rounded-xl bg-[#FFD25D]/15 flex items-center justify-center flex-shrink-0">
-                      <Image src={b.icon} alt="" width={28} height={28} className="w-7 h-7 object-contain" />
+                    <span className="w-12 h-12 rounded-xl bg-[#FFD25D]/15 flex items-center justify-center flex-shrink-0">
+                      <Image src={b.icon} alt="" width={32} height={32} className="w-8 h-8 object-contain" />
                     </span>
                     <div>
-                      <div className="text-xs text-gray-500 font-medium">{b.label}</div>
-                      <div className="font-poppins font-semibold text-[15px] text-[#061952]">{b.value}</div>
+                      <div className="text-sm text-gray-500 font-medium">{b.label}</div>
+                      <div className="font-poppins font-semibold text-base text-[#061952]">{b.value}</div>
                     </div>
                   </div>
                 ))}
@@ -79,14 +79,14 @@ export default function FormationPremiersSecoursCitoyenPage() {
               <div className="flex flex-wrap gap-3.5">
                 <a
                   href="https://calendly.com/nicolas-ofpodium/30min"
-                  className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-[15px] px-7 py-4 rounded-full bg-[#FFD25D] text-[#061952] shadow-[0_10px_26px_rgba(255,210,93,0.45)] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full bg-[#FFD25D] text-[#061952] shadow-[0_10px_26px_rgba(255,210,93,0.45)] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
                 >
                   Prendre rendez-vous
-                  <ArrowRight className="w-[18px] h-[18px]" />
+                  <ArrowRight className="w-5 h-5" />
                 </a>
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center font-poppins font-semibold text-[15px] px-7 py-4 rounded-full border-2 border-[#061952] text-[#061952] transition-all duration-300 hover:bg-[#061952] hover:text-white hover:-translate-y-0.5"
+                  className="inline-flex items-center justify-center font-poppins font-semibold text-base px-8 py-4 rounded-full border-2 border-[#061952] text-[#061952] transition-all duration-300 hover:bg-[#061952] hover:text-white hover:-translate-y-0.5"
                 >
                   Contact
                 </a>
