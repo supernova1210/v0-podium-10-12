@@ -75,7 +75,7 @@ export default function Navigation() {
   const isActive = (match: string) => pathname.startsWith(match)
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md sticky top-10 z-30 shadow-[0_2px_20px_rgba(6,25,82,0.05)] border-b border-gray-100">
+    <nav className="bg-white/90 backdrop-blur-md sticky top-10 z-30 shadow-[0_2px_20px_rgba(6,25,82,0.05)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
@@ -261,6 +261,13 @@ export default function Navigation() {
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
+      </div>
+
+      {/* Bande d'accent colorée */}
+      <div aria-hidden className="flex h-1 w-full">
+        <div className="w-[55%] bg-[#FFD25D]" />
+        <div className="w-[25%] bg-[#57B3B7]" />
+        <div className="flex-1 bg-[#C9426B]" />
       </div>
 
       {/* Mobile Menu */}
