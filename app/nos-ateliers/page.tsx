@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
 import AteliersHubHero from "@/components/atelier/ateliers-hub-hero"
-import AteliersAtouts from "@/components/atelier/ateliers-atouts"
 import AteliersGrid from "@/components/atelier/ateliers-grid"
+import AteliersFocus from "@/components/atelier/ateliers-focus"
+import AteliersJeuCoeur from "@/components/atelier/ateliers-jeu-coeur"
 import AteliersProcess from "@/components/atelier/ateliers-process"
 import FormationFAQ from "@/components/formation/formation-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
@@ -69,8 +70,9 @@ export default function NosAteliersPage() {
     <main className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <AteliersHubHero />
-      <AteliersAtouts />
       <AteliersGrid />
+      <AteliersFocus />
+      <AteliersJeuCoeur />
       <AteliersProcess />
       <FormationFAQ faqData={faqData} />
       <ContactezNousSection />

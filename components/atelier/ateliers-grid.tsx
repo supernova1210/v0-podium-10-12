@@ -115,16 +115,16 @@ export default function AteliersGrid() {
         </div>
 
         {/* Grille */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {visible.map((a, i) => {
             const acc = ACCENTS[a.category]
             return (
-              <Reveal key={a.slug} delay={(i % 3) * 100}>
+              <Reveal key={a.slug} delay={(i % 4) * 80}>
                 <Link
                   href={a.slug}
                   className="group flex flex-col h-full bg-white rounded-[22px] border border-gray-200 overflow-hidden shadow-[0_4px_18px_rgba(6,25,82,0.06)] transition-all duration-300 hover:shadow-[0_18px_50px_rgba(6,25,82,0.14)] hover:-translate-y-1.5"
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-44 overflow-hidden">
                     <Image
                       src={a.image}
                       alt={a.title}
@@ -142,9 +142,9 @@ export default function AteliersGrid() {
                     </span>
                   </div>
 
-                  <div className="flex flex-col flex-1 p-6">
+                  <div className="flex flex-col flex-1 p-5">
                     <h3
-                      className={`font-poppins font-semibold text-xl text-[#061952] leading-snug transition-colors duration-300 ${acc.hover}`}
+                      className={`font-poppins font-semibold text-lg text-[#061952] leading-snug transition-colors duration-300 ${acc.hover}`}
                     >
                       {a.title}
                     </h3>
