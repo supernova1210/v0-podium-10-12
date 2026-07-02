@@ -28,7 +28,7 @@ const pillars = [
 
 export default function AteliersProcess() {
   return (
-    <section id="deroulement" className="scroll-mt-20 py-16 md:py-24 bg-[#fafbfe] relative overflow-hidden">
+    <section id="deroulement" className="scroll-mt-20 py-16 md:py-24 bg-[#fafbfe] relative">
       <div aria-hidden className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute right-[-45px] top-28 hidden xl:block w-48 h-48 rounded-[38px] border-2 border-[#57B3B7]/25" />
         <div className="absolute left-[-50px] bottom-32 hidden xl:block w-44 h-44 rounded-[36px] bg-[#FFD25D]/15" />
