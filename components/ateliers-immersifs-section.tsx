@@ -11,7 +11,7 @@ const workshops = [
     description:
       "Une expérience immersive où les équipes collaborent pour résoudre des situations liées à la prévention, la sécurité et la QVCT.",
     image: "/images/escape-game-atelier-podium.jpg",
-    href: "/nos-ateliers#escape-game",
+    href: "/atelier/escape-game-securite",
     comingSoon: false,
   },
   {
@@ -20,7 +20,7 @@ const workshops = [
     description:
       "Des mises en situation réalistes et interactives pour déclencher des prises de conscience et encourager le dialogue autour des enjeux de prévention.",
     image: "/images/atelier-theatre-entreprise.jpg",
-    href: "/nos-ateliers#theatre-improvisation",
+    href: "/atelier/theatre-impro-sante-mentale",
     comingSoon: false,
   },
   {

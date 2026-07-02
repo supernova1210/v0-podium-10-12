@@ -52,7 +52,7 @@ const formationsDropdown = [
 const ateliersDropdown = {
   mainLink: { label: "Découvrir nos ateliers", href: "/nos-ateliers", desc: "18 ateliers ludiques, QVCT & sécurité.", icon: LayoutGrid },
   items: [
-    { label: "Escape Game", href: "/nos-ateliers#escape-game", icon: Puzzle },
+    { label: "Escape Game", href: "/atelier/escape-game-securite", icon: Puzzle },
     { label: "Théâtre d'impro santé mentale", href: "/atelier/theatre-impro-sante-mentale", icon: Drama },
   ],
 }
