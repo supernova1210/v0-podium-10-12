@@ -42,6 +42,7 @@ const atelierRoutes = [
   "/atelier/cles-cohesion-equipe",
   "/atelier/cnv-agressivite-physique",
   "/atelier/cnv-agressivite-verbale",
+  "/atelier/deconnecte-ton-ecran",
   "/atelier/escape-game-securite",
   "/atelier/geste-et-posture-petanque",
   "/atelier/gestion-des-emotions-sophrologie",
@@ -56,6 +57,7 @@ const atelierRoutes = [
   "/atelier/sensibiliser-au-handicap-visuel",
   "/atelier/sophrologie",
   "/atelier/sport-transfert-savoir-etre",
+  "/atelier/theatre-impro-sante-mentale",
   "/atelier/valorisation-des-savoir-etre",
 ]
 

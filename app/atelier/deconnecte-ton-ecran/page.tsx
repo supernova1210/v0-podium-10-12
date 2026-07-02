@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import AtelierPage from "@/components/atelier/atelier-page"
-import { preventionSanteMentale as data } from "@/lib/ateliers"
+import { deconnecteTonEcran as data } from "@/lib/ateliers"
 
 export const metadata: Metadata = {
   title: data.metaTitle,
