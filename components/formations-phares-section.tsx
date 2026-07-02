@@ -10,7 +10,7 @@ const formations = [
     subtitle: "Formation en présentiel – 1 jour (7h)",
     icon: GraduationCap,
     type: "formation",
-    href: "/formation-geste-et-posture",
+    href: "/formation-securite-geste-et-posture",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const formations = [
     subtitle: "Formation en présentiel – 3h30 ou 7h00",
     icon: Settings,
     type: "formation",
-    href: "/formation-ambassadeur-reveil-musculaire",
+    href: "/formation-securite-reveil-musculaire",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const formations = [
     subtitle: "Événement sur site – 3h30 ou 7h00",
     icon: Calendar,
     type: "formation",
-    href: "/formation-valoriser-posture-professionnelle",
+    href: "/formation-qvct-valoriser-posture-professionnelle",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const formations = [
     subtitle: "Formation en présentiel – 1 jour (7h)",
     icon: GraduationCap,
     type: "formation",
-    href: "/formation-management-lancer-dynamiser-reunion",
+    href: "/formation-qvct-lancer-dynamiser-reunion",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const formations = [
     subtitle: "Formation en présentiel – 1 jour (7h)",
     icon: Settings,
     type: "formation",
-    href: "/formation-management-affirmer-confiance-cnv",
+    href: "/formation-qvct-communication-non-violente",
   },
 ]
 

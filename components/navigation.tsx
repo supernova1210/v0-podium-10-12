@@ -75,7 +75,10 @@ export default function Navigation() {
   const isActive = (match: string) => pathname.startsWith(match)
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md sticky top-10 z-30 shadow-[0_2px_20px_rgba(6,25,82,0.05)]">
+    <nav className="sticky top-10 z-30">
+      {/* Barre : le blur reste ici, sur un wrapper qui ne contient PAS le menu mobile
+          (backdrop-filter sur un ancetre casse position:fixed des descendants) */}
+      <div className="bg-white/90 backdrop-blur-md shadow-[0_2px_20px_rgba(6,25,82,0.05)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
@@ -269,10 +272,19 @@ export default function Navigation() {
         <div className="w-[25%] bg-[#57B3B7]" />
         <div className="flex-1 bg-[#C9426B]" />
       </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        onClick={() => setIsMenuOpen(false)}
+        className={`lg:hidden fixed inset-0 bg-black/40 z-[60] transition-opacity duration-300 ${
+          isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      />
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-y-0 right-0 w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-50 overflow-y-auto ${
+        className={`lg:hidden fixed inset-y-0 right-0 w-80 max-w-[85vw] bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-[70] overflow-y-auto ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -354,10 +366,6 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black bg-opacity-25 z-40" onClick={() => setIsMenuOpen(false)} />
-      )}
     </nav>
   )
 }
