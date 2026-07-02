@@ -1,43 +1,6 @@
-import { MessagesSquare, PencilRuler, Gamepad2, MessageCircleHeart, Repeat, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Reveal from "@/components/reveal"
-
-const steps = [
-  {
-    icon: MessagesSquare,
-    color: "#FFD25D",
-    iconColor: "#061952",
-    title: "Choix des thèmes",
-    description: "TMS, addictions, santé mentale, cohésion : on part de vos enjeux et de vos équipes.",
-  },
-  {
-    icon: PencilRuler,
-    color: "#57B3B7",
-    iconColor: "#FFFFFF",
-    title: "Préparation sur-mesure",
-    description: "Contenus, quiz et scénarios adaptés à votre secteur et à vos consignes internes.",
-  },
-  {
-    icon: Gamepad2,
-    color: "#C9426B",
-    iconColor: "#FFFFFF",
-    title: "Animation dans vos locaux",
-    description: "Des sessions courtes et rythmées de 15 à 45 minutes, en rotation si besoin.",
-  },
-  {
-    icon: MessageCircleHeart,
-    color: "#F4B609",
-    iconColor: "#061952",
-    title: "Débriefing et ancrage",
-    description: "Chaque atelier se termine par un temps d'échange qui relie le jeu au quotidien de travail.",
-  },
-  {
-    icon: Repeat,
-    color: "#061952",
-    iconColor: "#FFD25D",
-    title: "Bilan et suite",
-    description: "Retour à chaud, pistes pour prolonger la dynamique : atelier récurrent, formation, événement.",
-  },
-]
+import AteliersStackingSteps from "./ateliers-stacking-steps"
 
 const pillars = [
   {
@@ -85,29 +48,9 @@ export default function AteliersProcess() {
           </p>
         </Reveal>
 
-        {/* Timeline en stacking : les cartes s'empilent au fil du scroll */}
-        <div className="max-w-2xl mx-auto mb-20">
-          {steps.map((step, i) => (
-            <div key={i} className="sticky" style={{ top: `${92 + i * 18}px`, zIndex: i + 1 }}>
-              <div className="bg-white border border-gray-200 rounded-[22px] p-6 md:p-7 mb-5 shadow-[0_14px_40px_rgba(6,25,82,0.12)] flex items-start gap-5">
-                <span
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md"
-                  style={{ backgroundColor: step.color }}
-                >
-                  <step.icon className="w-7 h-7" style={{ color: step.iconColor }} />
-                </span>
-                <div className="flex-1 pt-0.5">
-                  <div className="flex items-center gap-3">
-                    <span className="font-poppins font-bold text-sm text-gray-300">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="font-poppins font-semibold text-xl text-[#061952]">{step.title}</h3>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed mt-1.5">{step.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Timeline en stacking scroll-driven */}
+        <div className="mb-20">
+          <AteliersStackingSteps />
         </div>
 
         {/* Piliers */}
