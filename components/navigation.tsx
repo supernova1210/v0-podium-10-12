@@ -75,7 +75,7 @@ export default function Navigation() {
   const isActive = (match: string) => pathname.startsWith(match)
 
   return (
-    <nav className="sticky top-10 z-30">
+    <nav className="sticky top-10 z-[60]">
       {/* Barre : le blur reste ici, sur un wrapper qui ne contient PAS le menu mobile
           (backdrop-filter sur un ancetre casse position:fixed des descendants) */}
       <div className="bg-white/90 backdrop-blur-md shadow-[0_2px_20px_rgba(6,25,82,0.05)]">

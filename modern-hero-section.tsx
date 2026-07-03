@@ -9,7 +9,7 @@ export default function ModernHeroSection() {
   return (
     <section className="relative w-full bg-white">
       <div className="container mx-auto px-6 py-8 lg:py-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Mobile image - shown first on mobile */}
           <div className="lg:hidden">
             <div className="relative h-[300px] w-full overflow-hidden rounded-3xl">
@@ -46,7 +46,7 @@ export default function ModernHeroSection() {
             </div>
 
             {/* Keywords with yellow dots */}
-            <div className="flex items-center gap-x-2 pt-2 overflow-x-auto">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-2 pt-2">
               {keywords.map((keyword, index) => (
                 <span key={keyword} className="flex items-center whitespace-nowrap">
                   <span className="text-xs font-medium text-[#061952]/70 uppercase tracking-wide">{keyword}</span>
