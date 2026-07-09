@@ -45,7 +45,11 @@ export default function EvenementAtouts({
           <p className="text-lg text-white/75 leading-relaxed">{description}</p>
         </Reveal>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+        <div
+          className={`grid grid-cols-2 gap-5 mx-auto ${
+            items.length === 3 ? "lg:grid-cols-3 max-w-4xl" : "lg:grid-cols-4 max-w-5xl"
+          }`}
+        >
           {items.map((item, i) => {
             const a = ACCENTS[i % ACCENTS.length]
             return (
