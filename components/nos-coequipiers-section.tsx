@@ -52,7 +52,7 @@ export default function NosCoequipiersSection() {
       <div className="max-w-6xl mx-auto">
         {/* Part 1 - Mot du dirigeant */}
         <div className="mb-20">
-          <h3 className="text-3xl md:text-4xl font-bold text-[#1a237e] mb-12 text-center">Mot du dirigeant</h3>
+          <h3 className="font-poppins font-bold tracking-tight text-3xl md:text-4xl text-[#061952] mb-12 text-center">Mot du dirigeant</h3>
 
           <div className="grid md:grid-cols-[300px_1fr] gap-8 md:gap-12 items-start">
             {/* Left - Photo */}
@@ -103,7 +103,7 @@ export default function NosCoequipiersSection() {
 
         {/* Part 2 - Nos coéquipiers */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1a237e] mb-16">Nos coéquipiers</h2>
+          <h2 className="font-poppins font-bold tracking-tight text-3xl md:text-5xl text-center text-[#061952] mb-16">Nos coéquipiers</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
             {teamMembers.map((member, index) => (

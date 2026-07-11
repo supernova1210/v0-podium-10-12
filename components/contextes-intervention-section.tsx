@@ -93,7 +93,7 @@ export default function ContextesInterventionSection() {
           <span className="text-xs font-bold text-[#061952] bg-[#FFD25D] px-4 py-1.5 rounded-full uppercase tracking-wide">
             Vos contextes
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#061952] mt-5 mb-4 text-balance">
+          <h2 className="font-poppins font-bold tracking-tight text-3xl md:text-5xl text-[#061952] mt-5 mb-4 text-balance">
             {"Vous organisez une action de prévention ?"}
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto leading-relaxed">

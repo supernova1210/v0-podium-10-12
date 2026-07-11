@@ -32,7 +32,7 @@ export default function NosPartenairesSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#061952] mb-4">Nos partenaires et réseaux</h2>
+          <h2 className="font-poppins font-bold tracking-tight text-3xl md:text-4xl text-[#061952] mb-4">Nos partenaires et réseaux</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             PODIUM s’engage activement dans la vie économique locale et développe des partenariats avec des acteurs du territoire de l’Ain.
             À travers notre implication à Ambérieu-en-Bugey, à Bourg-en-Bresse et plus largement dans le département, nous participons aux dynamiques locales en faveur de la formation, de la prévention et de la qualité de vie au travail.

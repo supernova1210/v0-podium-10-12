@@ -1,76 +1,68 @@
-"use client"
-
 import Image from "next/image"
-import { PodiumButton } from "@/components/ui/podium-button"
+import { ArrowRight } from "lucide-react"
+import Reveal from "@/components/reveal"
 
 export default function NousRejoindreSection() {
   return (
-    <section className="relative bg-[#061952] py-20 lg:py-32 overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-4 h-4 bg-[#FFD25D] rounded-full"></div>
-        <div className="absolute top-40 right-20 w-6 h-6 bg-[#FFD25D] rounded-full"></div>
-        <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-[#FFD25D] rounded-full"></div>
-        <div className="absolute bottom-20 right-1/3 w-5 h-5 bg-[#FFD25D] rounded-full"></div>
+    <section className="relative bg-[#061952] py-16 md:py-24 overflow-hidden">
+      <div aria-hidden className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-12 -right-12 w-56 h-56 rounded-[44px] border-2 border-[#FFD25D]/20" />
+        <div className="absolute -bottom-14 -left-10 w-44 h-44 rounded-[36px] bg-[#57B3B7]/10" />
+        <div className="absolute top-24 left-20 w-20 h-20 rounded-[20px] bg-[#C9426B]/10 hidden md:block" />
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image Column */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative">
-              <div className="absolute -top-12 -left-12 w-96 h-96 z-0">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
+          {/* Image */}
+          <Reveal x={-40} className="order-2 lg:order-1">
+            <div className="relative max-w-md mx-auto w-full">
+              <div className="absolute -top-5 -left-4 w-32 h-32 rounded-3xl bg-[#FFD25D] z-0 hidden sm:block" />
+              <div className="absolute -bottom-6 -right-5 w-24 h-24 rounded-3xl bg-[#57B3B7] z-0 hidden sm:block" />
+              <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.35)] aspect-square">
                 <Image
-                  src="/images/trait-epais-jaune.png"
-                  alt=""
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-contain"
+                  src="/team-of-professionals-collaborating-at-a-modern-of.png"
+                  alt="Équipe PODIUM travaillant ensemble"
+                  fill
+                  className="object-cover"
                 />
               </div>
-
-              {/* Image container with yellow border */}
-              <div className="relative w-80 h-80 mx-auto z-10">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#FFD25D] to-[#FFD25D]/80 p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                    <Image
-                      src="/team-of-professionals-collaborating-at-a-modern-of.png"
-                      alt="Équipe PODIUM travaillant ensemble"
-                      width={320}
-                      height={320}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Additional decorative elements */}
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#FFD25D]/30 rounded-full blur-xl"></div>
-              <div className="absolute -top-4 -right-8 w-12 h-12 bg-[#FFD25D]/20 rounded-full blur-lg"></div>
             </div>
-          </div>
+          </Reveal>
 
-          {/* Content Column */}
-          <div className="order-1 lg:order-2 text-center lg:text-left">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8 font-sans">Nous rejoindre</h2>
-
-            <p className="text-lg lg:text-xl font-semibold text-white mb-10 max-w-2xl">
+          {/* Contenu */}
+          <Reveal x={40} delay={120} className="order-1 lg:order-2">
+            <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#FFD25D]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FFD25D]" />
               Un collectif engagé pour la santé au travail
+            </span>
+
+            <h2 className="font-poppins font-bold text-white tracking-tight text-3xl md:text-5xl mt-4 mb-6">
+              Nous{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10">rejoindre</span>
+                <span className="absolute left-0 right-0 bottom-1 h-3.5 bg-[#FFD25D]/40 z-0 rounded-sm" />
+              </span>
+            </h2>
+
+            <p className="text-lg text-white/80 leading-relaxed mb-5 max-w-2xl">
+              PODIUM, c&apos;est avant tout un collectif d&apos;experts partageant une vision commune de la formation :
+              humaine, participative et orientée prévention. Implanté à Ambérieu-en-Bugey, au cœur du département de
+              l&apos;Ain, PODIUM intervient auprès des entreprises locales et régionales pour les accompagner sur les
+              enjeux de qualité de vie au travail, de prévention et de santé des collaborateurs.
             </p>
 
-            <p className="text-lg lg:text-xl text-gray-200 leading-relaxed mb-8 max-w-2xl">
-              PODIUM, c’est avant tout un collectif d’experts partageant une vision commune de la formation : humaine, participative et orientée prévention.
-              Implanté à Ambérieu-en-Bugey, au cœur du département de l’Ain, PODIUM intervient auprès des entreprises locales et régionales pour les accompagner sur les enjeux de qualité de vie au travail, de prévention et de santé des collaborateurs.
+            <p className="font-poppins font-semibold text-lg text-white mb-8 max-w-2xl">
+              Si tu veux rejoindre l&apos;aventure, laisse-nous tes coordonnées, on te recontacte rapidement !
             </p>
 
-            <p className="text-lg lg:text-xl font-semibold text-white mb-10 max-w-2xl">
-              Si tu veux rejoindre l'aventure, laisse-nous tes coordonnées, on te recontacte rapidement
-            </p>
-
-            <PodiumButton href="/contact" variant="primary" size="lg">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full bg-[#FFD25D] text-[#061952] shadow-[0_10px_26px_rgba(255,210,93,0.35)] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
+            >
               Devenir formateur
-            </PodiumButton>
-          </div>
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </Reveal>
         </div>
       </div>
     </section>

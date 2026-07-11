@@ -82,7 +82,7 @@ export default function NosReferencesSection() {
 
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#061952] mb-6">Nos références</h2>
+          <h2 className="font-poppins font-bold tracking-tight text-3xl md:text-5xl text-[#061952] mb-6">Nos références</h2>
           <p className="text-lg text-gray-600 leading-relaxed">
             Ils nous font confiance pour accompagner leurs équipes vers l'excellence
           </p>

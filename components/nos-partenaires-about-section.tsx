@@ -50,7 +50,7 @@ export default function NosPartenairesAboutSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#061952] mb-4">Nos partenaires</h2>
+          <h2 className="font-poppins font-bold tracking-tight text-3xl md:text-4xl text-[#061952] mb-4">Nos partenaires</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-6xl mx-auto">

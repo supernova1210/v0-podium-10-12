@@ -109,7 +109,7 @@ export default function GoogleReviewsSection() {
                 Avis Google
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#061952] leading-tight">
+            <h2 className="font-poppins font-bold tracking-tight text-3xl md:text-4xl text-[#061952] leading-tight">
               Ce que nos clients disent de nous
             </h2>
           </div>
