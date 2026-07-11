@@ -10,7 +10,7 @@ const ACCENTS = {
     arrow: "group-hover:bg-[#57B3B7] group-hover:text-white group-hover:border-[#57B3B7]",
     deco1: "bg-[#57B3B7]/15",
     deco2: "border-[#C9426B]/30",
-    sweep: "bg-[#57B3B7]/25",
+    sweep: "bg-[#57B3B7]/55",
   },
   coral: {
     chip: "bg-[#C9426B]/15 text-[#8f2b49]",
@@ -18,7 +18,7 @@ const ACCENTS = {
     arrow: "group-hover:bg-[#C9426B] group-hover:text-white group-hover:border-[#C9426B]",
     deco1: "bg-[#C9426B]/15",
     deco2: "border-[#57B3B7]/30",
-    sweep: "bg-[#C9426B]/20",
+    sweep: "bg-[#C9426B]/45",
   },
   jaune: {
     chip: "bg-[#FFD25D]/30 text-[#061952]",
@@ -26,7 +26,7 @@ const ACCENTS = {
     arrow: "group-hover:bg-[#FFD25D] group-hover:text-[#061952] group-hover:border-[#FFD25D]",
     deco1: "bg-[#FFD25D]/25",
     deco2: "border-[#F4B609]/40",
-    sweep: "bg-[#FFD25D]/35",
+    sweep: "bg-[#FFD25D]/60",
   },
 }
 
@@ -78,7 +78,7 @@ export default function FormationsGrid({
                 {/* Filtre coloré qui balaye la carte au survol */}
                 <span
                   aria-hidden
-                  className={`absolute inset-0 z-10 pointer-events-none -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out ${a.sweep}`}
+                  className={`absolute inset-y-0 -left-[20%] w-[140%] z-10 pointer-events-none -skew-x-6 -translate-x-[120%] group-hover:translate-x-0 transition-transform duration-500 ease-out ${a.sweep}`}
                 />
                 <div className="relative h-60 overflow-hidden">
                   <Image
@@ -104,7 +104,7 @@ export default function FormationsGrid({
                   >
                     {f.cardTitle}
                   </h3>
-                  <p className="text-[15px] text-gray-600 leading-relaxed mt-2.5 flex-1">{f.cardDescription}</p>
+                  <p className="text-[15px] text-gray-600 leading-relaxed mt-2.5 flex-1 transition-colors duration-300 group-hover:text-[#061952]">{f.cardDescription}</p>
                   <span className="mt-5 inline-flex items-center gap-2 font-poppins font-semibold text-[15px] text-[#061952]">
                     Découvrir la formation
                     <span

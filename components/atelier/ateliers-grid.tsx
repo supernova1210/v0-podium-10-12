@@ -45,14 +45,14 @@ const ACCENTS = {
     label: "Atelier QVCT",
     hover: "group-hover:text-[#2c6e72]",
     arrow: "group-hover:bg-[#57B3B7] group-hover:text-white group-hover:border-[#57B3B7]",
-    sweep: "bg-[#57B3B7]/25",
+    sweep: "bg-[#57B3B7]/55",
   },
   securite: {
     chip: "bg-[#FFD25D]/95 text-[#061952]",
     label: "Atelier Sécurité",
     hover: "group-hover:text-[#B8860B]",
     arrow: "group-hover:bg-[#FFD25D] group-hover:text-[#061952] group-hover:border-[#FFD25D]",
-    sweep: "bg-[#FFD25D]/35",
+    sweep: "bg-[#FFD25D]/60",
   },
 } as const
 
@@ -129,7 +129,7 @@ export default function AteliersGrid() {
                   {/* Filtre coloré qui balaye la carte au survol */}
                   <span
                     aria-hidden
-                    className={`absolute inset-0 z-10 pointer-events-none -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out ${acc.sweep}`}
+                    className={`absolute inset-y-0 -left-[20%] w-[140%] z-10 pointer-events-none -skew-x-6 -translate-x-[120%] group-hover:translate-x-0 transition-transform duration-500 ease-out ${acc.sweep}`}
                   />
                   <div className="relative h-56 overflow-hidden">
                     <Image
@@ -155,7 +155,7 @@ export default function AteliersGrid() {
                     >
                       {a.title}
                     </h3>
-                    <p className="text-[15px] text-gray-600 leading-relaxed mt-2.5 flex-1">{a.description}</p>
+                    <p className="text-[15px] text-gray-600 leading-relaxed mt-2.5 flex-1 transition-colors duration-300 group-hover:text-[#061952]">{a.description}</p>
                     <div className="flex items-center justify-between mt-5">
                       <span className="inline-flex items-center gap-1.5 text-sm text-gray-500">
                         <Users className="w-4 h-4" />
