@@ -82,15 +82,6 @@ export default function SecuriteHero() {
                 <Image src="/images/atelier-secourir-sans-panique-bobologie.png" alt="Premiers secours" fill className="object-cover" />
               </div>
             </div>
-            <div className="absolute z-20 -bottom-4 right-6 bg-white rounded-2xl px-4 py-3 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3">
-              <span className="w-11 h-11 rounded-xl bg-[#061952] text-[#FFD25D] flex items-center justify-center flex-shrink-0">
-                <ShieldCheck className="w-6 h-6" />
-              </span>
-              <div>
-                <div className="font-poppins font-semibold text-sm text-[#061952] leading-tight">Culture prévention</div>
-                <div className="text-xs text-gray-500">ancrée durablement</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

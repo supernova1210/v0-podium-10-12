@@ -12,8 +12,8 @@ interface EvenementHeroProps {
   pdfHref?: string
   stats: { n: string; l: string; color?: string }[]
   images: { src: string; alt: string }[]
-  floatTitle: string
-  floatSubtitle: string
+  floatTitle?: string
+  floatSubtitle?: string
 }
 
 const CALENDLY = "https://calendly.com/nicolas-ofpodium/30min"
@@ -107,15 +107,6 @@ export default function EvenementHero({
                   <Image src={img.src} alt={img.alt} fill className="object-cover" />
                 </div>
               ))}
-            </div>
-            <div className="absolute z-20 -bottom-4 right-6 bg-white rounded-2xl px-4 py-3 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3">
-              <span className="w-11 h-11 rounded-xl bg-[#061952] text-[#FFD25D] flex items-center justify-center flex-shrink-0">
-                <Sparkles className="w-6 h-6" />
-              </span>
-              <div>
-                <div className="font-poppins font-semibold text-sm text-[#061952] leading-tight">{floatTitle}</div>
-                <div className="text-xs text-gray-500">{floatSubtitle}</div>
-              </div>
             </div>
           </div>
         </div>

@@ -16,8 +16,8 @@ interface FormationHeroProps {
   badges: HeroBadge[]
   image: string
   imageAlt: string
-  floatTitle: string
-  floatSubtitle: string
+  floatTitle?: string
+  floatSubtitle?: string
 }
 
 const CALENDLY = "https://calendly.com/nicolas-ofpodium/30min"
@@ -96,15 +96,6 @@ export default function FormationHero({
             <div className="absolute -bottom-5 -left-5 w-28 h-28 rounded-3xl bg-[#061952] z-0 hidden sm:block" />
             <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/3.9]">
               <Image src={image} alt={imageAlt} fill className="object-cover" priority />
-            </div>
-            <div className="absolute z-20 bottom-6 -left-4 sm:-left-7 bg-white rounded-2xl px-4 py-3 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3 max-w-[230px]">
-              <span className="w-11 h-11 rounded-xl bg-[#061952] text-[#FFD25D] flex items-center justify-center flex-shrink-0">
-                <Award className="w-6 h-6" />
-              </span>
-              <div>
-                <div className="font-poppins font-semibold text-sm text-[#061952] leading-tight">{floatTitle}</div>
-                <div className="text-xs text-gray-500">{floatSubtitle}</div>
-              </div>
             </div>
           </div>
         </div>

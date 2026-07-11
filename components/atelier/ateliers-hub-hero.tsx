@@ -98,15 +98,6 @@ export default function AteliersHubHero() {
                 />
               </div>
             </div>
-            <div className="absolute z-20 -bottom-4 right-6 bg-white rounded-2xl px-4 py-3 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3">
-              <span className="w-11 h-11 rounded-xl bg-[#061952] text-[#FFD25D] flex items-center justify-center flex-shrink-0">
-                <Gamepad2 className="w-6 h-6" />
-              </span>
-              <div>
-                <div className="font-poppins font-semibold text-sm text-[#061952] leading-tight">Le jeu au coeur</div>
-                <div className="text-xs text-gray-500">on retient ce qu&apos;on vit</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
