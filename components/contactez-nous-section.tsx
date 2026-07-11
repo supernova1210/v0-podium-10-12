@@ -1,77 +1,96 @@
-import { Phone, Mail } from "lucide-react"
-import { PodiumButton } from "@/components/ui/podium-button"
+import { Phone, Mail, ArrowRight, CalendarDays } from "lucide-react"
+import Reveal from "@/components/reveal"
+
+const CALENDLY = "https://calendly.com/nicolas-ofpodium/30min"
 
 export function ContactezNousSection() {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-200 rounded-full opacity-10"></div>
-        <div className="absolute bottom-32 right-16 w-16 h-16 bg-blue-200 rounded-full opacity-10"></div>
-        <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-yellow-300 rounded-full opacity-5"></div>
-      </div>
+    <section className="py-16 md:py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <Reveal>
+          <div className="relative overflow-hidden bg-[#061952] rounded-[36px] px-7 md:px-16 py-14 md:py-16 max-w-7xl mx-auto">
+            {/* habillage : grands carrés arrondis */}
+            <div aria-hidden className="absolute -top-12 -right-12 w-52 h-52 rounded-[40px] border-2 border-[#FFD25D]/20" />
+            <div aria-hidden className="absolute top-12 right-24 w-24 h-24 rounded-[26px] bg-[#57B3B7]/10 hidden md:block" />
+            <div aria-hidden className="absolute -bottom-14 -left-10 w-44 h-44 rounded-[36px] bg-white/[0.04]" />
 
-      <div className="container mx-auto px-6 relative">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <div className="space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#061952] leading-tight">Contactez-nous</h2>
+            <div className="relative grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-center">
+              {/* Texte */}
+              <div>
+                <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#FFD25D]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD25D]" />
+                  Parlons de votre projet
+                </span>
 
-            <div className="space-y-6 text-lg text-[#4A4A4A] leading-relaxed">
-              <p>
-                Vous souhaitez obtenir un devis, des informations sur nos formations QVCT, nos ateliers prévention ou organiser une journée sécurité en entreprise ?
-                Basé à Ambérieu-en-Bugey, PODIUM accompagne les entreprises de l’Ain, de Bourg-en-Bresse et des territoires alentours dans leurs projets de formation, de prévention et de bien-être au travail.
-              </p>
-              <p>Contactez-nous facilement par mail ou formulaire en ligne, nous vous rappelons dans les 12h !</p>
-              <p>Vous pouvez aussi prendre directement rendez-vous avec un membre de notre équipe.</p>
-            </div>
+                <h2 className="font-poppins font-bold text-white tracking-tight text-3xl md:text-5xl mt-4 mb-5">
+                  Contactez-
+                  <span className="relative inline-block">
+                    <span className="relative z-10">nous</span>
+                    <span className="absolute left-0 right-0 bottom-1 h-3.5 bg-[#FFD25D]/40 z-0 rounded-sm" />
+                  </span>
+                </h2>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <PodiumButton href="https://calendly.com/nicolas-ofpodium/30min" variant="primary">
-                Prendre rendez-vous
-              </PodiumButton>
-              <PodiumButton href="/contact" variant="outline">
-                Contactez-nous
-              </PodiumButton>
-            </div>
-          </div>
+                <p className="text-lg text-white/80 leading-relaxed max-w-xl mb-3">
+                  Vous souhaitez obtenir un devis, des informations sur nos formations QVCT, nos ateliers prévention ou
+                  organiser une journée sécurité en entreprise ? Contactez-nous par mail ou formulaire en ligne :
+                  <strong className="text-white"> nous vous rappelons dans les 12h.</strong>
+                </p>
+                <p className="text-[15px] text-white/60 leading-relaxed max-w-xl mb-8">
+                  Basé à Ambérieu-en-Bugey, Podium accompagne les entreprises de l&apos;Ain, de Bourg-en-Bresse, de Lyon
+                  et de toute la région Rhône-Alpes dans leurs projets de formation, de prévention et de bien-être au
+                  travail.
+                </p>
 
-          <div className="lg:pl-8">
-            <div className="bg-gray-50 rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl font-semibold text-[#061952] mb-6">Par téléphone ou par email :</h3>
+                <div className="flex flex-wrap gap-3.5">
+                  <a
+                    href={CALENDLY}
+                    className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full bg-[#FFD25D] text-[#061952] shadow-[0_10px_26px_rgba(255,210,93,0.35)] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
+                  >
+                    <CalendarDays className="w-5 h-5" />
+                    Prendre rendez-vous
+                  </a>
+                  <a
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full border-2 border-white/40 text-white transition-all duration-300 hover:bg-white hover:text-[#061952] hover:-translate-y-0.5"
+                  >
+                    Formulaire de contact
+                    <ArrowRight className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
 
-              <div className="space-y-6">
+              {/* Coordonnées */}
+              <div className="grid gap-4">
                 <a
                   href="tel:0770003672"
-                  className="flex items-center group hover:bg-white rounded-lg p-4 transition-all duration-200 hover:shadow-md"
+                  className="group flex items-center gap-4 bg-white/[0.06] border border-white/10 rounded-[22px] px-6 py-5 transition-all duration-300 hover:bg-white/[0.12] hover:-translate-y-1"
                 >
-                  <div className="w-12 h-12 bg-[#061952] rounded-full flex items-center justify-center mr-4 group-hover:bg-[#FFD25D] transition-colors duration-200">
-                    <Phone className="w-5 h-5 text-white group-hover:text-[#061952]" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-[#4A4A4A] mb-1">Téléphone</div>
-                    <div className="text-lg font-semibold text-[#061952] group-hover:text-[#FFD25D] transition-colors duration-200">
-                      07 70 00 36 72
-                    </div>
-                  </div>
+                  <span className="w-12 h-12 rounded-2xl bg-[#FFD25D] text-[#061952] flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                    <Phone className="w-6 h-6" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-white/60">Téléphone · réponse sous 12h</span>
+                    <span className="block font-poppins font-semibold text-lg text-white">07 70 00 36 72</span>
+                  </span>
                 </a>
-
                 <a
                   href="mailto:nicolas@ofpodium.fr"
-                  className="flex items-center group hover:bg-white rounded-lg p-4 transition-all duration-200 hover:shadow-md"
+                  className="group flex items-center gap-4 bg-white/[0.06] border border-white/10 rounded-[22px] px-6 py-5 transition-all duration-300 hover:bg-white/[0.12] hover:-translate-y-1"
                 >
-                  <div className="w-12 h-12 bg-[#061952] rounded-full flex items-center justify-center mr-4 group-hover:bg-[#FFD25D] transition-colors duration-200">
-                    <Mail className="w-5 h-5 text-white group-hover:text-[#061952]" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-[#4A4A4A] mb-1">Email</div>
-                    <div className="text-lg font-semibold text-[#061952] group-hover:text-[#FFD25D] transition-colors duration-200">
+                  <span className="w-12 h-12 rounded-2xl bg-[#57B3B7] text-white flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                    <Mail className="w-6 h-6" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-sm text-white/60">Email</span>
+                    <span className="block font-poppins font-semibold text-lg text-white truncate">
                       nicolas@ofpodium.fr
-                    </div>
-                  </div>
+                    </span>
+                  </span>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   )
