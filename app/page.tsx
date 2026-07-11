@@ -54,7 +54,7 @@ const faqSchema = {
       name: "Les formations Podium sont-elles certifiées Qualiopi ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui, Podium est un organisme de formation certifié Qualiopi. Cette certification garantit la qualité de nos processus et vous permet de financer vos formations via votre OPCO ou d'autres dispositifs de financement de la formation professionnelle.",
+        text: "Podium est actuellement en cours de labellisation Qualiopi. En attendant, nous travaillons avec des partenaires certifiés et vous accompagnons dans vos démarches de financement de la formation professionnelle.",
       },
     },
     {
@@ -78,7 +78,7 @@ const faqSchema = {
       name: "Peut-on financer les formations Podium avec l'OPCO ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui, en tant qu'organisme certifié Qualiopi, nos formations sont éligibles aux financements OPCO (Opérateurs de Compétences). Nous vous accompagnons dans les démarches administratives pour faciliter la prise en charge de vos formations QVCT.",
+        text: "Le financement via votre OPCO (Opérateur de Compétences) est possible selon les dispositifs. Nous vous accompagnons dans les démarches administratives pour faciliter la prise en charge de vos formations QVCT.",
       },
     },
   ],

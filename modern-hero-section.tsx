@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight, BadgeCheck, MapPin } from "lucide-react"
+import { ArrowRight, MapPin } from "lucide-react"
 
 export default function ModernHeroSection() {
   return (
@@ -21,7 +21,7 @@ export default function ModernHeroSection() {
           </span>
 
           {/* Titre XXL */}
-          <h1 className="font-poppins font-extrabold tracking-tight leading-[1.02] mt-7 mb-9 text-[2.6rem] sm:text-6xl lg:text-7xl">
+          <h1 className="font-poppins font-extrabold tracking-tight leading-[1.02] mt-7 mb-8 text-[2.6rem] sm:text-6xl lg:text-7xl">
             <span className="block text-[#061952]">Organisme de formation</span>
             <span className="block mt-2">
               <span className="relative inline-block">
@@ -32,40 +32,26 @@ export default function ModernHeroSection() {
             </span>
           </h1>
 
-          {/* CTAs + accroche */}
-          <div className="grid lg:grid-cols-[auto_1fr] gap-8 lg:gap-16 items-start mb-12">
-            <div className="flex flex-wrap gap-3.5">
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full bg-[#FFD25D] text-[#061952] shadow-[0_10px_26px_rgba(255,210,93,0.45)] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
-              >
-                Parler de votre projet
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="#nos-solutions"
-                className="inline-flex items-center justify-center font-poppins font-semibold text-base px-8 py-4 rounded-full border-2 border-[#061952] text-[#061952] transition-all duration-300 hover:bg-[#061952] hover:text-white hover:-translate-y-0.5"
-              >
-                Nos solutions
-              </a>
-            </div>
-
-            <div className="max-w-xl lg:justify-self-end">
-              <p className="font-poppins font-semibold text-lg text-[#061952] leading-snug mb-2.5">
-                Des formations et événements ludiques et participatifs pour améliorer la qualité de vie au travail,
-                prévenir les risques et renforcer l&apos;engagement des collaborateurs.
-              </p>
-              <p className="text-[15px] text-gray-500 leading-relaxed">
-                PODIUM accompagne les entreprises dans leurs démarches de QVCT, de prévention et de bien-être au
-                travail : formations, ateliers et événements qui placent l&apos;humain, le mouvement et la pédagogie
-                participative au cœur de chaque intervention.
-              </p>
-            </div>
+          {/* CTAs */}
+          <div className="flex flex-wrap gap-3.5 mb-10">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full bg-[#FFD25D] text-[#061952] shadow-[0_10px_26px_rgba(255,210,93,0.45)] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
+            >
+              Parler de votre projet
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            <a
+              href="#nos-solutions"
+              className="inline-flex items-center justify-center font-poppins font-semibold text-base px-8 py-4 rounded-full border-2 border-[#061952] text-[#061952] transition-all duration-300 hover:bg-[#061952] hover:text-white hover:-translate-y-0.5"
+            >
+              Nos solutions
+            </a>
           </div>
 
-          {/* Bande visuelle : grande photo + carte stat marine */}
-          <div className="grid lg:grid-cols-[1.9fr_1.1fr] gap-4">
-            <div className="relative h-[300px] lg:h-[420px] rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)]">
+          {/* Bande visuelle : grande photo + carte texte marine */}
+          <div className="grid lg:grid-cols-[1.8fr_1.2fr] gap-4">
+            <div className="relative h-[300px] lg:h-[440px] rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)]">
               <Image
                 src="/images/page-accueil-atelier-podium.jpg"
                 alt="Atelier Podium animé en entreprise"
@@ -84,26 +70,26 @@ export default function ModernHeroSection() {
               <div aria-hidden className="absolute -bottom-12 -left-8 w-32 h-32 rounded-[28px] bg-[#57B3B7]/10" />
 
               <div className="relative">
-                <div className="font-poppins font-extrabold leading-none">
-                  <span className="text-white text-6xl lg:text-7xl">12</span>
-                  <span className="text-[#FFD25D] text-6xl lg:text-7xl">h</span>
-                </div>
-                <p className="text-white/80 text-lg leading-snug mt-3">
-                  pour recevoir votre devis, gratuit et garanti.
+                <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#FFD25D] mb-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD25D]" />
+                  Notre approche
+                </span>
+                <p className="font-poppins font-semibold text-lg lg:text-xl text-white leading-snug mb-4">
+                  Des formations et événements ludiques et participatifs pour améliorer la qualité de vie au travail,
+                  prévenir les risques et renforcer l&apos;engagement des collaborateurs.
                 </p>
-
-                <div className="mt-7 pt-6 border-t border-white/15 space-y-3">
-                  <p className="flex items-center gap-2.5 text-[15px] text-white/80">
-                    <BadgeCheck className="w-5 h-5 text-[#FFD25D] flex-shrink-0" />
-                    Organisme certifié Qualiopi, éligible OPCO
-                  </p>
-                  <p className="flex items-center gap-2.5 text-[15px] text-white/80">
-                    <span className="w-5 h-5 rounded-md bg-[#57B3B7]/25 text-[#7ECDD1] flex items-center justify-center flex-shrink-0 font-poppins font-bold text-[11px]">
-                      %
-                    </span>
-                    100% sur-mesure, de 4 à 300 participants
-                  </p>
-                </div>
+                <p className="text-[15px] text-white/70 leading-relaxed mb-6">
+                  PODIUM accompagne les entreprises dans leurs démarches de QVCT, de prévention et de bien-être au
+                  travail : formations, ateliers et événements qui placent l&apos;humain, le mouvement et la pédagogie
+                  participative au cœur de chaque intervention.
+                </p>
+                <a
+                  href="/about"
+                  className="inline-flex items-center gap-2 font-poppins font-semibold text-[15px] text-[#FFD25D] hover:gap-3 transition-all"
+                >
+                  Nous découvrir
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>
