@@ -6,10 +6,11 @@ import type { FormationData } from "@/lib/formations"
 const ACCENTS = {
   teal: {
     chip: "bg-[#57B3B7]/15 text-[#2c6e72]",
-    hover: "group-hover:text-[#57B3B7]",
+    hover: "group-hover:text-[#2c6e72]",
     arrow: "group-hover:bg-[#57B3B7] group-hover:text-white group-hover:border-[#57B3B7]",
     deco1: "bg-[#57B3B7]/15",
     deco2: "border-[#C9426B]/30",
+    sweep: "bg-[#57B3B7]/25",
   },
   coral: {
     chip: "bg-[#C9426B]/15 text-[#8f2b49]",
@@ -17,6 +18,7 @@ const ACCENTS = {
     arrow: "group-hover:bg-[#C9426B] group-hover:text-white group-hover:border-[#C9426B]",
     deco1: "bg-[#C9426B]/15",
     deco2: "border-[#57B3B7]/30",
+    sweep: "bg-[#C9426B]/20",
   },
   jaune: {
     chip: "bg-[#FFD25D]/30 text-[#061952]",
@@ -24,6 +26,7 @@ const ACCENTS = {
     arrow: "group-hover:bg-[#FFD25D] group-hover:text-[#061952] group-hover:border-[#FFD25D]",
     deco1: "bg-[#FFD25D]/25",
     deco2: "border-[#F4B609]/40",
+    sweep: "bg-[#FFD25D]/35",
   },
 }
 
@@ -70,9 +73,14 @@ export default function FormationsGrid({
             <Reveal key={f.slug} delay={(i % 3) * 100}>
               <a
                 href={`/${f.slug}`}
-                className="group flex flex-col h-full bg-white rounded-[22px] border border-gray-200 overflow-hidden shadow-[0_4px_18px_rgba(6,25,82,0.06)] transition-all duration-300 hover:shadow-[0_18px_50px_rgba(6,25,82,0.14)] hover:-translate-y-1.5"
+                className="group relative flex flex-col h-full bg-white rounded-[22px] border border-gray-200 overflow-hidden shadow-[0_4px_18px_rgba(6,25,82,0.06)] transition-all duration-300 hover:shadow-[0_18px_50px_rgba(6,25,82,0.14)] hover:-translate-y-1.5"
               >
-                <div className="relative h-48 overflow-hidden">
+                {/* Filtre coloré qui balaye la carte au survol */}
+                <span
+                  aria-hidden
+                  className={`absolute inset-0 z-10 pointer-events-none -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out ${a.sweep}`}
+                />
+                <div className="relative h-60 overflow-hidden">
                   <Image
                     src={f.heroImage}
                     alt={f.cardTitle}

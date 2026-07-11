@@ -45,12 +45,14 @@ const ACCENTS = {
     label: "Atelier QVCT",
     hover: "group-hover:text-[#2c6e72]",
     arrow: "group-hover:bg-[#57B3B7] group-hover:text-white group-hover:border-[#57B3B7]",
+    sweep: "bg-[#57B3B7]/25",
   },
   securite: {
     chip: "bg-[#FFD25D]/95 text-[#061952]",
     label: "Atelier Sécurité",
     hover: "group-hover:text-[#B8860B]",
     arrow: "group-hover:bg-[#FFD25D] group-hover:text-[#061952] group-hover:border-[#FFD25D]",
+    sweep: "bg-[#FFD25D]/35",
   },
 } as const
 
@@ -122,9 +124,14 @@ export default function AteliersGrid() {
               <Reveal key={a.slug} delay={(i % 4) * 80}>
                 <Link
                   href={a.slug}
-                  className="group flex flex-col h-full bg-white rounded-[22px] border border-gray-200 overflow-hidden shadow-[0_4px_18px_rgba(6,25,82,0.06)] transition-all duration-300 hover:shadow-[0_18px_50px_rgba(6,25,82,0.14)] hover:-translate-y-1.5"
+                  className="group relative flex flex-col h-full bg-white rounded-[22px] border border-gray-200 overflow-hidden shadow-[0_4px_18px_rgba(6,25,82,0.06)] transition-all duration-300 hover:shadow-[0_18px_50px_rgba(6,25,82,0.14)] hover:-translate-y-1.5"
                 >
-                  <div className="relative h-44 overflow-hidden">
+                  {/* Filtre coloré qui balaye la carte au survol */}
+                  <span
+                    aria-hidden
+                    className={`absolute inset-0 z-10 pointer-events-none -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out ${acc.sweep}`}
+                  />
+                  <div className="relative h-56 overflow-hidden">
                     <Image
                       src={a.image}
                       alt={a.title}

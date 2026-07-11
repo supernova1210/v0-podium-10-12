@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight, Check, Trophy, Smartphone, Drama, Quote } from "lucide-react"
+import { ArrowRight, Check, Trophy, Quote } from "lucide-react"
 import Reveal from "@/components/reveal"
 
 const CALENDLY = "https://calendly.com/nicolas-ofpodium/30min"
@@ -120,15 +120,6 @@ export default function AteliersFocus() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute z-20 -bottom-4 left-6 bg-white rounded-2xl px-4 py-3 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3">
-                  <span className="w-11 h-11 rounded-xl bg-[#061952] text-[#FFD25D] flex items-center justify-center flex-shrink-0">
-                    <Smartphone className="w-6 h-6" />
-                  </span>
-                  <div>
-                    <div className="font-poppins font-semibold text-sm text-[#061952] leading-tight">App connectée</div>
-                    <div className="text-xs text-gray-500">défis et scores en direct</div>
-                  </div>
-                </div>
               </div>
             </Reveal>
           </div>
@@ -156,15 +147,6 @@ export default function AteliersFocus() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                </div>
-                <div className="absolute z-20 -bottom-4 right-6 bg-white rounded-2xl px-4 py-3 shadow-[0_18px_50px_rgba(6,25,82,0.16)] flex items-center gap-3">
-                  <span className="w-11 h-11 rounded-xl bg-[#061952] text-[#57B3B7] flex items-center justify-center flex-shrink-0">
-                    <Drama className="w-6 h-6" />
-                  </span>
-                  <div>
-                    <div className="font-poppins font-semibold text-sm text-[#061952] leading-tight">Effet miroir</div>
-                    <div className="text-xs text-gray-500">on se reconnaît, on en parle</div>
-                  </div>
                 </div>
               </div>
             </Reveal>
