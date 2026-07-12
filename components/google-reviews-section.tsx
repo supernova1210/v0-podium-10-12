@@ -98,14 +98,14 @@ export default function GoogleReviewsSection() {
   const tripleReviews = [...reviews, ...reviews, ...reviews]
 
   return (
-    <section className="py-16 bg-gradient-to-br from-white via-gray-50/50 to-blue-50/20 overflow-hidden">
+    <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-6">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <GoogleLogo className="w-8 h-8" />
-              <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+              <span className="font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
                 Avis Google
               </span>
             </div>
@@ -141,7 +141,7 @@ export default function GoogleReviewsSection() {
             {tripleReviews.map((review, index) => (
               <div
                 key={`${review.name}-${index}`}
-                className="w-[380px] flex-shrink-0 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100/80"
+                className="w-[380px] flex-shrink-0 bg-white rounded-[22px] p-6 shadow-[0_4px_18px_rgba(6,25,82,0.08)] hover:shadow-[0_14px_40px_rgba(6,25,82,0.14)] transition-shadow duration-300 border border-gray-200"
               >
                 {/* Top row: Google logo + stars */}
                 <div className="flex items-center justify-between mb-4">
@@ -174,12 +174,11 @@ export default function GoogleReviewsSection() {
             href={GOOGLE_REVIEWS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 group relative overflow-hidden border-2 border-[#061952] text-[#061952] bg-transparent hover:bg-[#061952] hover:text-white focus:ring-[#061952] hover:shadow-lg px-8 py-4 text-base rounded-xl hover:scale-105 hover:-translate-y-1"
+            className="inline-flex items-center justify-center font-poppins font-semibold text-base px-8 py-4 rounded-full border-2 border-[#061952] text-[#061952] transition-all duration-300 hover:bg-[#061952] hover:text-white hover:-translate-y-0.5 group"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-            <GoogleLogo className="relative z-10 w-5 h-5 mr-3" />
-            <span className="relative z-10">Voir tous les avis Google</span>
-            <ExternalLink className="relative z-10 w-4 h-4 ml-3 transition-all duration-300 group-hover:translate-x-1" />
+            <GoogleLogo className="w-5 h-5 mr-3" />
+            <span>Voir tous les avis Google</span>
+            <ExternalLink className="w-4 h-4 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
         </div>
       </div>
