@@ -12,11 +12,11 @@ export default function NosCoequipiersSection() {
       linkedin: "https://www.linkedin.com/in/julien-patane-3b420b1a5/",
     },
     {
-      name: "Laure JACQUART",
+      name: "Laure PECLIER",
       description: "Coach Bien-être & formatrice",
       image: "/images/team/laure-jacquart.png",
       website: "https://naturalcorporate.com/",
-      linkedin: "https://www.linkedin.com/company/natural-corporate/",
+      linkedin: "https://www.linkedin.com/in/laurejacquart/",
     },
     {
       name: "Coline DUPRAS",

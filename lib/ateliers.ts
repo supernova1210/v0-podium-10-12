@@ -183,7 +183,7 @@ export const gesteEtPosturePetanque: AtelierData = {
   titleHighlight: "pétanque",
   heroDescription:
     "Un atelier ludique qui utilise la pétanque pour sensibiliser aux bonnes postures, comprendre l'impact des mauvaises habitudes et intégrer des corrections concrètes en s'amusant.",
-  heroImage: "/images/atelier-geste-et-posture-petanque-4.jpg",
+  heroImage: "/images/atelier-geste-et-posture-petanque-4.png",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "7m x 3m en intérieur ou extérieur, sur sol plat",
