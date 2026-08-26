@@ -5,6 +5,7 @@ import AteliersImmersifsSection from "../components/ateliers-immersifs-section"
 import ContextesInterventionSection from "../components/contextes-intervention-section"
 import FormationsPharesSection from "../components/formations-phares-section"
 import ServicesCardsSection from "../components/services-cards-section"
+import VideoSection from "../components/video-section"
 import GoogleReviewsSection from "../components/google-reviews-section"
 import NosReferencesSection from "../components/nos-references-section"
 import NousRejoindreSection from "../components/nous-rejoindre-section"
@@ -97,6 +98,17 @@ export default function Page() {
       <ContextesInterventionSection />
       <FormationsPharesSection />
       <ServicesCardsSection />
+      <VideoSection
+        eyebrow="En images"
+        title="Comment se passe une formation avec Podium ?"
+        subtitle="Plongez dans une séance de réveil musculaire animée par nos formateurs : du mouvement, du jeu et de l'énergie collective."
+        src="/videos/formation-reveil-musculaire-podium.mp4"
+        poster="/images/video-poster-reveil-musculaire.jpg"
+        videoTitle="Le réveil musculaire en action"
+        description="Découvrez en vidéo comment se déroule une formation Podium en entreprise : une séance de réveil musculaire ludique et participative pour prévenir les TMS."
+        duration="1 min 25"
+        isoDuration="PT1M25S"
+      />
       <GoogleReviewsSection />
       <NosReferencesSection />
       <NousRejoindreSection />

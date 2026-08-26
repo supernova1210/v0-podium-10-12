@@ -31,9 +31,23 @@ const navItems = [
   { id: "contact", label: "Contact", icon: "phone" },
 ]
 
+const videoSchema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "L'interview du dirigeant de Podium",
+  description:
+    "Nicolas Billard, dirigeant de Podium, présente la vision de l'organisme de formation : une pédagogie active et ludique inspirée du sport collectif, au service de la QVCT, de la prévention et de la sécurité en entreprise.",
+  thumbnailUrl: "https://www.ofpodium.fr/images/video-poster-interview-dirigeant.jpg",
+  contentUrl: "https://www.ofpodium.fr/videos/interview-dirigeant-podium.mp4",
+  uploadDate: "2026-07-06",
+  duration: "PT1M50S",
+  publisher: { "@type": "Organization", name: "Podium", url: "https://www.ofpodium.fr" },
+}
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
       <EvenementLocalNav items={navItems} />
 
       <div id="pourquoi-podium" className="scroll-mt-52">

@@ -8,6 +8,14 @@ export interface AtelierData {
   titleSuffix?: string
   heroDescription: string
   heroImage: string
+  video?: {
+    src: string
+    poster: string
+    title: string
+    duration: string
+    iso: string
+    description: string
+  }
   duree: string
   participants: string
   espace: string
@@ -267,6 +275,15 @@ export const reveilMusculaireLudique: AtelierData = {
   heroDescription:
     "Un atelier énergisant qui fait vivre l'échauffement en équipe, avec des jeux dynamiques et une ambiance musicale pour installer une routine collective et motivante.",
   heroImage: "/images/reveil-musculaire-podium-atelier.jpg",
+  video: {
+    src: "/videos/formation-reveil-musculaire-podium.mp4",
+    poster: "/images/video-poster-reveil-musculaire.jpg",
+    title: "Le réveil musculaire en action",
+    duration: "1 min 25",
+    iso: "PT1M25S",
+    description:
+      "Découvrez en vidéo un atelier réveil musculaire ludique animé par Podium en entreprise : jeux, mouvement et énergie collective.",
+  },
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "6m x 6m en intérieur ou extérieur, sur sol plat",

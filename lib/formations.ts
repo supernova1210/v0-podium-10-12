@@ -8,6 +8,14 @@ export interface FormationData {
   titleSuffix?: string
   heroDescription: string
   heroImage: string
+  video?: {
+    src: string
+    poster: string
+    title: string
+    duration: string
+    iso: string
+    description: string
+  }
   duree: string
   participantsFull: string
   participantsTitle: string
@@ -60,6 +68,15 @@ export const reveilMusculaire: FormationData = {
   heroDescription:
     "Acquérez les compétences pour concevoir et animer des séances collectives de réveil musculaire et d'échauffement en entreprise, et prévenir durablement les TMS.",
   heroImage: "/images/reveil-musculaire-podium-atelier.jpg",
+  video: {
+    src: "/videos/formation-reveil-musculaire-podium.mp4",
+    poster: "/images/video-poster-reveil-musculaire.jpg",
+    title: "Le réveil musculaire en action",
+    duration: "1 min 25",
+    iso: "PT1M25S",
+    description:
+      "Découvrez en vidéo une séance de réveil musculaire animée par Podium en entreprise : jeux, mouvement et énergie collective pour prévenir les TMS.",
+  },
   duree: "7 heures",
   participantsFull: "6 à 12 personnes",
   participantsTitle: "6 à 12",

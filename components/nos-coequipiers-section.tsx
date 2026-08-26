@@ -1,5 +1,6 @@
 import { Linkedin } from "lucide-react"
 import Image from "next/image"
+import VideoPlayer from "@/components/video-player"
 
 export default function NosCoequipiersSection() {
   const teamMembers = [
@@ -98,6 +99,18 @@ export default function NosCoequipiersSection() {
                 Apprendre à mieux se connaître, se protéger et avancer ensemble : voilà l'essence même d'O.F PODIUM.
               </p>
             </div>
+          </div>
+
+          {/* Interview vidéo du dirigeant */}
+          <div className="mt-12 max-w-2xl mx-auto">
+            <VideoPlayer
+              src="/videos/interview-dirigeant-podium.mp4"
+              poster="/images/video-poster-interview-dirigeant.jpg"
+              title="L'interview du dirigeant"
+              duration="1 min 50"
+              expandOnPlay
+              miniPlayerOnScroll
+            />
           </div>
         </div>
 

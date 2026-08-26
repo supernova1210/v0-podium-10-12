@@ -1,5 +1,6 @@
 import AtelierHero from "./atelier-hero"
 import AtelierApproche from "./atelier-approche"
+import VideoSection from "@/components/video-section"
 import AtelierProgramme from "./atelier-programme"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import type { AtelierData } from "@/lib/ateliers"
@@ -42,6 +43,18 @@ export default function AtelierPage({ data }: { data: AtelierData }) {
         paragraphs={data.approcheParagraphs}
         stats={data.stats}
       />
+      {data.video ? (
+        <VideoSection
+          title="L'atelier en vidéo"
+          src={data.video.src}
+          poster={data.video.poster}
+          videoTitle={data.video.title}
+          description={data.video.description}
+          duration={data.video.duration}
+          isoDuration={data.video.iso}
+          dotColor={data.category === "securite" ? "bg-[#FFD25D]" : "bg-[#57B3B7]"}
+        />
+      ) : null}
       <AtelierProgramme
         accent={accent}
         subtitle={data.heroDescription}

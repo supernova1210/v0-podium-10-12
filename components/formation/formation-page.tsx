@@ -1,5 +1,6 @@
 import FormationHero from "./formation-hero"
 import FormationApproche from "./formation-approche"
+import VideoSection from "@/components/video-section"
 import FormationProgramme from "./formation-programme"
 import FormationFAQ from "./formation-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
@@ -38,6 +39,17 @@ export default function FormationPage({ data }: { data: FormationData }) {
         paragraphs={data.approcheParagraphs}
         stats={data.stats}
       />
+      {data.video ? (
+        <VideoSection
+          title="La formation en vidéo"
+          src={data.video.src}
+          poster={data.video.poster}
+          videoTitle={data.video.title}
+          description={data.video.description}
+          duration={data.video.duration}
+          isoDuration={data.video.iso}
+        />
+      ) : null}
       <FormationProgramme
         subtitle={data.programmeSubtitle}
         objectifs={data.objectifs}
