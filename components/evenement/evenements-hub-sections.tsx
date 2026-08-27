@@ -17,7 +17,7 @@ const evenements = [
     title: "Journée RSE",
     description:
       "Des ateliers participatifs pour engager concrètement vos équipes dans votre démarche de responsabilité sociétale.",
-    image: "/interactive-workshop-with-team-collaboration.png",
+    image: "/images/podium-olympiade-equipe.webp",
     href: "/nos-evenements/journee-rse",
   },
   {
@@ -125,8 +125,8 @@ const details = [
     title: "Journée RSE",
     description:
       "Engagez concrètement vos équipes dans votre démarche de responsabilité sociétale. Podium et l'Agence Déclic co-construisent votre journée RSE avec des ateliers participatifs adaptés à vos enjeux : environnement, inclusion, handicap, bien-être au travail. Un format modulable, animé dans vos locaux à Lyon et en Auvergne-Rhône-Alpes.",
-    image: "/interactive-workshop-with-team-collaboration.png",
-    imageAlt: "Atelier RSE collaboratif animé par Podium en entreprise",
+    image: "/images/podium-olympiade-equipe.webp",
+    imageAlt: "Équipe mobilisée lors d'une journée RSE animée par Podium",
     href: "/nos-evenements/journee-rse",
     deco: "bg-[#57B3B7]",
     chip: "bg-[#57B3B7]/90 text-white",

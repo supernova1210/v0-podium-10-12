@@ -77,8 +77,8 @@ export default function PourquoiPodiumAboutSection() {
             <div className="relative z-10 grid grid-cols-2 gap-3.5 h-[380px] lg:h-[460px]">
               <div className="relative row-span-2 rounded-[24px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)]">
                 <Image
-                  src="/images/atelier-coequipiers-min.jpg"
-                  alt="L'équipe Podium en atelier"
+                  src="/images/podium-atelier-escape-game.webp"
+                  alt="Formatrice Podium animant une session en entreprise"
                   fill
                   className="object-cover"
                   priority
@@ -86,8 +86,8 @@ export default function PourquoiPodiumAboutSection() {
               </div>
               <div className="relative rounded-[24px] overflow-hidden shadow-[0_18px_50px_rgba(6,25,82,0.12)]">
                 <Image
-                  src="/images/accompagnement-podium-coaching.jpg"
-                  alt="Accompagnement et coaching Podium"
+                  src="/images/atelier-coequipiers-min.jpg"
+                  alt="L'équipe Podium"
                   fill
                   className="object-cover"
                 />

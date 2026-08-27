@@ -83,8 +83,8 @@ export default function AteliersHubHero() {
               </div>
               <div className="relative rounded-[24px] overflow-hidden shadow-[0_18px_50px_rgba(6,25,82,0.12)]">
                 <Image
-                  src="/images/page-presentation-atelier-podium-2.jpg"
-                  alt="Atelier prévention ludique"
+                  src="/images/podium-atelier-cohesion-concentration.webp"
+                  alt="Atelier de cohésion et de concentration animé par Podium"
                   fill
                   className="object-cover"
                 />

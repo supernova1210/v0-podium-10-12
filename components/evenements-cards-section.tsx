@@ -14,7 +14,7 @@ const services = [
     id: "journeerse",
     title: "Journée RSE",
     subline: "Découvrez notre programme et nos ateliers.",
-    image: "/interactive-workshop-with-team-collaboration.png",
+    image: "/images/podium-olympiade-equipe.webp",
     href: "/nos-evenements/journee-rse",
   },
   {
