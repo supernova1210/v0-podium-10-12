@@ -26,6 +26,7 @@ const menuItems = [
   { label: "Formations", href: null, hasDropdown: true, match: "/formation" },
   { label: "Ateliers", href: null, hasDropdown: true, match: "/nos-ateliers" },
   { label: "Événements", href: null, hasDropdown: true, match: "/nos-evenements" },
+  { label: "Ressources", href: "/ressources", match: "/ressources" },
 ]
 
 const formationsDropdown = [
@@ -305,6 +306,14 @@ export default function Navigation() {
             className="block text-lg font-poppins font-semibold text-[#061952] hover:text-[#FFD25D] transition-colors py-2"
           >
             Nous découvrir
+          </Link>
+
+          <Link
+            href="/ressources"
+            onClick={() => setIsMenuOpen(false)}
+            className="block text-lg font-poppins font-semibold text-[#061952] hover:text-[#FFD25D] transition-colors py-2"
+          >
+            Ressources
           </Link>
 
           <div>

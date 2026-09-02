@@ -16,6 +16,13 @@ export interface FormationData {
     iso: string
     description: string
   }
+  ressource?: {
+    href: string
+    title: string
+    description: string
+    image: string
+    readingTime: string
+  }
   duree: string
   participantsFull: string
   participantsTitle: string
@@ -76,6 +83,14 @@ export const reveilMusculaire: FormationData = {
     iso: "PT1M25S",
     description:
       "Découvrez en vidéo une séance de réveil musculaire animée par Podium en entreprise : jeux, mouvement et énergie collective pour prévenir les TMS.",
+  },
+  ressource: {
+    href: "/ressources/reveil-musculaire-en-entreprise",
+    title: "Le réveil musculaire en entreprise : le guide complet",
+    description:
+      "Pourquoi s'échauffer avant de travailler, ce que ça change vraiment sur les TMS, et la routine complète en 7 exercices à faire debout ou assis.",
+    image: "/images/triptyque-reveil-musculaire-volet-5.webp",
+    readingTime: "6 min de lecture",
   },
   duree: "7 heures",
   participantsFull: "6 à 12 personnes",
@@ -147,6 +162,14 @@ export const gesteEtPosture: FormationData = {
   heroDescription:
     "Apprenez à comprendre, évaluer et améliorer durablement vos postures de travail pour réduire les risques professionnels et préserver votre corps.",
   heroImage: "/images/atelier-geste-et-posture-petanque-min.jpg",
+  ressource: {
+    href: "/ressources/gestes-et-postures",
+    title: "Gestes et postures : les 5 règles de base",
+    description:
+      "Se positionner, éviter les torsions, garder le dos droit, fléchir les jambes, rapprocher la charge : le mémo complet en accès libre.",
+    image: "/images/atelier-geste-et-posture-petanque-4.png",
+    readingTime: "5 min de lecture",
+  },
   duree: "3,5 heures",
   participantsFull: "6 à 12 personnes",
   participantsTitle: "6 à 12",

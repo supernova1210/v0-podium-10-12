@@ -16,6 +16,13 @@ export interface AtelierData {
     iso: string
     description: string
   }
+  ressource?: {
+    href: string
+    title: string
+    description: string
+    image: string
+    readingTime: string
+  }
   duree: string
   participants: string
   espace: string
@@ -184,6 +191,14 @@ export const gesteEtPosturePetanque: AtelierData = {
   heroDescription:
     "Un atelier ludique qui utilise la pétanque pour sensibiliser aux bonnes postures, comprendre l'impact des mauvaises habitudes et intégrer des corrections concrètes en s'amusant.",
   heroImage: "/images/atelier-geste-et-posture-petanque-4.png",
+  ressource: {
+    href: "/ressources/gestes-et-postures",
+    title: "Gestes et postures : les 5 règles de base",
+    description:
+      "Se positionner, éviter les torsions, garder le dos droit, fléchir les jambes, rapprocher la charge : le mémo complet en accès libre.",
+    image: "/images/atelier-geste-et-posture-petanque-4.png",
+    readingTime: "5 min de lecture",
+  },
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "7m x 3m en intérieur ou extérieur, sur sol plat",
@@ -275,6 +290,14 @@ export const reveilMusculaireLudique: AtelierData = {
   heroDescription:
     "Un atelier énergisant qui fait vivre l'échauffement en équipe, avec des jeux dynamiques et une ambiance musicale pour installer une routine collective et motivante.",
   heroImage: "/images/reveil-musculaire-podium-atelier.jpg",
+  ressource: {
+    href: "/ressources/reveil-musculaire-en-entreprise",
+    title: "Le réveil musculaire en entreprise : le guide complet",
+    description:
+      "Pourquoi s'échauffer avant de travailler, ce que ça change vraiment sur les TMS, et la routine complète en 7 exercices à faire debout ou assis.",
+    image: "/images/triptyque-reveil-musculaire-volet-5.webp",
+    readingTime: "6 min de lecture",
+  },
   video: {
     src: "/videos/formation-reveil-musculaire-podium.mp4",
     poster: "/images/video-poster-reveil-musculaire.jpg",

@@ -19,6 +19,14 @@ const colonnes = [
     ],
   },
   {
+    title: "Ressources",
+    links: [
+      { label: "Toutes nos ressources", href: "/ressources" },
+      { label: "Le réveil musculaire", href: "/ressources/reveil-musculaire-en-entreprise" },
+      { label: "Gestes et postures", href: "/ressources/gestes-et-postures" },
+    ],
+  },
+  {
     title: "Événements",
     links: [
       { label: "Journée Sécurité", href: "/nos-evenements/journee-securite" },
@@ -40,7 +48,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-8">
-        <div className="grid gap-10 lg:gap-8 lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 lg:gap-8 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
           {/* Marque + contact */}
           <div>
             <Image

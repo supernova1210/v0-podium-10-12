@@ -4,6 +4,7 @@ const BASE_URL = "https://www.ofpodium.fr"
 
 const mainRoutes = [
   "/",
+  "/ressources",
   "/about",
   "/contact",
   "/nos-ateliers",
@@ -27,6 +28,11 @@ const formationRoutes = [
   "/formation-qvct-sante-mentale-situations-dangereuses",
   "/formation-qvct-sante-mentale-detecter-mal-etre",
   "/formation-qvct-valoriser-posture-professionnelle",
+]
+
+const ressourceRoutes = [
+  "/ressources/reveil-musculaire-en-entreprise",
+  "/ressources/gestes-et-postures",
 ]
 
 const evenementRoutes = [
@@ -78,6 +84,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
     ...evenementRoutes.map((route) => ({
+      url: `${BASE_URL}${route}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...ressourceRoutes.map((route) => ({
       url: `${BASE_URL}${route}`,
       lastModified,
       changeFrequency: "monthly" as const,
