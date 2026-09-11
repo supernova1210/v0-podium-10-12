@@ -17,11 +17,13 @@ import {
   reveilTraumatismes,
   reveilPiliers,
   reveilVolets,
+  RESSOURCES_PUBLIQUES,
 } from "@/lib/ressources"
 
 const URL = `https://www.ofpodium.fr/ressources/${meta.slug}`
 
 export const metadata: Metadata = {
+  robots: { index: RESSOURCES_PUBLIQUES, follow: RESSOURCES_PUBLIQUES },
   title: meta.metaTitle,
   description: meta.metaDescription,
   alternates: { canonical: URL },

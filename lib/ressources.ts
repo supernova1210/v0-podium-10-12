@@ -1,3 +1,13 @@
+/**
+ * Interrupteur de publication de la rubrique Ressources.
+ *
+ * false  = pages en ligne mais invisibles : absentes du menu, du footer, du sitemap
+ *          et des pages formation/atelier, et marquées "noindex" pour Google.
+ *          Elles restent accessibles par URL directe (partage privé).
+ * true   = rubrique publique et indexable.
+ */
+export const RESSOURCES_PUBLIQUES = false
+
 export interface RessourceMeta {
   slug: string
   category: "securite" | "qvct"

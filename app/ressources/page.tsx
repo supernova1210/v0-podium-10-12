@@ -4,9 +4,10 @@ import Link from "next/link"
 import { ArrowRight, BookOpen, Clock, Download } from "lucide-react"
 import Reveal from "@/components/reveal"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
-import { allRessources } from "@/lib/ressources"
+import { allRessources, RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 
 export const metadata: Metadata = {
+  robots: { index: RESSOURCES_PUBLIQUES, follow: RESSOURCES_PUBLIQUES },
   title: "Ressources gratuites QVCT, prévention et sécurité au travail",
   description:
     "Les mémos et guides pratiques de Podium en accès libre : réveil musculaire en entreprise, gestes et postures, prévention des TMS. Les supports que nous remettons à nos participants.",

@@ -1,10 +1,10 @@
 import type { MetadataRoute } from "next"
+import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 
 const BASE_URL = "https://www.ofpodium.fr"
 
 const mainRoutes = [
   "/",
-  "/ressources",
   "/about",
   "/contact",
   "/nos-ateliers",
@@ -30,10 +30,9 @@ const formationRoutes = [
   "/formation-qvct-valoriser-posture-professionnelle",
 ]
 
-const ressourceRoutes = [
-  "/ressources/reveil-musculaire-en-entreprise",
-  "/ressources/gestes-et-postures",
-]
+const ressourceRoutes = RESSOURCES_PUBLIQUES
+  ? ["/ressources", "/ressources/reveil-musculaire-en-entreprise", "/ressources/gestes-et-postures"]
+  : []
 
 const evenementRoutes = [
   "/nos-evenements/journee-rse",

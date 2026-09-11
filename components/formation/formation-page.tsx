@@ -2,6 +2,7 @@ import FormationHero from "./formation-hero"
 import FormationApproche from "./formation-approche"
 import VideoSection from "@/components/video-section"
 import RessourceTeaser from "@/components/ressource/ressource-teaser"
+import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 import FormationProgramme from "./formation-programme"
 import FormationFAQ from "./formation-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
@@ -62,7 +63,7 @@ export default function FormationPage({ data }: { data: FormationData }) {
         pdfHref={data.pdf}
       />
       <FormationFAQ faqData={data.faq} />
-      {data.ressource ? (
+      {RESSOURCES_PUBLIQUES && data.ressource ? (
         <RessourceTeaser
           href={data.ressource.href}
           title={data.ressource.title}

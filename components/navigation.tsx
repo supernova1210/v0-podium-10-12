@@ -20,14 +20,18 @@ import {
   CalendarDays,
 } from "lucide-react"
 import { PodiumButton } from "@/components/ui/podium-button"
+import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 
 const menuItems = [
   { label: "Nous découvrir", href: "/about", match: "/about" },
   { label: "Formations", href: null, hasDropdown: true, match: "/formation" },
   { label: "Ateliers", href: null, hasDropdown: true, match: "/nos-ateliers" },
   { label: "Événements", href: null, hasDropdown: true, match: "/nos-evenements" },
-  { label: "Ressources", href: "/ressources", match: "/ressources" },
 ]
+
+if (RESSOURCES_PUBLIQUES) {
+  menuItems.push({ label: "Ressources", href: "/ressources", match: "/ressources" })
+}
 
 const formationsDropdown = [
   {
@@ -308,13 +312,15 @@ export default function Navigation() {
             Nous découvrir
           </Link>
 
-          <Link
-            href="/ressources"
-            onClick={() => setIsMenuOpen(false)}
-            className="block text-lg font-poppins font-semibold text-[#061952] hover:text-[#FFD25D] transition-colors py-2"
-          >
-            Ressources
-          </Link>
+          {RESSOURCES_PUBLIQUES ? (
+            <Link
+              href="/ressources"
+              onClick={() => setIsMenuOpen(false)}
+              className="block text-lg font-poppins font-semibold text-[#061952] hover:text-[#FFD25D] transition-colors py-2"
+            >
+              Ressources
+            </Link>
+          ) : null}
 
           <div>
             <div className="text-xs font-poppins font-semibold text-gray-400 uppercase tracking-wider mb-3">Formations</div>

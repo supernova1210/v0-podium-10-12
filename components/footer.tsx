@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Phone, Mail, MapPin, Linkedin } from "lucide-react"
+import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 
 const colonnes = [
   {
@@ -16,14 +17,6 @@ const colonnes = [
       { label: "Tous nos ateliers", href: "/nos-ateliers" },
       { label: "Escape Game Sécurité", href: "/atelier/escape-game-securite" },
       { label: "Théâtre d'impro santé mentale", href: "/atelier/theatre-impro-sante-mentale" },
-    ],
-  },
-  {
-    title: "Ressources",
-    links: [
-      { label: "Toutes nos ressources", href: "/ressources" },
-      { label: "Le réveil musculaire", href: "/ressources/reveil-musculaire-en-entreprise" },
-      { label: "Gestes et postures", href: "/ressources/gestes-et-postures" },
     ],
   },
   {
@@ -48,7 +41,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-8">
-        <div className="grid gap-10 lg:gap-8 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
+        <div className={`grid gap-10 lg:gap-8 ${RESSOURCES_PUBLIQUES ? "lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]" : "lg:grid-cols-[1.2fr_1fr_1fr_1fr]"}`}>
           {/* Marque + contact */}
           <div>
             <Image
@@ -88,7 +81,20 @@ export default function Footer() {
           </div>
 
           {/* Colonnes de navigation */}
-          {colonnes.map((col) => (
+          {(RESSOURCES_PUBLIQUES
+            ? [
+                ...colonnes,
+                {
+                  title: "Ressources",
+                  links: [
+                    { label: "Toutes nos ressources", href: "/ressources" },
+                    { label: "Le réveil musculaire", href: "/ressources/reveil-musculaire-en-entreprise" },
+                    { label: "Gestes et postures", href: "/ressources/gestes-et-postures" },
+                  ],
+                },
+              ]
+            : colonnes
+          ).map((col) => (
             <div key={col.title}>
               <h3 className="font-poppins font-semibold text-sm tracking-[0.12em] uppercase text-[#FFD25D] mb-4">
                 {col.title}

@@ -2,6 +2,7 @@ import AtelierHero from "./atelier-hero"
 import AtelierApproche from "./atelier-approche"
 import VideoSection from "@/components/video-section"
 import RessourceTeaser from "@/components/ressource/ressource-teaser"
+import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 import AtelierProgramme from "./atelier-programme"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import type { AtelierData } from "@/lib/ateliers"
@@ -66,7 +67,7 @@ export default function AtelierPage({ data }: { data: AtelierData }) {
         modalites={modalites}
         pdfHref={data.pdf}
       />
-      {data.ressource ? (
+      {RESSOURCES_PUBLIQUES && data.ressource ? (
         <RessourceTeaser
           href={data.ressource.href}
           title={data.ressource.title}
