@@ -9,7 +9,7 @@ import FormationFAQ from "@/components/formation/formation-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 
 export const metadata: Metadata = {
-  title: "Semaine QVCT en entreprise Lyon & Rhône-Alpes | Podium",
+  title: "Semaine QVCT en entreprise Lyon & Rhône-Alpes",
   description:
     "Podium organise votre semaine QVCT sur mesure à Lyon et en région Auvergne-Rhône-Alpes. Ateliers participatifs, prévention des TMS, bien-être, cohésion d'équipe. Intervention directement dans vos locaux.",
   alternates: {

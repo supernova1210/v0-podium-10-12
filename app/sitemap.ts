@@ -67,36 +67,29 @@ const atelierRoutes = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date()
-
   return [
     ...mainRoutes.map((route) => ({
       url: `${BASE_URL}${route === "/" ? "" : route}`,
-      lastModified,
       changeFrequency: "weekly" as const,
       priority: route === "/" ? 1 : 0.9,
     })),
     ...formationRoutes.map((route) => ({
       url: `${BASE_URL}${route}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
     ...evenementRoutes.map((route) => ({
       url: `${BASE_URL}${route}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
     ...ressourceRoutes.map((route) => ({
       url: `${BASE_URL}${route}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
     ...atelierRoutes.map((route) => ({
       url: `${BASE_URL}${route}`,
-      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

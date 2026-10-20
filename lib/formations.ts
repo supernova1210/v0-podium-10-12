@@ -67,7 +67,7 @@ const RPS_SUIVI =
 export const reveilMusculaire: FormationData = {
   slug: "formation-securite-reveil-musculaire",
   category: "securite",
-  metaTitle: "Formation Réveil Musculaire | Podium",
+  metaTitle: "Formation Réveil Musculaire",
   metaDescription:
     "Formez vos ambassadeurs réveil musculaire : concevoir et animer des séances d'échauffement ludiques en entreprise pour prévenir les TMS.",
   heroEyebrow: "Formation Sécurité",
@@ -154,7 +154,7 @@ export const reveilMusculaire: FormationData = {
 export const gesteEtPosture: FormationData = {
   slug: "formation-securite-geste-et-posture",
   category: "securite",
-  metaTitle: "Formation Geste et Posture | Podium",
+  metaTitle: "Formation Geste et Posture",
   metaDescription:
     "Comprendre, évaluer et améliorer durablement ses postures de travail pour réduire les risques professionnels et les TMS.",
   heroEyebrow: "Formation Sécurité",
@@ -228,7 +228,7 @@ export const gesteEtPosture: FormationData = {
 export const animationQuartHeure: FormationData = {
   slug: "formation-securite-animation-quart-heure",
   category: "securite",
-  metaTitle: "Formation Animation ¼h Sécurité | Podium",
+  metaTitle: "Formation Animation ¼h Sécurité",
   metaDescription:
     "Concevoir, préparer et animer un quart d'heure sécurité clair, engageant et opérationnel pour développer une culture prévention durable.",
   heroEyebrow: "Formation Sécurité",
@@ -302,7 +302,7 @@ export const animationQuartHeure: FormationData = {
 export const gestesQuiSauvent: FormationData = {
   slug: "formation-securite-gestes-qui-sauvent",
   category: "securite",
-  metaTitle: "Formation Sensibilisation aux Gestes Qui Sauvent | Podium",
+  metaTitle: "Formation Sensibilisation aux Gestes Qui Sauvent",
   metaDescription:
     "Sur une courte durée, acquérir et maîtriser les gestes de secours essentiels pour porter les premiers secours à une victime.",
   heroEyebrow: "Formation Sécurité · Certifiante",
@@ -372,7 +372,7 @@ export const gestesQuiSauvent: FormationData = {
 export const premiersSecoursCitoyen: FormationData = {
   slug: "formation-securite-premiers-secours-citoyen",
   category: "securite",
-  metaTitle: "Formation Premiers Secours Citoyen | Podium",
+  metaTitle: "Formation Premiers Secours Citoyen",
   metaDescription:
     "Apprendre à protéger, alerter et intervenir face à une situation d'urgence. Certificat de compétences PSC.",
   heroEyebrow: "Formation Sécurité · Certifiante",
@@ -452,7 +452,7 @@ export const premiersSecoursCitoyen: FormationData = {
 export const lancerDynamiserReunion: FormationData = {
   slug: "formation-qvct-lancer-dynamiser-reunion",
   category: "qvct",
-  metaTitle: "Formation Lancer et dynamiser une réunion | Podium",
+  metaTitle: "Formation Lancer et dynamiser une réunion",
   metaDescription:
     "Lancer ses réunions avec un icebreaker qui capte l'attention, crée du lien et met de l'énergie dès les premières minutes.",
   heroEyebrow: "Formation QVCT",
@@ -524,7 +524,7 @@ export const lancerDynamiserReunion: FormationData = {
 export const techniqueAnimation: FormationData = {
   slug: "formation-qvct-technique-animation",
   category: "qvct",
-  metaTitle: "Formation Technique d'animation | Podium",
+  metaTitle: "Formation Technique d'animation",
   metaDescription:
     "Donner vie à ses réunions pour capter l'attention, créer du lien et garder le cap jusqu'aux résultats.",
   heroEyebrow: "Formation QVCT",
@@ -597,7 +597,7 @@ export const techniqueAnimation: FormationData = {
 export const communicationNonViolente: FormationData = {
   slug: "formation-qvct-communication-non-violente",
   category: "qvct",
-  metaTitle: "Formation Communication Non Violente | Podium",
+  metaTitle: "Formation Communication Non Violente",
   metaDescription:
     "Renforcer ses compétences relationnelles pour des échanges respectueux et constructifs, même en situation de tension.",
   heroEyebrow: "Formation QVCT",
@@ -666,7 +666,7 @@ export const communicationNonViolente: FormationData = {
 export const santeMentaleModule1: FormationData = {
   slug: "formation-qvct-sante-mentale-agressivite-verbale",
   category: "qvct",
-  metaTitle: "Formation Santé Mentale · Module 1 : Gestion de l'agressivité verbale | Podium",
+  metaTitle: "Formation Santé Mentale · Module 1 : Gestion de l'agressivité verbale",
   metaDescription:
     "Prévenir les escalades verbales et garantir un cadre d'intervention sécurisant, en particulier pour les professionnels du domicile.",
   heroEyebrow: "Formation QVCT · Santé mentale",
@@ -733,7 +733,7 @@ export const santeMentaleModule1: FormationData = {
 export const santeMentaleModule2: FormationData = {
   slug: "formation-qvct-sante-mentale-situations-dangereuses",
   category: "qvct",
-  metaTitle: "Formation Santé Mentale · Module 2 : Se préserver face aux situations dangereuses | Podium",
+  metaTitle: "Formation Santé Mentale · Module 2 : Se préserver face aux situations dangereuses",
   metaDescription:
     "Adopter une posture relationnelle régulée et sécurisante pour se préserver face à l'agressivité verbale.",
   heroEyebrow: "Formation QVCT · Santé mentale",
@@ -800,7 +800,7 @@ export const santeMentaleModule2: FormationData = {
 export const santeMentaleModule3: FormationData = {
   slug: "formation-qvct-sante-mentale-detecter-mal-etre",
   category: "qvct",
-  metaTitle: "Formation Santé Mentale · Module 3 : Détecter une personne en détresse | Podium",
+  metaTitle: "Formation Santé Mentale · Module 3 : Détecter une personne en détresse",
   metaDescription:
     "Repérer les premiers signes de mal-être, écouter avec justesse et réagir de manière adaptée pour prévenir les risques psychosociaux.",
   heroEyebrow: "Formation QVCT · Santé mentale",
@@ -867,7 +867,7 @@ export const santeMentaleModule3: FormationData = {
 export const valoriserPosture: FormationData = {
   slug: "formation-qvct-valoriser-posture-professionnelle",
   category: "qvct",
-  metaTitle: "Formation Valoriser sa posture professionnelle | Podium",
+  metaTitle: "Formation Valoriser sa posture professionnelle",
   metaDescription:
     "Découvrir les codes de l'entreprise et apprendre à se positionner vis-à-vis de ses collègues et de sa hiérarchie.",
   heroEyebrow: "Formation QVCT",

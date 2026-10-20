@@ -7,7 +7,7 @@ import FormationPscFAQ from "@/components/formation-psc-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 
 export const metadata: Metadata = {
-  title: "Formation Premiers Secours Citoyen | Podium",
+  title: "Formation Premiers Secours Citoyen",
   description:
     "Donnez à vos équipes les gestes qui sauvent avec la formation Premiers Secours Citoyen : protéger, alerter et intervenir face à une situation d'urgence. Certificat de compétences PSC.",
   alternates: {
