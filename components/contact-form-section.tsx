@@ -7,7 +7,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { PodiumButton } from "@/components/ui/podium-button"
-import { CheckCircle, Send, ArrowRight } from "lucide-react"
+import { CheckCircle, Send, ArrowRight, AlertCircle } from "lucide-react"
+import Link from "next/link"
+import { trackEvent } from "@/lib/analytics"
 
 interface ContactFormData {
   nom: string
@@ -15,11 +17,13 @@ interface ContactFormData {
   email: string
   entreprise: string
   message: string
+  website?: string
 }
 
 export function ContactFormSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [hasError, setHasError] = useState(false)
 
   const {
     register,
@@ -30,9 +34,10 @@ export function ContactFormSection() {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
+    setHasError(false)
 
     try {
-      const response = await fetch("https://formspree.io/f/xrbqgjjw", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,11 +46,15 @@ export function ContactFormSection() {
       })
 
       if (response.ok) {
+        trackEvent("generate_lead", { form: "contact" })
         setIsSubmitted(true)
         reset()
+      } else {
+        setHasError(true)
       }
     } catch (error) {
       console.error("Error submitting form:", error)
+      setHasError(true)
     } finally {
       setIsSubmitting(false)
     }
@@ -160,6 +169,28 @@ export function ContactFormSection() {
                   {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
                 </div>
 
+                {/* Pot de miel anti-robots : invisible pour les humains */}
+                <div aria-hidden="true" className="absolute -left-[9999px] w-px h-px overflow-hidden">
+                  <label htmlFor="website">Ne pas remplir</label>
+                  <input id="website" type="text" tabIndex={-1} autoComplete="off" {...register("website")} />
+                </div>
+
+                {hasError ? (
+                  <div
+                    role="alert"
+                    className="flex items-start gap-3 rounded-2xl border border-[#C9426B]/25 bg-[#C9426B]/[0.06] px-4 py-3.5 text-[15px] text-[#061952]"
+                  >
+                    <AlertCircle className="w-5 h-5 text-[#C9426B] shrink-0 mt-0.5" />
+                    <p>
+                      L&apos;envoi n&apos;a pas abouti. Réessayez dans un instant ou appelez-nous directement au{" "}
+                      <a href="tel:0770003672" className="font-semibold underline underline-offset-2">
+                        07 70 00 36 72
+                      </a>
+                      .
+                    </p>
+                  </div>
+                ) : null}
+
                 <div className="pt-4">
                   <PodiumButton
                     type="submit"
@@ -179,6 +210,13 @@ export function ContactFormSection() {
                       </div>
                     )}
                   </PodiumButton>
+                  <p className="mt-4 text-xs text-gray-500 leading-relaxed text-center">
+                    Vos informations servent uniquement à répondre à votre demande. Elles ne sont ni revendues ni
+                    utilisées à d&apos;autres fins.{" "}
+                    <Link href="/mentions-legales#donnees" className="underline underline-offset-2 hover:text-[#061952]">
+                      En savoir plus
+                    </Link>
+                  </p>
                 </div>
               </form>
             </CardContent>

@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Phone, Mail, MapPin, Linkedin } from "lucide-react"
 import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
+import CookieSettingsButton from "@/components/cookie-settings-button"
 
 const colonnes = [
   {
@@ -122,6 +123,8 @@ export default function Footer() {
             <Link href="/mentions-legales" className="text-[#FFD25D] hover:underline">
               Mentions légales &amp; RGPD
             </Link>
+            <span className="mx-2 text-white/30">·</span>
+            <CookieSettingsButton className="text-[#FFD25D] hover:underline" />
           </p>
           <p>
             Réalisation <span className="text-[#FFD25D]">Podium®</span>

@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import SecondaryNav from "../components/secondary-nav"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
+import CookieConsent from "../components/cookie-consent"
 import "./globals.css"
 
 const inter = Inter({
@@ -138,6 +139,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Analytics />
+        <CookieConsent />
       </body>
     </html>
   )
