@@ -135,3 +135,11 @@
 @media (prefers-reduced-motion: reduce) {
   .podium-cookie-in { animation: none; }
 }
+
+/* Tailwind v4 ne met plus le curseur "main" sur les boutons : on le rétablit partout */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+}
