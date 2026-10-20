@@ -60,10 +60,7 @@ const atelierRoutes = [
   "/atelier/secourir-sans-panique",
   "/atelier/sensibiliser-au-handicap",
   "/atelier/sensibiliser-au-handicap-visuel",
-  "/atelier/sophrologie",
-  "/atelier/sport-transfert-savoir-etre",
   "/atelier/theatre-impro-sante-mentale",
-  "/atelier/valorisation-des-savoir-etre",
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -53,6 +53,28 @@ const nextConfig = {
         destination: "/formation-qvct-valoriser-posture-professionnelle",
         permanent: true,
       },
+      // Anciens ateliers hors catalogue 2026 (validé avec le client)
+      {
+        source: "/atelier/sophrologie",
+        destination: "/atelier/gestion-des-emotions-sophrologie",
+        permanent: true,
+      },
+      {
+        source: "/atelier/sport-transfert-savoir-etre",
+        destination: "/atelier/posture-pro-defi-flash",
+        permanent: true,
+      },
+      {
+        source: "/atelier/valorisation-des-savoir-etre",
+        destination: "/atelier/posture-pro-defi-flash",
+        permanent: true,
+      },
+      // Ancienne page modèle héritée de v0
+      {
+        source: "/atelier/template",
+        destination: "/nos-ateliers",
+        permanent: true,
+      },
     ]
   },
 }

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/atelier/template",
+      disallow: "/api/",
     },
     sitemap: "https://www.ofpodium.fr/sitemap.xml",
   }
