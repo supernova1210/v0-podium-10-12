@@ -10,7 +10,7 @@ const workshops = [
     title: "Escape Game QVCT & Sécurité",
     description:
       "Une expérience immersive où les équipes collaborent pour résoudre des situations liées à la prévention, la sécurité et la QVCT.",
-    image: "/images/escape-game-atelier-podium.jpg",
+    image: "/images/escape-game-atelier-podium.webp",
     href: "/atelier/escape-game-securite",
     comingSoon: false,
   },
@@ -28,7 +28,7 @@ const workshops = [
     title: "Olympiades QVCT & cohésion",
     description:
       "Des défis collectifs ludiques pour renforcer la cohésion et sensibiliser aux enjeux de santé et de prévention.",
-    image: "/images/olympiades-qvct-atelier.jpg",
+    image: "/images/olympiades-qvct-atelier.webp",
     href: "",
     comingSoon: true,
   },

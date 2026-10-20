@@ -21,7 +21,7 @@ export const reveilMusculaireData = {
       },
     ],
     image: {
-      src: "/group-of-people-doing-morning-stretching-exercises.png",
+      src: "/group-of-people-doing-morning-stretching-exercises.webp",
       alt: "Groupe de personnes participant à un atelier de réveil musculaire dans un espace moderne et lumineux",
     },
     ctas: [

@@ -86,7 +86,7 @@ export default function PourquoiPodiumAboutSection() {
               </div>
               <div className="relative rounded-[24px] overflow-hidden shadow-[0_18px_50px_rgba(6,25,82,0.12)]">
                 <Image
-                  src="/images/atelier-coequipiers-min.jpg"
+                  src="/images/atelier-coequipiers-min.webp"
                   alt="L'équipe Podium"
                   fill
                   className="object-cover"
@@ -94,7 +94,7 @@ export default function PourquoiPodiumAboutSection() {
               </div>
               <div className="relative rounded-[24px] overflow-hidden shadow-[0_18px_50px_rgba(6,25,82,0.12)]">
                 <Image
-                  src="/images/mur-digital-addiction.jpg"
+                  src="/images/mur-digital-addiction.webp"
                   alt="Atelier interactif de prévention avec mur digital des addictions"
                   fill
                   className="object-cover"

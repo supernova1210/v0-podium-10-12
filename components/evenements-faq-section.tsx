@@ -57,7 +57,7 @@ export default function FAQSection() {
   return (
     <section className="relative py-16 md:py-24 bg-gray-50 overflow-hidden">
       <div className="absolute left-8 top-1/2 -translate-y-1/2 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-        <Image src="/images/fleche-jaune.png" alt="Decorative arrow" fill className="object-contain" />
+        <Image src="/images/fleche-jaune.webp" alt="Decorative arrow" fill className="object-contain" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

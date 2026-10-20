@@ -12,7 +12,7 @@ export default function JourneeSeminaireHeroSection() {
           <div className="lg:hidden">
             <div className="relative h-[300px] w-full overflow-hidden rounded-3xl shadow-lg">
               <Image
-                src="/images/seminaire-2-min.jpg"
+                src="/images/seminaire-2-min.webp"
                 alt="Séminaire d'entreprise PODIUM"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -73,7 +73,7 @@ export default function JourneeSeminaireHeroSection() {
           <div className="hidden lg:block lg:col-span-2">
             <div className="relative h-[400px] w-full overflow-hidden rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
               <Image
-                src="/images/seminaire-2-min.jpg"
+                src="/images/seminaire-2-min.webp"
                 alt="Séminaire d'entreprise PODIUM"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"

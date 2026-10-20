@@ -12,7 +12,7 @@ export default function NosAteliersSeminaireSection() {
           <div className="lg:hidden">
             <div className="relative h-[300px] w-full overflow-hidden rounded-3xl shadow-lg">
               <Image
-                src="/images/seminaire-min.jpg"
+                src="/images/seminaire-min.webp"
                 alt="Ateliers ludiques séminaire PODIUM"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -63,7 +63,7 @@ export default function NosAteliersSeminaireSection() {
               {/* Left column - vertical image */}
               <div className="relative h-[400px] overflow-hidden rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <Image
-                  src="/images/seminaire-podium-1.jpg"
+                  src="/images/seminaire-podium-1.webp"
                   alt="Atelier séminaire PODIUM"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-300"
@@ -77,7 +77,7 @@ export default function NosAteliersSeminaireSection() {
               <div className="flex flex-col gap-4">
                 <div className="relative h-[190px] overflow-hidden rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <Image
-                    src="/images/seminaire-min.jpg"
+                    src="/images/seminaire-min.webp"
                     alt="Séminaire entreprise PODIUM"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
@@ -87,7 +87,7 @@ export default function NosAteliersSeminaireSection() {
                 </div>
                 <div className="relative h-[190px] overflow-hidden rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <Image
-                    src="/images/seminaire-podium-2.jpg"
+                    src="/images/seminaire-podium-2.webp"
                     alt="Activité séminaire PODIUM"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"

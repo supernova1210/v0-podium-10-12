@@ -24,7 +24,7 @@ const methodes = [
 
 const modalites = [
   { icon: "/images/picto_interactif.png", title: "Formation", subtitle: "intra-entreprise" },
-  { icon: "/images/picto-temps.png", title: "Durée", subtitle: "7 heures" },
+  { icon: "/images/picto-temps.webp", title: "Durée", subtitle: "7 heures" },
   { icon: "/images/picto-participants.png", title: "2 à 10", subtitle: "participants" },
   { icon: "/images/picto_prix.png", title: "Sur devis", subtitle: "tarif adapté" },
 ]

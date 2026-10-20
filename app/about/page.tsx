@@ -60,7 +60,7 @@ export default function AboutPage() {
           description="Stop aux formations inadaptées trop théoriques dont on oublie rapidement le contenu. Notre pédagogie et nos approches ludiques vont rendre vos formations et vos événements impactants et mémorables !"
           items={[
             { icon: "/images/picto-cartes.png", title: "Méthodes innovantes", alt: "Icône méthodes innovantes" },
-            { icon: "/images/picto-temps.png", title: "Durées modulables", alt: "Icône durées modulables" },
+            { icon: "/images/picto-temps.webp", title: "Durées modulables", alt: "Icône durées modulables" },
             { icon: "/images/picto-personne-etoile.png", title: "Formateurs expérimentés", alt: "Icône formateurs expérimentés" },
             { icon: "/images/picto-zone.png", title: "En présentiel", alt: "Icône en présentiel" },
           ]}

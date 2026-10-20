@@ -96,9 +96,9 @@ export default function JourneeSecuritePage() {
             { n: "0", l: "limite de participants" },
           ]}
           images={[
-            { src: "/images/journee-securite-evenement-podium.jpg", alt: "Journée sécurité en entreprise animée par Podium" },
-            { src: "/images/mur-digital-addiction.jpg", alt: "Atelier interactif de prévention avec mur digital des addictions" },
-            { src: "/images/atelier-sst-podium-securite.jpg", alt: "Atelier de prévention sécurité au travail" },
+            { src: "/images/journee-securite-evenement-podium.webp", alt: "Journée sécurité en entreprise animée par Podium" },
+            { src: "/images/mur-digital-addiction.webp", alt: "Atelier interactif de prévention avec mur digital des addictions" },
+            { src: "/images/atelier-sst-podium-securite.webp", alt: "Atelier de prévention sécurité au travail" },
           ]}
           floatTitle="Coordinateur dédié"
           floatSubtitle="présent le jour J"

@@ -23,7 +23,7 @@ export default function PromoPopup({
   dates = "Du 15 au 19 juin 2026",
   description =
     "Cette semaine, on met la qualité de vie au travail à l'honneur : ateliers, animations et temps forts pour vos équipes. Découvrez le programme.",
-  image = "/images/cohesion-d-equipe.png",
+  image = "/images/cohesion-d-equipe.webp",
   ctaLabel = "Découvrir la Semaine QVCT",
   ctaHref = "/nos-evenements/semaine-qvct",
   delay = 700,

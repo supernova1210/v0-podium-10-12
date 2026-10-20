@@ -12,14 +12,14 @@ export default function EvenementsHeroSection() {
             <div className="grid grid-cols-2 gap-2 h-[300px]">
               <div className="relative overflow-hidden rounded-lg">
                 <Image
-                  src="/images/podium-photo-hero-evenement-1.jpg"
+                  src="/images/podium-photo-hero-evenement-1.webp"
                   alt="Atelier sécurité Cap'Sécurité"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative overflow-hidden rounded-lg">
-                <Image src="/images/seminaire-min.jpg" alt="Séminaire d'entreprise" fill className="object-cover" />
+                <Image src="/images/seminaire-min.webp" alt="Séminaire d'entreprise" fill className="object-cover" />
               </div>
             </div>
           </div>
@@ -81,20 +81,20 @@ export default function EvenementsHeroSection() {
               <div className="space-y-4">
                 <div className="relative h-48 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/podium-photo-hero-evenement-1.jpg"
+                    src="/images/podium-photo-hero-evenement-1.webp"
                     alt="Atelier sécurité Cap'Sécurité"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="relative h-32 overflow-hidden rounded-lg">
-                  <Image src="/images/seminaire-min.jpg" alt="Séminaire d'entreprise" fill className="object-cover" />
+                  <Image src="/images/seminaire-min.webp" alt="Séminaire d'entreprise" fill className="object-cover" />
                 </div>
               </div>
               <div className="space-y-4 pt-8">
                 <div className="relative h-32 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/atelier-yoga-bulle-oxygene-v2.png"
+                    src="/images/atelier-yoga-bulle-oxygene-v2.webp"
                     alt="Atelier yoga bien-être"
                     fill
                     className="object-cover"
@@ -102,7 +102,7 @@ export default function EvenementsHeroSection() {
                 </div>
                 <div className="relative h-48 overflow-hidden rounded-lg">
                   <Image
-                    src="/images/podium-photo-hero-evenement-2.jpg"
+                    src="/images/podium-photo-hero-evenement-2.webp"
                     alt="Événement GSF conférence"
                     fill
                     className="object-cover"

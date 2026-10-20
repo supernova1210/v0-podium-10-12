@@ -8,7 +8,7 @@ const rseWorkshops = [
     category: "QVT",
     duration: "à partir de 20 min",
     participants: "À partir de 6 participants",
-    image: "/images/podium_organisme_formation_atelier_sophrologie-min.png",
+    image: "/images/podium_organisme_formation_atelier_sophrologie-min.webp",
     slug: "/atelier/gestion-des-emotions-sophrologie",
   },
   {
@@ -17,7 +17,7 @@ const rseWorkshops = [
     category: "QVT",
     duration: "à partir de 20 min",
     participants: "À partir de 4 participants",
-    image: "/images/stress-management-confidence-workshop.png",
+    image: "/images/stress-management-confidence-workshop.webp",
     slug: "/atelier/prevention-sante-mentale",
   },
   {
@@ -26,7 +26,7 @@ const rseWorkshops = [
     category: "SÉCURITÉ",
     duration: "à partir de 20 min",
     participants: "À partir de 6 participants",
-    image: "/images/atelier-sensibilisation-handicap-auditif.png",
+    image: "/images/atelier-sensibilisation-handicap-auditif.webp",
     slug: "/atelier/sensibiliser-au-handicap",
   },
   {

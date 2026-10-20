@@ -89,7 +89,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/podium-logo.png"
+              src="/images/podium-logo.webp"
               alt="PODIUM - Organisme de formation"
               width={220}
               height={80}
@@ -294,7 +294,7 @@ export default function Navigation() {
         }`}
       >
         <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-gray-50">
-          <Image src="/images/podium-logo.png" alt="PODIUM" width={160} height={56} className="h-12 w-auto" />
+          <Image src="/images/podium-logo.webp" alt="PODIUM" width={160} height={56} className="h-12 w-auto" />
           <button
             onClick={() => setIsMenuOpen(false)}
             className="p-2 rounded-lg text-[#061952] hover:text-[#FFD25D] hover:bg-white transition-all duration-200"

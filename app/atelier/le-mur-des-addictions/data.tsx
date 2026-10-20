@@ -21,7 +21,7 @@ export const murDesAddictionsData = {
       },
     ],
     image: {
-      src: "/images/podium-ateliers-mur-des-addictions.jpg",
+      src: "/images/podium-ateliers-mur-des-addictions.webp",
       alt: "Deux participants utilisant des lunettes de simulation d'addiction lors de l'atelier mur des addictions",
     },
     ctas: [

@@ -20,7 +20,7 @@ export default function NousRejoindreSection() {
               <div className="absolute -bottom-6 -right-5 w-24 h-24 rounded-3xl bg-[#57B3B7] z-0 hidden sm:block" />
               <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.35)] aspect-square">
                 <Image
-                  src="/team-of-professionals-collaborating-at-a-modern-of.png"
+                  src="/team-of-professionals-collaborating-at-a-modern-of.webp"
                   alt="Équipe PODIUM travaillant ensemble"
                   fill
                   className="object-cover"

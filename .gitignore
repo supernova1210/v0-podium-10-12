@@ -59,3 +59,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 >>>>>>> ba03b74 (SEO: metadata, schemas JSON-LD, H1, FAQ, contenus optimisés)
+
+# Originaux et images inutilisées, gardés en local mais hors déploiement
+_archives-images/

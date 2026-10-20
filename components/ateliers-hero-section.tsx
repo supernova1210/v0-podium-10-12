@@ -24,7 +24,7 @@ export default function AteliersHeroSection() {
                 style={{ transitionDelay: "200ms" }}
               >
                 <Image
-                  src="/images/page-presentation-atelier-podium-1.jpg"
+                  src="/images/page-presentation-atelier-podium-1.webp"
                   alt="Atelier interactif"
                   fill
                   className="object-cover"
@@ -37,7 +37,7 @@ export default function AteliersHeroSection() {
                 style={{ transitionDelay: "400ms" }}
               >
                 <Image
-                  src="/images/page-presentation-atelier-podium-2.jpg"
+                  src="/images/page-presentation-atelier-podium-2.webp"
                   alt="Formation d'équipe"
                   fill
                   className="object-cover"
@@ -83,7 +83,7 @@ export default function AteliersHeroSection() {
                 style={{ transitionDelay: "200ms" }}
               >
                 <Image
-                  src="/images/page-presentation-atelier-podium-1.jpg"
+                  src="/images/page-presentation-atelier-podium-1.webp"
                   alt="Atelier gestion du stress"
                   fill
                   className="object-cover"
@@ -98,7 +98,7 @@ export default function AteliersHeroSection() {
                 style={{ transitionDelay: "400ms" }}
               >
                 <Image
-                  src="/images/page-presentation-atelier-podium-2.jpg"
+                  src="/images/page-presentation-atelier-podium-2.webp"
                   alt="Atelier communication"
                   fill
                   className="object-cover"
@@ -113,7 +113,7 @@ export default function AteliersHeroSection() {
                 style={{ transitionDelay: "600ms" }}
               >
                 <Image
-                  src="/images/page-presentation-atelier-podium-3.jpg"
+                  src="/images/page-presentation-atelier-podium-3.webp"
                   alt="Atelier sécurité"
                   fill
                   className="object-cover"

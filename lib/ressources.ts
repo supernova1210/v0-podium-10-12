@@ -34,7 +34,7 @@ export const reveilMusculaireMeta: RessourceMeta = {
   cardTitle: "Le réveil musculaire en entreprise",
   cardDescription:
     "Pourquoi s'échauffer avant de travailler, ce que ça change vraiment, et une routine complète en 7 exercices à faire debout ou assis.",
-  cardImage: "/images/reveil-musculaire-podium-atelier.jpg",
+  cardImage: "/images/reveil-musculaire-podium-atelier.webp",
   readingTime: "6 min de lecture",
   formation: { label: "Formation Ambassadeur Réveil Musculaire", href: "/formation-securite-reveil-musculaire" },
   atelier: { label: "Atelier Réveil musculaire ludique", href: "/atelier/reveil-musculaire-ludique" },
@@ -51,7 +51,7 @@ export const gestesEtPosturesMeta: RessourceMeta = {
   cardTitle: "Gestes et postures : les 5 règles de base",
   cardDescription:
     "Se positionner, éviter les torsions, garder le dos droit, fléchir les jambes, rapprocher la charge : les réflexes qui protègent votre dos.",
-  cardImage: "/images/atelier-geste-et-posture-petanque-4.png",
+  cardImage: "/images/atelier-geste-et-posture-petanque-4.webp",
   readingTime: "5 min de lecture",
   formation: { label: "Formation Geste et Posture", href: "/formation-securite-geste-et-posture" },
   atelier: { label: "Atelier Geste et posture pétanque", href: "/atelier/geste-et-posture-petanque" },

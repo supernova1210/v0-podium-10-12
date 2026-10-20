@@ -25,7 +25,7 @@ const navigationItems = [
   {
     id: "faq",
     label: "Questions fréquentes",
-    icon: "/images/picto-badge.png",
+    icon: "/images/picto-badge.webp",
     shortLabel: "FAQ",
   },
   {

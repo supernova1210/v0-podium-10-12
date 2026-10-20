@@ -25,7 +25,7 @@ const navigationItems = [
   {
     id: "references",
     label: "Nos références",
-    icon: "/images/picto-badge.png",
+    icon: "/images/picto-badge.webp",
     shortLabel: "Références",
   },
   {

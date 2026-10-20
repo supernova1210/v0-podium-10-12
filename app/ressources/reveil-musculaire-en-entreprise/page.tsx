@@ -74,7 +74,7 @@ const schemas = [
       "@type": "Organization",
       name: "Podium",
       url: "https://www.ofpodium.fr",
-      logo: { "@type": "ImageObject", url: "https://www.ofpodium.fr/images/podium-logo.png" },
+      logo: { "@type": "ImageObject", url: "https://www.ofpodium.fr/images/podium-logo.webp" },
     },
     mainEntityOfPage: URL,
     image: `https://www.ofpodium.fr${meta.cardImage}`,
@@ -129,7 +129,7 @@ export default function ReveilMusculaireRessourcePage() {
         titleHighlight="en entreprise"
         chapo="Quelques minutes pour préparer son corps, réveiller son esprit et se sentir bien avant de penser au travail. Un temps de recentrage, comme avant un match : on se connecte à soi pour mieux se mobiliser ensemble. Voici pourquoi ça marche, et la routine complète en 7 exercices."
         readingTime={meta.readingTime}
-        image="/images/reveil-musculaire-podium-atelier.jpg"
+        image="/images/reveil-musculaire-podium-atelier.webp"
         imageAlt="Séance de réveil musculaire animée par Podium en entreprise"
         pdfHref={meta.pdf?.href}
       />

@@ -70,7 +70,7 @@ const schemas = [
       "@type": "Organization",
       name: "Podium",
       url: "https://www.ofpodium.fr",
-      logo: { "@type": "ImageObject", url: "https://www.ofpodium.fr/images/podium-logo.png" },
+      logo: { "@type": "ImageObject", url: "https://www.ofpodium.fr/images/podium-logo.webp" },
     },
     mainEntityOfPage: URL,
     image: `https://www.ofpodium.fr${meta.cardImage}`,
@@ -125,7 +125,7 @@ export default function GestesEtPosturesRessourcePage() {
         titleHighlight="les 5 règles de base"
         chapo="Un mauvais geste répété aujourd'hui peut devenir une douleur chronique demain. Voici les cinq réflexes qui protègent votre dos lors d'un port de charge, comment préparer votre corps avant l'effort, et pourquoi la prévention se joue autant en dehors du travail qu'au poste."
         readingTime={meta.readingTime}
-        image="/images/atelier-geste-et-posture-petanque-4.png"
+        image="/images/atelier-geste-et-posture-petanque-4.webp"
         imageAlt="Atelier gestes et postures animé par Podium en entreprise"
       />
 

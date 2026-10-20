@@ -21,11 +21,11 @@ export default function EscapeGameSecuritePage() {
         titleHighlight="Sécurité"
         description="Un jeu connecté sur la sécurité au travail où les équipes relèvent des défis variés à travers une application interactive. Un classement en temps réel maintient l'engagement et la compétitivité tout au long de l'événement."
         badges={[
-          { icon: "/images/picto-temps.png", label: "Animation", value: "60 à 75 min" },
+          { icon: "/images/picto-temps.webp", label: "Animation", value: "60 à 75 min" },
           { icon: "/images/picto-participants.png", label: "Équipes de", value: "4 à 6 participants" },
           { icon: "/images/picto-zone.png", label: "Lieu", value: "Intérieur de préférence" },
         ]}
-        image="/images/escape-game-atelier-podium.jpg"
+        image="/images/escape-game-atelier-podium.webp"
         imageAlt="Escape Game Sécurité, jeu connecté en entreprise"
       />
       <AtelierApproche
@@ -65,7 +65,7 @@ export default function EscapeGameSecuritePage() {
         espace="En intérieur de préférence, dans vos locaux"
         modalites={[
           { icon: "/images/picto_interactif.png", title: "Atelier", subtitle: "intra-entreprise" },
-          { icon: "/images/picto-temps.png", title: "Durée", subtitle: "60 à 75 min" },
+          { icon: "/images/picto-temps.webp", title: "Durée", subtitle: "60 à 75 min" },
           { icon: "/images/picto-participants.png", title: "Équipes", subtitle: "de 4 à 6 participants" },
           { icon: "/images/picto_prix.png", title: "Sur devis", subtitle: "tarif adapté" },
         ]}

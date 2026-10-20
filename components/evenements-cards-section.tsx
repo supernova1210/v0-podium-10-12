@@ -7,7 +7,7 @@ const services = [
     id: "journeesecurite",
     title: "Journée Sécurité",
     subline: "Découvrez notre programme et nos ateliers.",
-    image: "/images/journee-securite-evenement-podium.jpg",
+    image: "/images/journee-securite-evenement-podium.webp",
     href: "/nos-evenements/journee-securite",
   },
   {
@@ -21,14 +21,14 @@ const services = [
     id: "semaineqvt",
     title: "Semaine QVCT",
     subline: "Organisez une semaine sur mesure autour de la qualité de vie au travail.",
-    image: "/images/atelier yoga.png",
+    image: "/images/atelier-yoga.webp",
     href: "/nos-evenements/semaine-qvct",
   },
   {
     id: "journeeseminaire",
     title: "Journée Séminaire",
     subline: "Découvrez notre programme pour une journée séminaire.",
-    image: "/images/seminaire-podium-2.jpg",
+    image: "/images/seminaire-podium-2.webp",
     href: "/nos-evenements/journee-seminaire",
   },
 ]

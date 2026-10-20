@@ -27,7 +27,7 @@ export default function FormationArmProgramme() {
       subtitle: "intra-entreprise",
     },
     {
-      icon: "/images/picto-temps.png",
+      icon: "/images/picto-temps.webp",
       title: "Durée :",
       subtitle: "7h",
     },

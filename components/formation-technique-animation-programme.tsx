@@ -25,7 +25,7 @@ export default function FormationTechniqueAnimationProgramme() {
       subtitle: "participants",
     },
     {
-      icon: "/images/picto-temps.png",
+      icon: "/images/picto-temps.webp",
       title: "Durée :",
       subtitle: "3h30",
     },

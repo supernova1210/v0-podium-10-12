@@ -35,7 +35,7 @@ const ateliers: GridAtelier[] = [
     category: "securite",
     duree: "à partir de 20 min",
     participants: "à partir de 6",
-    image: "/images/escape-game-atelier-podium.jpg",
+    image: "/images/escape-game-atelier-podium.webp",
   },
 ]
 

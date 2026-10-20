@@ -95,9 +95,9 @@ export default function SemaineQvctPage() {
             { n: "12h", l: "devis garanti" },
           ]}
           images={[
-            { src: "/images/atelier-yoga-podium-bien-etre.jpg", alt: "Atelier bien-être pendant la semaine QVCT" },
-            { src: "/images/reveil-musculaire-podium-atelier.jpg", alt: "Réveil musculaire en entreprise" },
-            { src: "/images/atelier-cohesion-min.jpg", alt: "Atelier cohésion d'équipe" },
+            { src: "/images/atelier-yoga-podium-bien-etre.webp", alt: "Atelier bien-être pendant la semaine QVCT" },
+            { src: "/images/reveil-musculaire-podium-atelier.webp", alt: "Réveil musculaire en entreprise" },
+            { src: "/images/atelier-cohesion-min.webp", alt: "Atelier cohésion d'équipe" },
           ]}
           floatTitle="Fil conducteur"
           floatSubtitle="une progression sur la semaine"

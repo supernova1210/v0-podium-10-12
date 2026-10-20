@@ -10,7 +10,7 @@ const workshops = [
     category: "SÉCURITÉ",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-secourir-sans-panique-bobologie.png",
+    image: "/images/atelier-secourir-sans-panique-bobologie.webp",
     slug: "/atelier/secourir-sans-panique",
   },
   {
@@ -19,7 +19,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-posture-pro-defi-flash.png",
+    image: "/images/atelier-posture-pro-defi-flash.webp",
     slug: "/atelier/posture-pro-defi-flash",
   },
   {
@@ -28,7 +28,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-CNV-agressivite-physique.jpg",
+    image: "/images/atelier-CNV-agressivite-physique.webp",
     slug: "/atelier/cnv-agressivite-physique",
   },
   {
@@ -37,7 +37,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-communication-non-violente-CNV-min.jpg",
+    image: "/images/atelier-communication-non-violente-CNV-min.webp",
     slug: "/atelier/cnv-agressivite-verbale",
   },
   {
@@ -46,7 +46,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-cohesion-min.jpg",
+    image: "/images/atelier-cohesion-min.webp",
     slug: "/atelier/cles-cohesion-equipe",
   },
   {
@@ -55,7 +55,7 @@ const workshops = [
     category: "SÉCURITÉ",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-sensibilisation-handicap-auditif.png",
+    image: "/images/atelier-sensibilisation-handicap-auditif.webp",
     slug: "/atelier/sensibiliser-au-handicap",
   },
   {
@@ -73,7 +73,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-nutrition-performance-v2.jpg",
+    image: "/images/atelier-nutrition-performance-v2.webp",
     slug: "/atelier/atelier-nutrition-performance",
   },
   {
@@ -82,7 +82,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/podium_organisme_formation_atelier_sophrologie-min.png",
+    image: "/images/podium_organisme_formation_atelier_sophrologie-min.webp",
     slug: "/atelier/gestion-des-emotions-sophrologie",
   },
   {
@@ -91,7 +91,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/stress-management-confidence-workshop.png",
+    image: "/images/stress-management-confidence-workshop.webp",
     slug: "/atelier/prevention-sante-mentale",
   },
   {
@@ -100,7 +100,7 @@ const workshops = [
     category: "SÉCURITÉ",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-geste-et-posture-petanque-4.png",
+    image: "/images/atelier-geste-et-posture-petanque-4.webp",
     slug: "/atelier/geste-et-posture-petanque",
   },
   {
@@ -109,7 +109,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-yoga-bulle-oxygene-v2.png",
+    image: "/images/atelier-yoga-bulle-oxygene-v2.webp",
     slug: "/atelier/atelier-bulle-oxygene",
   },
   {
@@ -118,7 +118,7 @@ const workshops = [
     category: "SÉCURITÉ",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-le-mur-des-addictions-image-2.jpg",
+    image: "/images/atelier-le-mur-des-addictions-image-2.webp",
     slug: "/atelier/le-mur-des-addictions",
   },
   {
@@ -127,7 +127,7 @@ const workshops = [
     category: "SÉCURITÉ",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/reveil-musculaire-podium-atelier.jpg",
+    image: "/images/reveil-musculaire-podium-atelier.webp",
     slug: "/atelier/reveil-musculaire-ludique",
   },
   {
@@ -136,7 +136,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-quiz-2-min.jpeg",
+    image: "/images/atelier-quiz-2-min.webp",
     slug: "/atelier/quiz-sur-mesure",
   },
   {
@@ -145,7 +145,7 @@ const workshops = [
     category: "QVT",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-plateau-de-jeu-geant-min.jpg",
+    image: "/images/atelier-plateau-de-jeu-geant-min.webp",
     slug: "/atelier/jeu-de-plateau-geant",
   },
   {
@@ -154,7 +154,7 @@ const workshops = [
     category: "SÉCURITÉ",
     duration: "15 à 45 min",
     participants: "À partir de 4 participants",
-    image: "/images/atelier-sst-podium-securite.jpg",
+    image: "/images/atelier-sst-podium-securite.webp",
     slug: "/atelier/deconnecte-ton-ecran",
   },
   {
@@ -172,7 +172,7 @@ const workshops = [
     category: "SÉCURITÉ",
     duration: "à partir de 20 min",
     participants: "À partir de 6 participants",
-    image: "/images/escape-game-atelier-podium.jpg",
+    image: "/images/escape-game-atelier-podium.webp",
     slug: "/atelier/escape-game-securite",
   },
 ]

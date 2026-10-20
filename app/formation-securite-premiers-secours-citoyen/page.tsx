@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 }
 
 const badges = [
-  { icon: "/images/picto-temps.png", label: "Durée", value: "7 heures" },
+  { icon: "/images/picto-temps.webp", label: "Durée", value: "7 heures" },
   { icon: "/images/picto-participants.png", label: "Participants", value: "2 à 10 personnes" },
   { icon: "/images/picto-zone.png", label: "Lieu", value: "Intra-entreprise" },
 ]
@@ -95,7 +95,7 @@ export default function FormationPremiersSecoursCitoyenPage() {
               <div className="absolute -bottom-5 -left-5 w-28 h-28 rounded-3xl bg-[#061952] z-0 hidden sm:block" />
               <div className="relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/3.9]">
                 <Image
-                  src="/images/atelier-secourir-sans-panique-bobologie.png"
+                  src="/images/atelier-secourir-sans-panique-bobologie.webp"
                   alt="Formation Premiers Secours Citoyen | Podium"
                   fill
                   className="object-cover"

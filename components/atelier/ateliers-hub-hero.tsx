@@ -74,7 +74,7 @@ export default function AteliersHubHero() {
             <div className="relative z-10 grid grid-cols-2 gap-3.5 h-[440px]">
               <div className="relative row-span-2 rounded-[24px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)]">
                 <Image
-                  src="/images/page-presentation-atelier-podium-1.jpg"
+                  src="/images/page-presentation-atelier-podium-1.webp"
                   alt="Atelier Podium en entreprise"
                   fill
                   className="object-cover"
@@ -91,7 +91,7 @@ export default function AteliersHubHero() {
               </div>
               <div className="relative rounded-[24px] overflow-hidden shadow-[0_18px_50px_rgba(6,25,82,0.12)]">
                 <Image
-                  src="/images/page-presentation-atelier-podium-3.jpg"
+                  src="/images/page-presentation-atelier-podium-3.webp"
                   alt="Atelier cohésion d'équipe"
                   fill
                   className="object-cover"

@@ -93,9 +93,9 @@ export default function JourneeRsePage() {
             { n: "0", l: "limite de participants" },
           ]}
           images={[
-            { src: "/images/atelier-sensibilisation-handicap-auditif.png", alt: "Atelier de sensibilisation au handicap en journée RSE" },
+            { src: "/images/atelier-sensibilisation-handicap-auditif.webp", alt: "Atelier de sensibilisation au handicap en journée RSE" },
             { src: "/images/atelier-sensibiliser-handicap-visuel-1.jpg", alt: "Atelier immersif handicap visuel" },
-            { src: "/images/atelier-cohesion-min.jpg", alt: "Atelier de cohésion d'équipe" },
+            { src: "/images/atelier-cohesion-min.webp", alt: "Atelier de cohésion d'équipe" },
           ]}
           floatTitle="Avec l'Agence Déclic"
           floatSubtitle="votre journée RSE de A à Z"
@@ -107,7 +107,7 @@ export default function JourneeRsePage() {
           description="Transformez votre journée RSE en un événement marquant et fédérateur. Nos ateliers ludiques, immersifs et personnalisés créent un vrai déclic chez vos équipes : vous sensibilisez efficacement tout en renforçant la cohésion et l'engagement."
           items={[
             { icon: "/images/Picto_cocher.png", title: "Ancrer la RSE", alt: "Icône ancrer la RSE" },
-            { icon: "/images/Pictogrammes_RSE.png", title: "Renforcer l'engagement", alt: "Icône renforcer l'engagement" },
+            { icon: "/images/Pictogrammes_RSE.webp", title: "Renforcer l'engagement", alt: "Icône renforcer l'engagement" },
             { icon: "/images/Picto_Safety.png", title: "Valoriser son image", alt: "Icône valoriser son image" },
           ]}
         />

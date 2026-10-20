@@ -31,7 +31,7 @@ const navigationItems = [
   {
     id: "benefices",
     label: "Les bénéfices",
-    icon: "/images/picto-badge.png",
+    icon: "/images/picto-badge.webp",
     shortLabel: "Bénéfices",
   },
   {

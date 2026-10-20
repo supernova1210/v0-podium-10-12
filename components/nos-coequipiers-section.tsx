@@ -7,42 +7,42 @@ export default function NosCoequipiersSection() {
     {
       name: "Julien PATANE",
       description: "Formateur management, préparateur mental de sportifs de haut niveau, kinésiologue",
-      image: "/images/team/julien-patane.png",
+      image: "/images/team/julien-patane.webp",
       website: "https://www.flow-equiperf.com/",
       linkedin: "https://www.linkedin.com/in/julien-patane-3b420b1a5/",
     },
     {
       name: "Laure PECLIER",
       description: "Coach Bien-être & formatrice",
-      image: "/images/team/laure-jacquart.png",
+      image: "/images/team/laure-jacquart.webp",
       website: "https://naturalcorporate.com/",
       linkedin: "https://www.linkedin.com/in/laurejacquart/",
     },
     {
       name: "Coline DUPRAS",
       description: "Coach professionnelle & Sophrologue",
-      image: "/images/team/coline-dupras.png",
+      image: "/images/team/coline-dupras.webp",
       website: "https://colinedupras.fr/",
       linkedin: "https://www.linkedin.com/in/coline-dupras-786553112/",
     },
     {
       name: "Anne-Lise BEAL RIGAUD",
       description: "Coach bien-être et santé mentale, coach individuel",
-      image: "/images/team/anne-lise-rigaud-new.png", // Updated to new photo
+      image: "/images/team/anne-lise-rigaud-new.webp", // Updated to new photo
       website: "https://www.olystik-performance.fr/",
       linkedin: "https://www.linkedin.com/in/anne-lise-beal-rigaud-7094801a5/",
     },
     {
       name: "Laury MAZZELLA",
       description: "Coach en activité physique adaptée et santé",
-      image: "/images/team/laury-mazella.png",
+      image: "/images/team/laury-mazella.webp",
       website: null,
       linkedin: "https://www.linkedin.com/in/laury-mazzella-67639b273/",
     },
     {
       name: "Schiphra MUTUBULE",
       description: "Formatrice SST",
-      image: "/images/team/schiphra-mutubule.png",
+      image: "/images/team/schiphra-mutubule.webp",
       website: null,
       linkedin: "https://www.linkedin.com/in/schiphra-mutubule-138227217/",
     },

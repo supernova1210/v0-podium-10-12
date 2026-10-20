@@ -73,7 +73,7 @@ export default function AtelierMurDesAddictionsPage() {
           </HeroText>
 
           <HeroImage
-            src="/images/podium_organisme_formation_atelier_sophrologie-min.png"
+            src="/images/podium_organisme_formation_atelier_sophrologie-min.webp"
             alt="Participants utilisant des lunettes de simulation d'addiction"
           />
         </HeroContent>

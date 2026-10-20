@@ -25,7 +25,7 @@ export default function FormationGestePostureProgramme() {
       subtitle: "intra-entreprise",
     },
     {
-      icon: "/images/picto-temps.png",
+      icon: "/images/picto-temps.webp",
       title: "Durée :",
       subtitle: "3,5h",
     },

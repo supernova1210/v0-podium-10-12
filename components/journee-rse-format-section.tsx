@@ -6,7 +6,7 @@ export default function NotrePedagogieSection() {
       alt: "Icône ancrer la RSE",
     },
     {
-      icon: "/images/Pictogrammes_RSE.png",
+      icon: "/images/Pictogrammes_RSE.webp",
       title: "Renforcer l'engagement",
       alt: "Icône renforcer l'engagement",
     },

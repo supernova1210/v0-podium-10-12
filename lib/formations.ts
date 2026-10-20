@@ -74,7 +74,7 @@ export const reveilMusculaire: FormationData = {
   titleHighlight: "Réveil Musculaire",
   heroDescription:
     "Acquérez les compétences pour concevoir et animer des séances collectives de réveil musculaire et d'échauffement en entreprise, et prévenir durablement les TMS.",
-  heroImage: "/images/reveil-musculaire-podium-atelier.jpg",
+  heroImage: "/images/reveil-musculaire-podium-atelier.webp",
   video: {
     src: "/videos/formation-reveil-musculaire-podium.mp4",
     poster: "/images/video-poster-reveil-musculaire.jpg",
@@ -161,13 +161,13 @@ export const gesteEtPosture: FormationData = {
   titleHighlight: "Geste et Posture",
   heroDescription:
     "Apprenez à comprendre, évaluer et améliorer durablement vos postures de travail pour réduire les risques professionnels et préserver votre corps.",
-  heroImage: "/images/atelier-geste-et-posture-petanque-min.jpg",
+  heroImage: "/images/atelier-geste-et-posture-petanque-min.webp",
   ressource: {
     href: "/ressources/gestes-et-postures",
     title: "Gestes et postures : les 5 règles de base",
     description:
       "Se positionner, éviter les torsions, garder le dos droit, fléchir les jambes, rapprocher la charge : le mémo complet en accès libre.",
-    image: "/images/atelier-geste-et-posture-petanque-4.png",
+    image: "/images/atelier-geste-et-posture-petanque-4.webp",
     readingTime: "5 min de lecture",
   },
   duree: "3,5 heures",
@@ -236,7 +236,7 @@ export const animationQuartHeure: FormationData = {
   titleSuffix: "Sécurité",
   heroDescription:
     "Apprenez à concevoir, préparer et animer un quart d'heure sécurité clair, engageant et opérationnel, pour transmettre la prévention avec conviction et fédérer vos équipes.",
-  heroImage: "/images/journee-securite-evenement-podium.jpg",
+  heroImage: "/images/journee-securite-evenement-podium.webp",
   duree: "10,5 heures",
   participantsFull: "Individuel ou collectif",
   participantsTitle: "Individuel",
@@ -309,7 +309,7 @@ export const gestesQuiSauvent: FormationData = {
   titleHighlight: "Gestes Qui Sauvent",
   heroDescription:
     "En une courte durée, acquérez et maîtrisez les gestes de secours essentiels pour porter les premiers secours à une victime en attendant les secours.",
-  heroImage: "/images/atelier-sst-podium-securite.jpg",
+  heroImage: "/images/atelier-sst-podium-securite.webp",
   duree: "2 heures",
   participantsFull: "max. 15 personnes",
   participantsTitle: "max. 15",
@@ -380,7 +380,7 @@ export const premiersSecoursCitoyen: FormationData = {
   titleSuffix: "Citoyen",
   heroDescription:
     "Apprenez les gestes qui sauvent : protéger une victime, alerter les secours et intervenir efficacement face à une situation d'urgence, jusqu'à la prise en charge par les services de secours.",
-  heroImage: "/images/atelier-secourir-sans-panique-bobologie.png",
+  heroImage: "/images/atelier-secourir-sans-panique-bobologie.webp",
   duree: "7 heures",
   participantsFull: "2 à 10 personnes",
   participantsTitle: "2 à 10",
@@ -460,7 +460,7 @@ export const lancerDynamiserReunion: FormationData = {
   titleSuffix: "une réunion",
   heroDescription:
     "Apprenez à lancer vos réunions avec un icebreaker qui capte l'attention, met de l'énergie dans le groupe et crée du lien dès les premières minutes.",
-  heroImage: "/images/seminaire-podium-1.jpg",
+  heroImage: "/images/seminaire-podium-1.webp",
   duree: "3h30",
   participantsFull: "2 à 12 personnes",
   participantsTitle: "2 à 12",
@@ -532,7 +532,7 @@ export const techniqueAnimation: FormationData = {
   titleSuffix: "d'animation",
   heroDescription:
     "Donnez vie à vos réunions pour capter l'attention, créer du lien et garder le cap jusqu'aux résultats.",
-  heroImage: "/images/seminaire-podium-2.jpg",
+  heroImage: "/images/seminaire-podium-2.webp",
   duree: "3h30",
   participantsFull: "2 à 10 personnes",
   participantsTitle: "2 à 10",
@@ -605,7 +605,7 @@ export const communicationNonViolente: FormationData = {
   titleSuffix: "Non Violente",
   heroDescription:
     "Renforcez vos compétences relationnelles pour favoriser un climat d'échanges respectueux et constructifs, même dans les contextes de tension ou de désaccord.",
-  heroImage: "/images/atelier-communication-non-violente-CNV-min.jpg",
+  heroImage: "/images/atelier-communication-non-violente-CNV-min.webp",
   duree: "7 heures",
   participantsFull: "2 à 10 personnes",
   participantsTitle: "2 à 10",
@@ -674,7 +674,7 @@ export const santeMentaleModule1: FormationData = {
   titleSuffix: "· Module 1",
   heroDescription:
     "Module 1 : gestion de l'agressivité verbale. Renforcez les compétences relationnelles et émotionnelles de vos équipes pour prévenir les escalades verbales et garantir un cadre d'intervention sécurisant.",
-  heroImage: "/images/stress-management-confidence-workshop.png",
+  heroImage: "/images/stress-management-confidence-workshop.webp",
   duree: "3 heures",
   participantsFull: "4 à 12 personnes",
   participantsTitle: "4 à 12",
@@ -741,7 +741,7 @@ export const santeMentaleModule2: FormationData = {
   titleSuffix: "· Module 2",
   heroDescription:
     "Module 2 : se préserver face aux situations dangereuses. Apprenez à adopter une posture relationnelle régulée et sécurisante pour vous préserver face à l'agressivité verbale.",
-  heroImage: "/images/atelier-CNV-agressivite-physique.jpg",
+  heroImage: "/images/atelier-CNV-agressivite-physique.webp",
   duree: "3 heures",
   participantsFull: "4 à 12 personnes",
   participantsTitle: "4 à 12",
@@ -808,7 +808,7 @@ export const santeMentaleModule3: FormationData = {
   titleSuffix: "· Module 3",
   heroDescription:
     "Module 3 : détecter une personne en détresse ou en situation de mal-être. Développez une posture pour repérer les premiers signes, écouter avec justesse et réagir de manière adaptée.",
-  heroImage: "/images/podium_organisme_formation_atelier_sophrologie-min.png",
+  heroImage: "/images/podium_organisme_formation_atelier_sophrologie-min.webp",
   duree: "3 heures",
   participantsFull: "4 à 12 personnes",
   participantsTitle: "4 à 12",
@@ -875,7 +875,7 @@ export const valoriserPosture: FormationData = {
   titleSuffix: "pro",
   heroDescription:
     "Découvrez les codes de l'entreprise et apprenez à vous positionner vis-à-vis de vos collègues comme de votre hiérarchie, avec confiance.",
-  heroImage: "/images/atelier-accompagnement-posture-pro-min.jpg",
+  heroImage: "/images/atelier-accompagnement-posture-pro-min.webp",
   duree: "7 à 14 heures",
   participantsFull: "6 à 12 personnes",
   participantsTitle: "6 à 12",

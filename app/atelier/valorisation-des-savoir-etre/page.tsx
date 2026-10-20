@@ -73,7 +73,7 @@ export default function AtelierMurDesAddictionsPage() {
           </HeroText>
 
           <HeroImage
-            src="/images/sport-transfert.png"
+            src="/images/sport-transfert.webp"
             alt="Participants utilisant des lunettes de simulation d'addiction"
           />
         </HeroContent>

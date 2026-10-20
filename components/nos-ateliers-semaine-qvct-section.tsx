@@ -9,7 +9,7 @@ const qvctWorkshops = [
     duration: "A partir de 20 min",
     participants: "A partir de 6 participants",
     extra: "En libre accès - Intérieur ou extérieur",
-    image: "/images/atelier-geste-et-posture-petanque-min.jpg",
+    image: "/images/atelier-geste-et-posture-petanque-min.webp",
     slug: "/atelier/geste-et-posture-petanque",
   },
   {
@@ -19,7 +19,7 @@ const qvctWorkshops = [
     duration: "A partir de 20 min",
     participants: "A partir de 6 participants",
     extra: "Thématique sur mesure - Intérieur ou extérieur",
-    image: "/images/stress-management-confidence-workshop.png",
+    image: "/images/stress-management-confidence-workshop.webp",
     slug: "/atelier/quiz-sur-mesure",
   },
   {
@@ -39,7 +39,7 @@ const qvctWorkshops = [
     duration: "A partir de 45 min",
     participants: "A partir de 6 participants",
     extra: "Sur inscription - Cours collectif",
-    image: "/images/podium_organisme_formation_atelier_sophrologie-min.png",
+    image: "/images/podium_organisme_formation_atelier_sophrologie-min.webp",
     slug: "/atelier/gestion-des-emotions-sophrologie",
   },
 ]

@@ -10,7 +10,7 @@ const evenements = [
     title: "Journée Sécurité",
     description:
       "Escape game, gestes qui sauvent, mur des addictions : une journée qui ancre durablement les réflexes de prévention.",
-    image: "/images/journee-securite-evenement-podium.jpg",
+    image: "/images/journee-securite-evenement-podium.webp",
     href: "/nos-evenements/journee-securite",
   },
   {
@@ -24,14 +24,14 @@ const evenements = [
     title: "Semaine QVCT",
     description:
       "Plusieurs jours d'ateliers autour de la qualité de vie au travail, avec un fil conducteur et une vraie progression.",
-    image: "/images/atelier-yoga-podium-bien-etre.jpg",
+    image: "/images/atelier-yoga-podium-bien-etre.webp",
     href: "/nos-evenements/semaine-qvct",
   },
   {
     title: "Journée Séminaire",
     description:
       "Un séminaire vivant et mémorable : cohésion, intelligence collective, prise de parole et formats participatifs.",
-    image: "/images/seminaire-podium-2.jpg",
+    image: "/images/seminaire-podium-2.webp",
     href: "/nos-evenements/journee-seminaire",
   },
 ]
@@ -114,7 +114,7 @@ const details = [
     title: "Journée Sécurité",
     description:
       "Organisez une journée sécurité en entreprise qui marque les esprits. Podium conçoit des formats ludiques et interactifs (escape game sécurité, gestes qui sauvent, mur des addictions, gestes et postures) pour ancrer durablement les réflexes de prévention des risques professionnels. Intervention sur site à Lyon et dans toute la région Rhône-Alpes, pour toutes les tailles d'équipes.",
-    image: "/images/journee-securite-evenement-podium.jpg",
+    image: "/images/journee-securite-evenement-podium.webp",
     imageAlt: "Journée sécurité en entreprise animée par Podium à Lyon",
     href: "/nos-evenements/journee-securite",
     deco: "bg-[#FFD25D]",
@@ -136,7 +136,7 @@ const details = [
     title: "Semaine QVCT",
     description:
       "La semaine QVCT est l'occasion d'organiser plusieurs jours d'ateliers autour de la qualité de vie et des conditions de travail, avec un fil conducteur fort et une progression cohérente. Prévention des TMS, bien-être, cohésion, gestion du stress : chaque atelier est pensé pour répondre à vos enjeux terrain, à vos métiers et à vos contraintes d'organisation.",
-    image: "/images/atelier-yoga-podium-bien-etre.jpg",
+    image: "/images/atelier-yoga-podium-bien-etre.webp",
     imageAlt: "Semaine QVCT organisée par Podium à Lyon et en Rhône-Alpes",
     href: "/nos-evenements/semaine-qvct",
     deco: "bg-[#C9426B]",
@@ -147,7 +147,7 @@ const details = [
     title: "Journée séminaire",
     description:
       "Transformez votre séminaire d'entreprise en un moment de travail collectif vivant et mémorable. Podium intervient à Lyon et en Rhône-Alpes pour co-animer vos journées de travail : ateliers de cohésion d'équipe, intelligence collective, prise de parole, formats participatifs. Moins de réunions passives, plus d'énergie et de résultats.",
-    image: "/images/seminaire-podium-2.jpg",
+    image: "/images/seminaire-podium-2.webp",
     imageAlt: "Séminaire d'entreprise animé par Podium à Lyon et en Rhône-Alpes",
     href: "/nos-evenements/journee-seminaire",
     deco: "bg-[#FFD25D]",

@@ -50,7 +50,7 @@ export const secourirSansPanique: AtelierData = {
   titleHighlight: "sans panique",
   heroDescription:
     "Un atelier pratique pour apprendre à réagir face aux petites blessures du quotidien, adopter les gestes simples qui sécurisent et orienter correctement une victime.",
-  heroImage: "/images/atelier-secourir-sans-panique-bobologie.png",
+  heroImage: "/images/atelier-secourir-sans-panique-bobologie.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur, tables à disposition",
@@ -97,7 +97,7 @@ export const sensibiliserHandicapAuditif: AtelierData = {
   titleHighlight: "handicap auditif",
   heroDescription:
     "Un atelier immersif pour comprendre les défis du handicap auditif, expérimenter des situations concrètes et découvrir des solutions de communication simples et efficaces.",
-  heroImage: "/images/atelier-sensibilisation-handicap-auditif.png",
+  heroImage: "/images/atelier-sensibilisation-handicap-auditif.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur ou extérieur, tables à disposition",
@@ -190,13 +190,13 @@ export const gesteEtPosturePetanque: AtelierData = {
   titleHighlight: "pétanque",
   heroDescription:
     "Un atelier ludique qui utilise la pétanque pour sensibiliser aux bonnes postures, comprendre l'impact des mauvaises habitudes et intégrer des corrections concrètes en s'amusant.",
-  heroImage: "/images/atelier-geste-et-posture-petanque-4.png",
+  heroImage: "/images/atelier-geste-et-posture-petanque-4.webp",
   ressource: {
     href: "/ressources/gestes-et-postures",
     title: "Gestes et postures : les 5 règles de base",
     description:
       "Se positionner, éviter les torsions, garder le dos droit, fléchir les jambes, rapprocher la charge : le mémo complet en accès libre.",
-    image: "/images/atelier-geste-et-posture-petanque-4.png",
+    image: "/images/atelier-geste-et-posture-petanque-4.webp",
     readingTime: "5 min de lecture",
   },
   duree: "15 à 45 min",
@@ -243,7 +243,7 @@ export const murDesAddictions: AtelierData = {
   titleHighlight: "addictions",
   heroDescription:
     "Un atelier ludique et percutant qui sensibilise aux impacts des addictions à travers des mises en situation dynamiques et l'usage de lunettes de simulation.",
-  heroImage: "/images/atelier-le-mur-des-addictions-image-2.jpg",
+  heroImage: "/images/atelier-le-mur-des-addictions-image-2.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur ou extérieur, prises de courant à disposition",
@@ -289,7 +289,7 @@ export const reveilMusculaireLudique: AtelierData = {
   titleHighlight: "ludique",
   heroDescription:
     "Un atelier énergisant qui fait vivre l'échauffement en équipe, avec des jeux dynamiques et une ambiance musicale pour installer une routine collective et motivante.",
-  heroImage: "/images/reveil-musculaire-podium-atelier.jpg",
+  heroImage: "/images/reveil-musculaire-podium-atelier.webp",
   ressource: {
     href: "/ressources/reveil-musculaire-en-entreprise",
     title: "Le réveil musculaire en entreprise : le guide complet",
@@ -352,7 +352,7 @@ export const deconnecteTonEcran: AtelierData = {
   titleHighlight: "reconnecte le terrain",
   heroDescription:
     "Un atelier qui fait mesurer concrètement l'impact du téléphone sur la concentration, les réflexes et la vigilance, à travers des exercices dynamiques avec pods lumineux.",
-  heroImage: "/images/atelier-sst-podium-securite.jpg",
+  heroImage: "/images/atelier-sst-podium-securite.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "En intérieur ou extérieur",
@@ -399,7 +399,7 @@ export const posturePro: AtelierData = {
   titleHighlight: "défi flash",
   heroDescription:
     "Un atelier dynamique pour explorer sa posture professionnelle, développer confiance et stabilité, et mobiliser son savoir-être à travers des défis courts et ludiques.",
-  heroImage: "/images/atelier-posture-pro-defi-flash.png",
+  heroImage: "/images/atelier-posture-pro-defi-flash.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur, tables à disposition",
@@ -444,7 +444,7 @@ export const cnvAgressivitePhysique: AtelierData = {
   titleHighlight: "agressivité physique",
   heroDescription:
     "Un atelier pratique pour apprendre à poser un cadre clair, affirmer ses limites et gérer les situations tendues sans violence, grâce à la posture et au langage corporel.",
-  heroImage: "/images/atelier-CNV-agressivite-physique.jpg",
+  heroImage: "/images/atelier-CNV-agressivite-physique.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "7m x 7m",
@@ -488,7 +488,7 @@ export const cnvAgressiviteVerbale: AtelierData = {
   titleHighlight: "agressivité verbale",
   heroDescription:
     "Un atelier de jeux de rôle pour comprendre l'agressivité verbale et apprendre à gérer les conflits avec calme et assertivité.",
-  heroImage: "/images/atelier-communication-non-violente-CNV-min.jpg",
+  heroImage: "/images/atelier-communication-non-violente-CNV-min.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur au calme, chaises à disposition",
@@ -533,7 +533,7 @@ export const clesCohesionEquipe: AtelierData = {
   titleHighlight: "cohésion d'équipe",
   heroDescription:
     "Un atelier collectif pour renforcer la cohésion, développer un état d'esprit positif et expérimenter les dynamiques qui font fonctionner une équipe.",
-  heroImage: "/images/atelier-cohesion-min.jpg",
+  heroImage: "/images/atelier-cohesion-min.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "6m x 6m en intérieur au calme, écran à disposition",
@@ -578,7 +578,7 @@ export const nutritionPerformance: AtelierData = {
   titleHighlight: "performance",
   heroDescription:
     "Un atelier concret et ludique pour comprendre l'impact de l'alimentation, corriger ses habitudes et construire une assiette équilibrée adaptée à son rythme de travail.",
-  heroImage: "/images/atelier-nutrition-performance-v2.jpg",
+  heroImage: "/images/atelier-nutrition-performance-v2.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur, tables et chaises à disposition",
@@ -625,7 +625,7 @@ export const gestionEmotionsSophrologie: AtelierData = {
   titleHighlight: "sophrologie",
   heroDescription:
     "Un atelier pour acquérir des techniques de respiration simples et efficaces, mieux gérer son stress et développer concentration, présence et ancrage au quotidien.",
-  heroImage: "/images/podium_organisme_formation_atelier_sophrologie-min.png",
+  heroImage: "/images/podium_organisme_formation_atelier_sophrologie-min.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "6m x 6m en intérieur, tables et chaises à disposition",
@@ -671,7 +671,7 @@ export const preventionSanteMentale: AtelierData = {
   titleHighlight: "santé mentale",
   heroDescription:
     "Un atelier interactif pour comprendre les mécanismes du stress, repérer ses signaux d'alerte et expérimenter des outils concrets de régulation, pour un environnement de travail plus serein.",
-  heroImage: "/images/stress-management-confidence-workshop.png",
+  heroImage: "/images/stress-management-confidence-workshop.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "6m x 6m en intérieur, tables, chaises et écran à disposition",
@@ -723,7 +723,7 @@ export const yogaBulleOxygene: AtelierData = {
   titleHighlight: "bulle d'oxygène",
   heroDescription:
     "Une pause yoga ludique pour apprendre à gérer ses émotions, prévenir le stress par la respiration et vivre un vrai moment d'équipe.",
-  heroImage: "/images/atelier-yoga-bulle-oxygene-v2.png",
+  heroImage: "/images/atelier-yoga-bulle-oxygene-v2.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur ou extérieur, sur sol plat au calme",
@@ -769,7 +769,7 @@ export const quizSurMesure: AtelierData = {
   titleHighlight: "sur-mesure",
   heroDescription:
     "Un atelier ludique et participatif qui renforce les connaissances, transmet les règles internes de l'entreprise et valide les acquis grâce à des quiz interactifs avec buzzers.",
-  heroImage: "/images/atelier-quiz-2-min.jpeg",
+  heroImage: "/images/atelier-quiz-2-min.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur (type salle de réunion), tables et écran à disposition",
@@ -816,7 +816,7 @@ export const jeuDePlateauGeant: AtelierData = {
   titleHighlight: "géant",
   heroDescription:
     "Un atelier ludique et interactif autour d'un plateau de jeu géant, qui renforce les connaissances, transmet les règles de l'entreprise et valide les acquis à travers quiz et défis collectifs.",
-  heroImage: "/images/atelier-plateau-de-jeu-geant-min.jpg",
+  heroImage: "/images/atelier-plateau-de-jeu-geant-min.webp",
   duree: "15 à 45 min",
   participants: "à partir de 4",
   espace: "5m x 5m en intérieur, chaises à disposition",

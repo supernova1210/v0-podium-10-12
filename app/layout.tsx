@@ -55,7 +55,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Podium — Organisme de formation QVCT",
   url: "https://www.ofpodium.fr",
-  logo: "https://www.ofpodium.fr/images/podium-logo.png",
+  logo: "https://www.ofpodium.fr/images/podium-logo.webp",
   image: "https://www.ofpodium.fr/images/podium-formation-equipe.webp",
   description:
     "Organisme de formation QVCT, prévention et sécurité au travail. Formations, ateliers et journées sécurité animés dans les locaux des entreprises, à Lyon, dans l'Ain et en Auvergne-Rhône-Alpes.",

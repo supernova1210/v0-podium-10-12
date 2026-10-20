@@ -114,7 +114,7 @@ export default function AteliersFocus() {
                 <div className="absolute -bottom-6 -left-5 w-24 h-24 rounded-3xl bg-[#061952] z-0 hidden sm:block" />
                 <div className="group relative z-10 rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)] aspect-[4/3.4]">
                   <Image
-                    src="/images/escape-game-atelier-podium.jpg"
+                    src="/images/escape-game-atelier-podium.webp"
                     alt="Escape Game Sécurité Podium, jeu connecté en entreprise"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"

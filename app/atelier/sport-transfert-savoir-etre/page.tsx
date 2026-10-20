@@ -73,7 +73,7 @@ export default function AtelierMurDesAddictionsPage() {
           </HeroText>
 
           <HeroImage
-            src="/images/cohesion-d-equipe.png"
+            src="/images/cohesion-d-equipe.webp"
             alt="Participants utilisant des lunettes de simulation d'addiction"
           />
         </HeroContent>

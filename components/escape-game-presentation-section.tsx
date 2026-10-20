@@ -82,7 +82,7 @@ export default function EscapeGamePresentationSection() {
           <div className="relative">
             <div className="relative h-[350px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/escape-game-atelier-podium.jpg"
+                src="/images/escape-game-atelier-podium.webp"
                 alt="Escape Game Sécurité - Jeu connecté"
                 fill
                 className="object-cover"

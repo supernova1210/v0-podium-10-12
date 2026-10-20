@@ -91,9 +91,9 @@ export default function NosEvenementsPage() {
           { n: "0", l: "limite de participants" },
         ]}
         images={[
-          { src: "/images/podium-photo-hero-evenement-1.jpg", alt: "Événement d'entreprise animé par Podium" },
-          { src: "/images/journee-securite-evenement-podium.jpg", alt: "Journée sécurité en entreprise" },
-          { src: "/images/seminaire-min.jpg", alt: "Séminaire d'entreprise participatif" },
+          { src: "/images/podium-photo-hero-evenement-1.webp", alt: "Événement d'entreprise animé par Podium" },
+          { src: "/images/journee-securite-evenement-podium.webp", alt: "Journée sécurité en entreprise" },
+          { src: "/images/seminaire-min.webp", alt: "Séminaire d'entreprise participatif" },
         ]}
       />
       <EvenementsHubCards />

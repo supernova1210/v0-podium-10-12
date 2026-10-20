@@ -6,7 +6,7 @@ import Reveal from "@/components/reveal"
 
 const pillars = [
   {
-    icon: "/images/picto-personne-celebrant.png",
+    icon: "/images/picto-personne-celebrant.webp",
     alt: "Le corps comme levier",
     title: "Le corps comme levier d'apprentissage",
     description:

@@ -6,7 +6,7 @@ export default function NotrePedagogieSection() {
       alt: "Icône méthodes innovantes",
     },
     {
-      icon: "/images/picto-temps.png",
+      icon: "/images/picto-temps.webp",
       title: "DURÉES MODULABLES",
       alt: "Icône durées modulables",
     },

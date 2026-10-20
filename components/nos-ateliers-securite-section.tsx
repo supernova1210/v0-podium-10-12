@@ -9,7 +9,7 @@ const rseWorkshops = [
     category: "QVT",
     duration: "à partir de 20 min",
     participants: "À partir de 6 participants",
-    image: "/images/atelier-yoga-bulle-oxygene-v2.png",
+    image: "/images/atelier-yoga-bulle-oxygene-v2.webp",
     slug: "/atelier/atelier-bulle-oxygene",
   },
   {
@@ -18,7 +18,7 @@ const rseWorkshops = [
     category: "SÉCURITÉ",
     duration: "à partir de 20 min",
     participants: "À partir de 8 participants",
-    image: "/images/atelier-le-mur-des-addictions-image-2.jpg",
+    image: "/images/atelier-le-mur-des-addictions-image-2.webp",
     slug: "/atelier/le-mur-des-addictions",
   },
   {
@@ -27,7 +27,7 @@ const rseWorkshops = [
     category: "QVT & SÉCURITÉ",
     duration: "à partir de 20 min",
     participants: "À partir de 6 participants",
-    image: "/images/atelier-quiz-2-min.jpeg",
+    image: "/images/atelier-quiz-2-min.webp",
     slug: "/atelier/quiz-sur-mesure",
   },
   {
@@ -36,7 +36,7 @@ const rseWorkshops = [
     category: "SÉCURITÉ",
     duration: "à partir de 20 min",
     participants: "À partir de 6 participants",
-    image: "/images/reveil-musculaire-podium-atelier.jpg",
+    image: "/images/reveil-musculaire-podium-atelier.webp",
     slug: "/atelier/reveil-musculaire-ludique",
   },
 ]

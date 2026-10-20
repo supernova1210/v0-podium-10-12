@@ -29,7 +29,7 @@ export default function FormationAffirmerConfianceCnvProgramme() {
       subtitle: "participants",
     },
     {
-      icon: "/images/picto-temps.png",
+      icon: "/images/picto-temps.webp",
       title: "Durée :",
       subtitle: "9h",
     },

@@ -89,9 +89,9 @@ export default function JourneeSeminairePage() {
             { n: "0", l: "limite de participants" },
           ]}
           images={[
-            { src: "/images/seminaire-2-min.jpg", alt: "Séminaire d'entreprise animé par Podium" },
-            { src: "/images/seminaire-podium-1.jpg", alt: "Atelier collectif en séminaire" },
-            { src: "/images/seminaire-podium-2.jpg", alt: "Temps fort de cohésion en séminaire" },
+            { src: "/images/seminaire-2-min.webp", alt: "Séminaire d'entreprise animé par Podium" },
+            { src: "/images/seminaire-podium-1.webp", alt: "Atelier collectif en séminaire" },
+            { src: "/images/seminaire-podium-2.webp", alt: "Temps fort de cohésion en séminaire" },
           ]}
           floatTitle="Rythme cadencé"
           floatSubtitle="une journée qui donne de l'énergie"
