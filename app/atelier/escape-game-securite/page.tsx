@@ -3,18 +3,33 @@ import AtelierHero from "@/components/atelier/atelier-hero"
 import AtelierApproche from "@/components/atelier/atelier-approche"
 import AtelierProgramme from "@/components/atelier/atelier-programme"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
+import RelatedOffers from "@/components/related-offers"
+import Breadcrumb from "@/components/seo/breadcrumb"
+import JsonLd from "@/components/seo/json-ld"
+import { atelierMetadata, atelierPath, atelierServiceLd, breadcrumbLd, graphLd, type Crumb } from "@/lib/seo"
 
-export const metadata: Metadata = {
-  title: "Escape Game Sécurité en entreprise",
-  description:
+const escapeGame = {
+  slug: "escape-game-securite",
+  category: "securite" as const,
+  metaTitle: "Escape Game Sécurité en entreprise",
+  metaDescription:
     "Un escape game connecté sur la sécurité au travail : défis en équipe, prévention des risques et cohésion. Animé sur site à Lyon et en Rhône-Alpes.",
-  alternates: { canonical: "/atelier/escape-game-securite" },
 }
+const href = atelierPath(escapeGame.slug)
+const crumbs: Crumb[] = [
+  { label: "Accueil", href: "/" },
+  { label: "Ateliers", href: "/nos-ateliers" },
+  { label: "Escape Game Sécurité", href },
+]
+
+export const metadata: Metadata = atelierMetadata(escapeGame)
 
 export default function EscapeGameSecuritePage() {
   return (
     <main>
+      <JsonLd data={graphLd(atelierServiceLd(escapeGame), breadcrumbLd(crumbs))} />
       <AtelierHero
+        breadcrumb={<Breadcrumb items={crumbs} />}
         accent="jaune"
         eyebrow="Atelier Sécurité"
         titlePrefix="Escape Game"
@@ -71,6 +86,7 @@ export default function EscapeGameSecuritePage() {
         ]}
         pdfHref="/documents/programme-atelier-escape-game.pdf"
       />
+      <RelatedOffers href={href} />
       <ContactezNousSection />
     </main>
   )

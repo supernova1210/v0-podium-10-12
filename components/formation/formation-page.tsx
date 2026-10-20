@@ -6,6 +6,10 @@ import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 import FormationProgramme from "./formation-programme"
 import FormationFAQ from "./formation-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
+import RelatedOffers from "@/components/related-offers"
+import Breadcrumb from "@/components/seo/breadcrumb"
+import JsonLd from "@/components/seo/json-ld"
+import { breadcrumbLd, courseLd, faqLd, graphLd, formationPath, type Crumb } from "@/lib/seo"
 import type { FormationData } from "@/lib/formations"
 
 export default function FormationPage({ data }: { data: FormationData }) {
@@ -22,9 +26,25 @@ export default function FormationPage({ data }: { data: FormationData }) {
     { icon: "/images/picto_prix.png", title: "Sur devis", subtitle: "tarif adapté" },
   ]
 
+  const href = formationPath(data.slug)
+  const crumbs: Crumb[] = [
+    { label: "Accueil", href: "/" },
+    data.category === "securite"
+      ? { label: "Formations Sécurité", href: "/formations-securite" }
+      : { label: "Formations QVCT", href: "/formations-qvct" },
+    { label: data.cardTitle, href },
+  ]
+  const ld = graphLd(
+    courseLd(data),
+    ...(data.faq.length ? [faqLd(data.faq)] : []),
+    breadcrumbLd(crumbs),
+  )
+
   return (
     <main>
+      <JsonLd data={ld} />
       <FormationHero
+        breadcrumb={<Breadcrumb items={crumbs} />}
         eyebrow={data.heroEyebrow}
         titleHighlight={data.titleHighlight}
         titleSuffix={data.titleSuffix}
@@ -73,6 +93,7 @@ export default function FormationPage({ data }: { data: FormationData }) {
           accent={data.category === "securite" ? "jaune" : "teal"}
         />
       ) : null}
+      <RelatedOffers href={href} />
       <ContactezNousSection />
     </main>
   )

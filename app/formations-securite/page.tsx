@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import SecuriteHero from "@/components/securite/securite-hero"
 import SecuriteAtouts from "@/components/securite/securite-atouts"
 import SecuriteProcess from "@/components/securite/securite-process"
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/formations-securite",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Formation Sécurité au travail Lyon & Rhône-Alpes | Podium",
     description:
       "Formations sécurité pour vos équipes à Lyon et en Rhône-Alpes : gestes qui sauvent, premiers secours, prévention des risques. Intervention dans vos locaux.",

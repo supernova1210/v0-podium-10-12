@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import ModernHeroSection from "../modern-hero-section"
 import PourquoiPodiumSection from "../components/pourquoi-podium-section"
 import AteliersImmersifsSection from "../components/ateliers-immersifs-section"
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Organisme de formation QVCT Lyon & Rhône-Alpes | Podium",
     description:
       "Formations QVCT, ateliers prévention et événements sur mesure pour vos équipes. Podium intervient dans toute la région Rhône-Alpes. Devis gratuit.",

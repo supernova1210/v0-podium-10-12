@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import EvenementHero from "@/components/evenement/evenement-hero"
 import EvenementAtouts from "@/components/evenement/evenement-atouts"
 import EvenementAteliers from "@/components/evenement/evenement-ateliers"
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/nos-evenements/journee-rse",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Journée RSE entreprise Lyon & Rhône-Alpes | Podium",
     description:
       "Journée RSE sur mesure pour vos équipes à Lyon et en Rhône-Alpes. Ateliers collaboratifs, formats modulables, intervention dans vos locaux.",

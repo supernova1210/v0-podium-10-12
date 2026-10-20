@@ -5,6 +5,10 @@ import RessourceTeaser from "@/components/ressource/ressource-teaser"
 import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 import AtelierProgramme from "./atelier-programme"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
+import RelatedOffers from "@/components/related-offers"
+import Breadcrumb from "@/components/seo/breadcrumb"
+import JsonLd from "@/components/seo/json-ld"
+import { atelierPath, atelierServiceLd, breadcrumbLd, graphLd, type Crumb } from "@/lib/seo"
 import type { AtelierData } from "@/lib/ateliers"
 import type { AtelierAccent } from "./atelier-accents"
 
@@ -25,9 +29,19 @@ export default function AtelierPage({ data }: { data: AtelierData }) {
     { icon: "/images/picto_prix.png", title: "Sur devis", subtitle: "tarif adapté" },
   ]
 
+  const href = atelierPath(data.slug)
+  const crumbs: Crumb[] = [
+    { label: "Accueil", href: "/" },
+    { label: "Ateliers", href: "/nos-ateliers" },
+    { label: data.cardTitle, href },
+  ]
+  const ld = graphLd(atelierServiceLd(data), breadcrumbLd(crumbs))
+
   return (
     <main>
+      <JsonLd data={ld} />
       <AtelierHero
+        breadcrumb={<Breadcrumb items={crumbs} />}
         accent={accent}
         eyebrow={eyebrow}
         titlePrefix={data.titlePrefix}
@@ -77,6 +91,7 @@ export default function AtelierPage({ data }: { data: AtelierData }) {
           accent={data.category === "securite" ? "jaune" : "teal"}
         />
       ) : null}
+      <RelatedOffers href={href} />
       <ContactezNousSection />
     </main>
   )

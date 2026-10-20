@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import Image from "next/image"
 import { ArrowRight, Sparkles } from "lucide-react"
 import { ACCENTS, type AtelierAccent } from "./atelier-accents"
@@ -9,6 +10,7 @@ export interface AtelierHeroBadge {
 }
 
 interface AtelierHeroProps {
+  breadcrumb?: ReactNode
   accent: AtelierAccent
   eyebrow: string
   titlePrefix?: string
@@ -23,6 +25,7 @@ interface AtelierHeroProps {
 const CALENDLY = "https://calendly.com/nicolas-ofpodium/30min"
 
 export default function AtelierHero({
+  breadcrumb,
   accent,
   eyebrow,
   titlePrefix,
@@ -40,6 +43,7 @@ export default function AtelierHero({
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-12 items-center max-w-7xl mx-auto">
           {/* Left */}
           <div>
+            {breadcrumb ? <div className="mb-5">{breadcrumb}</div> : null}
             <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
               <span className={`w-1.5 h-1.5 rounded-full ${a.dot}`} />
               {eyebrow}

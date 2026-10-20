@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, BookOpen, Clock, Download } from "lucide-react"
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
     "Les mémos et guides pratiques de Podium en accès libre : réveil musculaire en entreprise, gestes et postures, prévention des TMS. Les supports que nous remettons à nos participants.",
   alternates: { canonical: "https://www.ofpodium.fr/ressources" },
   openGraph: {
+    ...OG_BASE,
     title: "Ressources gratuites QVCT, prévention et sécurité | Podium",
     description:
       "Mémos et guides pratiques en accès libre : réveil musculaire, gestes et postures, prévention des TMS.",

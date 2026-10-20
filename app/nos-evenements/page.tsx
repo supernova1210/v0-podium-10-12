@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import EvenementHero from "@/components/evenement/evenement-hero"
 import { EvenementsHubCards, EvenementsHubDetails, EvenementsConfiance } from "@/components/evenement/evenements-hub-sections"
 import FormationFAQ from "@/components/formation/formation-faq"
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/nos-evenements",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Journée Sécurité, RSE et Séminaire Lyon & Rhône-Alpes | Podium",
     description:
       "Journées sécurité, RSE et séminaires d'entreprise sur mesure à Lyon et en Rhône-Alpes. Ateliers interactifs, formats modulables.",

@@ -5,21 +5,25 @@ import FormationPscApproche from "@/components/formation-psc-approche"
 import FormationPscProgramme from "@/components/formation-psc-programme"
 import FormationPscFAQ from "@/components/formation-psc-faq"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
+import RelatedOffers from "@/components/related-offers"
+import Breadcrumb from "@/components/seo/breadcrumb"
+import JsonLd from "@/components/seo/json-ld"
+import { premiersSecoursCitoyen } from "@/lib/formations"
+import { breadcrumbLd, courseLd, faqLd, formationMetadata, formationPath, graphLd, type Crumb } from "@/lib/seo"
 
-export const metadata: Metadata = {
-  title: "Formation Premiers Secours Citoyen",
-  description:
+const data = {
+  ...premiersSecoursCitoyen,
+  metaDescription:
     "Donnez à vos équipes les gestes qui sauvent avec la formation Premiers Secours Citoyen : protéger, alerter et intervenir face à une situation d'urgence. Certificat de compétences PSC.",
-  alternates: {
-    canonical: "https://www.ofpodium.fr/formation-securite-premiers-secours-citoyen",
-  },
-  openGraph: {
-    title: "Formation Premiers Secours Citoyen | Podium",
-    description:
-      "Donnez à vos équipes les gestes qui sauvent avec la formation Premiers Secours Citoyen : protéger, alerter et intervenir face à une situation d'urgence. Certificat de compétences PSC.",
-    type: "website",
-  },
 }
+const href = formationPath(data.slug)
+const crumbs: Crumb[] = [
+  { label: "Accueil", href: "/" },
+  { label: "Formations Sécurité", href: "/formations-securite" },
+  { label: "Premiers Secours Citoyen", href },
+]
+
+export const metadata: Metadata = formationMetadata(data)
 
 const badges = [
   { icon: "/images/picto-temps.webp", label: "Durée", value: "7 heures" },
@@ -30,12 +34,16 @@ const badges = [
 export default function FormationPremiersSecoursCitoyenPage() {
   return (
     <main>
+      <JsonLd data={graphLd(courseLd(data), faqLd(data.faq), breadcrumbLd(crumbs))} />
       {/* ===== HERO ===== */}
       <section className="relative overflow-hidden bg-white pt-6 pb-10 lg:pt-7 lg:pb-14">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-12 items-center max-w-7xl mx-auto">
             {/* Left */}
             <div>
+              <div className="mb-5">
+                <Breadcrumb items={crumbs} />
+              </div>
               <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FFD25D]" />
                 Formation Sécurité · Certifiante
@@ -126,6 +134,7 @@ export default function FormationPremiersSecoursCitoyenPage() {
       <FormationPscFAQ />
 
       {/* Contact CTA */}
+      <RelatedOffers href={href} />
       <ContactezNousSection />
     </main>
   )

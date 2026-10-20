@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import QvctHero from "@/components/qvct/qvct-hero"
 import QvctAtouts from "@/components/qvct/qvct-atouts"
 import QvctProcess from "@/components/qvct/qvct-process"
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/formations-qvct",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Formation QVCT Lyon & Rhône-Alpes | Podium",
     description:
       "Formations QVCT pour vos équipes à Lyon et en Rhône-Alpes. Prévention des TMS, RPS, bien-être au travail. Programmes sur mesure, intervention dans vos locaux.",

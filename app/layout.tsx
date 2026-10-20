@@ -7,6 +7,7 @@ import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 import CookieConsent from "../components/cookie-consent"
 import "./globals.css"
+import { OG_BASE, ORG_ID } from "@/lib/seo"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,15 +31,14 @@ export const metadata: Metadata = {
     "Podium accompagne les entreprises de Lyon et de toute la région Rhône-Alpes avec des formations QVCT, ateliers prévention et événements ludiques. Interventions sur site, devis gratuit sous 12h.",
   metadataBase: new URL("https://www.ofpodium.fr"),
   // Pas de canonical global : chaque page déclare le sien (sinon une page qui l'oublie se déclare copie de l'accueil)
+  // Valeurs par défaut pour les pages qui ne définissent pas leur propre openGraph (pas d'url : sinon elles pointeraient vers l'accueil)
   openGraph: {
-    type: "website",
-    locale: "fr_FR",
-    url: "https://www.ofpodium.fr",
-    siteName: "Podium — Organisme de formation QVCT",
+    ...OG_BASE,
     title: "Organisme de formation QVCT Lyon & Rhône-Alpes | Podium",
     description:
       "Formations QVCT, ateliers prévention et événements sur mesure pour vos équipes. Podium intervient dans toute la région Rhône-Alpes.",
   },
+  twitter: { card: "summary_large_image" },
   robots: {
     index: true,
     follow: true,
@@ -53,6 +53,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": ORG_ID,
   name: "Podium — Organisme de formation QVCT",
   url: "https://www.ofpodium.fr",
   logo: "https://www.ofpodium.fr/images/podium-logo.webp",

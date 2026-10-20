@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import { Check, Sunrise, Activity, Home, Zap, Battery, TrendingUp } from "lucide-react"
 import Reveal from "@/components/reveal"
 import RessourceHero from "@/components/ressource/ressource-hero"
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   title: meta.metaTitle,
   description: meta.metaDescription,
   alternates: { canonical: URL },
-  openGraph: { title: meta.metaTitle, description: meta.metaDescription, url: URL, type: "article" },
+  openGraph: { ...OG_BASE, title: meta.metaTitle, description: meta.metaDescription, url: URL, type: "article" },
 }
 
 const faqData = [

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import EvenementHero from "@/components/evenement/evenement-hero"
 import EvenementAtouts from "@/components/evenement/evenement-atouts"
 import EvenementEtapesStacking from "@/components/evenement/evenement-etapes-stacking"
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/nos-evenements/journee-securite",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Journée Sécurité entreprise Lyon & Rhône-Alpes | Podium",
     description:
       "Journée sécurité sur mesure pour vos équipes à Lyon et en Rhône-Alpes. Ateliers de prévention interactifs, intervention dans vos locaux.",

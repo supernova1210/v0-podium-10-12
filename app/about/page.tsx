@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import PourquoiPodiumAboutSection from "@/components/pourquoi-podium-about-section"
 import EvenementAtouts from "@/components/evenement/evenement-atouts"
 import EvenementLocalNav from "@/components/evenement/evenement-local-nav"
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/about",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Qui sommes-nous ? Podium, organisme de formation QVCT Lyon & Ain",
     description:
       "Podium, organisme de formation QVCT, prévention et sécurité entre Lyon et l'Ain. Pédagogie active et ludique, intervention dans vos locaux en Rhône-Alpes.",

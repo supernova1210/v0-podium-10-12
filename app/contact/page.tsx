@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import { ContactHeroSection } from "@/components/contact-hero-section"
 import { ContactFormSection } from "@/components/contact-form-section"
 
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
     "Formation, atelier ou journée sécurité : contactez Podium. Intervention dans vos locaux à Lyon, dans l'Ain et en Auvergne-Rhône-Alpes. Devis gratuit.",
   alternates: { canonical: "https://www.ofpodium.fr/contact" },
   openGraph: {
+    ...OG_BASE,
     title: "Contact et devis formation QVCT & sécurité | Podium",
     description:
       "Formation, atelier ou journée sécurité : contactez Podium. Intervention dans vos locaux à Lyon, dans l'Ain et en Auvergne-Rhône-Alpes.",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import AteliersHubHero from "@/components/atelier/ateliers-hub-hero"
 import AteliersGrid from "@/components/atelier/ateliers-grid"
 import AteliersFocus from "@/components/atelier/ateliers-focus"
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/nos-ateliers",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Ateliers QVT Lyon & Rhône-Alpes — Sensibilisation & Prévention | Podium",
     description:
       "Des ateliers QVT interactifs pour sensibiliser et fédérer vos équipes. Podium intervient à Lyon et dans toute la région Rhône-Alpes.",

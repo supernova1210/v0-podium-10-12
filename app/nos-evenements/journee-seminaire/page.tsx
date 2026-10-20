@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { OG_BASE } from "@/lib/seo"
 import EvenementHero from "@/components/evenement/evenement-hero"
 import EvenementAtouts from "@/components/evenement/evenement-atouts"
 import EvenementEtapesStacking from "@/components/evenement/evenement-etapes-stacking"
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.ofpodium.fr/nos-evenements/journee-seminaire",
   },
   openGraph: {
+    ...OG_BASE,
     title: "Séminaire d'entreprise Lyon & Rhône-Alpes | Podium",
     description:
       "Séminaire d'entreprise sur mesure à Lyon et en Rhône-Alpes. Journées participatives et apprenantes pour renforcer la cohésion de vos équipes.",
