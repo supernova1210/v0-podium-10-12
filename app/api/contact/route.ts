@@ -10,12 +10,20 @@ import { z } from "zod"
  *   CONTACT_TO      (optionnel)    destinataire des demandes, défaut nicolas@ofpodium.fr
  *   CONTACT_FROM    (optionnel)    expéditeur, défaut "Podium <podium@notifications-site.fr>"
  *                                  -> domaine d'envoi commun à tous les sites clients, déjà vérifié dans Resend
+ *   CONTACT_BCC     (optionnel)    copie cachée des deux emails (notif + accusé), ex. pour vérifier
+ *                                  que tout part bien. Plusieurs adresses séparées par des virgules.
+ *                                  Supprimer la variable dans Vercel (puis redéployer) pour arrêter la copie.
  */
 
 export const runtime = "nodejs"
 
 const CONTACT_TO = process.env.CONTACT_TO || "nicolas@ofpodium.fr"
 const CONTACT_FROM = process.env.CONTACT_FROM || "Podium <podium@notifications-site.fr>"
+const CONTACT_BCC = (process.env.CONTACT_BCC || "")
+  .split(",")
+  .map((a) => a.trim())
+  .filter(Boolean)
+const bcc = CONTACT_BCC.length ? { bcc: CONTACT_BCC } : {}
 const PHONE = "07 70 00 36 72"
 const PHONE_HREF = "tel:0770003672"
 const SITE = "https://www.ofpodium.fr"
@@ -111,6 +119,7 @@ export async function POST(request: Request) {
   const notif = await resend.emails.send({
     from: CONTACT_FROM,
     to: [CONTACT_TO],
+    ...bcc,
     replyTo: email,
     subject: `Nouvelle demande de contact · ${entreprise} (${fullName})`,
     html: layout(
@@ -137,6 +146,7 @@ export async function POST(request: Request) {
   const ack = await resend.emails.send({
     from: CONTACT_FROM,
     to: [email],
+    ...bcc,
     replyTo: CONTACT_TO,
     subject: "Nous avons bien reçu votre demande · Podium",
     html: layout(
