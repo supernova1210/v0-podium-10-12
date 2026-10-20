@@ -186,7 +186,7 @@ export const gesteEtPosturePetanque: AtelierData = {
   metaTitle: "Atelier Gestes et Postures façon pétanque",
   metaDescription:
     "La pétanque pour sensibiliser aux bonnes postures et prévenir les TMS en s'amusant. Atelier prévention animé en entreprise, Ain & Rhône-Alpes.",
-  titlePrefix: "Geste et posture",
+  titlePrefix: "Gestes et postures façon",
   titleHighlight: "pétanque",
   heroDescription:
     "Un atelier ludique qui utilise la pétanque pour sensibiliser aux bonnes postures, comprendre l'impact des mauvaises habitudes et intégrer des corrections concrètes en s'amusant.",
@@ -395,8 +395,8 @@ export const posturePro: AtelierData = {
   metaTitle: "Atelier Posture Pro : défi flash",
   metaDescription:
     "Des défis courts et ludiques pour développer confiance, stabilité et savoir-être professionnel. Atelier QVCT animé en entreprise en Rhône-Alpes.",
-  titlePrefix: "La posture pro",
-  titleHighlight: "défi flash",
+  titlePrefix: "Posture pro :",
+  titleHighlight: "le défi flash",
   heroDescription:
     "Un atelier dynamique pour explorer sa posture professionnelle, développer confiance et stabilité, et mobiliser son savoir-être à travers des défis courts et ludiques.",
   heroImage: "/images/atelier-posture-pro-defi-flash.webp",
@@ -440,8 +440,9 @@ export const cnvAgressivitePhysique: AtelierData = {
   metaTitle: "Atelier CNV : gérer l'agressivité physique",
   metaDescription:
     "Un atelier pratique pour poser un cadre, affirmer ses limites et désamorcer les situations tendues sans violence. Animé en entreprise en Rhône-Alpes.",
-  titlePrefix: "CNV",
-  titleHighlight: "agressivité physique",
+  titlePrefix: "Gérer l'agressivité",
+  titleHighlight: "physique",
+  titleSuffix: "avec la CNV",
   heroDescription:
     "Un atelier pratique pour apprendre à poser un cadre clair, affirmer ses limites et gérer les situations tendues sans violence, grâce à la posture et au langage corporel.",
   heroImage: "/images/atelier-CNV-agressivite-physique.webp",
@@ -484,8 +485,9 @@ export const cnvAgressiviteVerbale: AtelierData = {
   metaTitle: "Atelier CNV : gérer l'agressivité verbale",
   metaDescription:
     "Jeux de rôle pour comprendre l'agressivité verbale et gérer les conflits avec calme et assertivité. Atelier animé en entreprise, Lyon & Rhône-Alpes.",
-  titlePrefix: "CNV",
-  titleHighlight: "agressivité verbale",
+  titlePrefix: "Gérer l'agressivité",
+  titleHighlight: "verbale",
+  titleSuffix: "avec la CNV",
   heroDescription:
     "Un atelier de jeux de rôle pour comprendre l'agressivité verbale et apprendre à gérer les conflits avec calme et assertivité.",
   heroImage: "/images/atelier-communication-non-violente-CNV-min.webp",
@@ -621,8 +623,9 @@ export const gestionEmotionsSophrologie: AtelierData = {
   metaTitle: "Atelier Gestion des Émotions par la sophrologie",
   metaDescription:
     "Comprendre les mécanismes du stress et transformer ses émotions grâce à la sophrologie. Atelier QVCT animé en entreprise en Rhône-Alpes.",
-  titlePrefix: "Gestion des émotions",
-  titleHighlight: "sophrologie",
+  titlePrefix: "Gérer ses",
+  titleHighlight: "émotions",
+  titleSuffix: "avec la sophrologie",
   heroDescription:
     "Un atelier pour acquérir des techniques de respiration simples et efficaces, mieux gérer son stress et développer concentration, présence et ancrage au quotidien.",
   heroImage: "/images/podium_organisme_formation_atelier_sophrologie-min.webp",
@@ -667,8 +670,9 @@ export const preventionSanteMentale: AtelierData = {
   metaTitle: "Atelier Santé Mentale : gérer son stress au quotidien",
   metaDescription:
     "Comprendre le stress, repérer ses signaux d'alerte et expérimenter des outils de régulation concrets. Atelier QVCT en entreprise, Lyon & Rhône-Alpes.",
-  titlePrefix: "Prévention",
-  titleHighlight: "santé mentale",
+  titlePrefix: "Santé mentale : gérer",
+  titleHighlight: "son stress",
+  titleSuffix: "au quotidien",
   heroDescription:
     "Un atelier interactif pour comprendre les mécanismes du stress, repérer ses signaux d'alerte et expérimenter des outils concrets de régulation, pour un environnement de travail plus serein.",
   heroImage: "/images/stress-management-confidence-workshop.webp",
@@ -767,6 +771,7 @@ export const quizSurMesure: AtelierData = {
     "Un quiz interactif avec buzzers pour renforcer les connaissances et transmettre les règles internes de façon ludique. Animé en entreprise en Rhône-Alpes.",
   titlePrefix: "Quiz",
   titleHighlight: "sur-mesure",
+  titleSuffix: "avec buzzers",
   heroDescription:
     "Un atelier ludique et participatif qui renforce les connaissances, transmet les règles internes de l'entreprise et valide les acquis grâce à des quiz interactifs avec buzzers.",
   heroImage: "/images/atelier-quiz-2-min.webp",
@@ -859,7 +864,7 @@ export const theatreImproSanteMentale: AtelierData = {
   metaTitle: "Atelier Théâtre d'Impro Santé Mentale",
   metaDescription:
     "Théâtre d'improvisation et théâtre forum pour repérer les signaux faibles de mal-être au travail et oser en parler. Atelier animé en entreprise en Rhône-Alpes.",
-  titlePrefix: "Théâtre d'impro",
+  titlePrefix: "Le théâtre d'impro au service de la",
   titleHighlight: "santé mentale",
   heroDescription:
     "Un atelier de théâtre d'improvisation et de théâtre forum pour apprendre à repérer les signaux faibles de mal-être au travail et oser initier un échange avec un collègue en difficulté.",

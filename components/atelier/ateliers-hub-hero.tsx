@@ -13,12 +13,12 @@ export default function AteliersHubHero() {
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
           {/* Left */}
           <div>
-            <span className="inline-flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952]">
+            {/* La ligne d'accroche fait partie du H1 (mot-clé pour Google), visuellement inchangée */}
+            <h1 className="font-poppins font-extrabold text-[#061952] tracking-tight leading-[1.05] text-5xl md:text-6xl mb-5">
+              <span className="flex items-center gap-2 font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#061952] leading-normal mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-[#57B3B7]" />
-              Ateliers QVCT &amp; Sécurité · Rhône-Alpes
-            </span>
-
-            <h1 className="font-poppins font-extrabold text-[#061952] tracking-tight leading-[1.05] text-5xl md:text-6xl mt-4 mb-5">
+                Ateliers QVT et prévention à Lyon et dans l&apos;Ain
+              </span>
               Des ateliers qui{" "}
               <span className="relative inline-block">
                 <span className="relative z-10">marquent les esprits</span>

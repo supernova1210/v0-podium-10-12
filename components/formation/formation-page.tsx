@@ -46,6 +46,7 @@ export default function FormationPage({ data }: { data: FormationData }) {
       <FormationHero
         breadcrumb={<Breadcrumb items={crumbs} />}
         eyebrow={data.heroEyebrow}
+        titlePrefix={data.titlePrefix}
         titleHighlight={data.titleHighlight}
         titleSuffix={data.titleSuffix}
         description={data.heroDescription}

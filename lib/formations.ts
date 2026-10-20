@@ -4,6 +4,8 @@ export interface FormationData {
   metaTitle: string
   metaDescription: string
   heroEyebrow: string
+  /** Début du H1 avant le mot surligné (défaut : « Formation ») */
+  titlePrefix?: string
   titleHighlight: string
   titleSuffix?: string
   heroDescription: string
@@ -69,7 +71,7 @@ export const reveilMusculaire: FormationData = {
   category: "securite",
   metaTitle: "Formation Réveil Musculaire",
   metaDescription:
-    "Formez vos ambassadeurs réveil musculaire : concevoir et animer des séances d'échauffement ludiques en entreprise pour prévenir les TMS.",
+    "Formation réveil musculaire : formez vos ambassadeurs à animer des échauffements ludiques pour prévenir les TMS. Intra-entreprise à Lyon et dans l'Ain.",
   heroEyebrow: "Formation Sécurité",
   titleHighlight: "Réveil Musculaire",
   heroDescription:
@@ -156,7 +158,7 @@ export const gesteEtPosture: FormationData = {
   category: "securite",
   metaTitle: "Formation Geste et Posture",
   metaDescription:
-    "Comprendre, évaluer et améliorer durablement ses postures de travail pour réduire les risques professionnels et les TMS.",
+    "Formation gestes et postures en entreprise : comprendre, évaluer et améliorer ses postures pour réduire les TMS. Intra-entreprise à Lyon et dans l'Ain.",
   heroEyebrow: "Formation Sécurité",
   titleHighlight: "Geste et Posture",
   heroDescription:
@@ -230,7 +232,7 @@ export const animationQuartHeure: FormationData = {
   category: "securite",
   metaTitle: "Formation Animation ¼h Sécurité",
   metaDescription:
-    "Concevoir, préparer et animer un quart d'heure sécurité clair, engageant et opérationnel pour développer une culture prévention durable.",
+    "Formation animation du quart d'heure sécurité : concevoir et animer des ¼h sécurité engageants pour ancrer la prévention. Dans vos locaux, à Lyon et dans l'Ain.",
   heroEyebrow: "Formation Sécurité",
   titleHighlight: "Animation ¼h",
   titleSuffix: "Sécurité",
@@ -304,7 +306,7 @@ export const gestesQuiSauvent: FormationData = {
   category: "securite",
   metaTitle: "Formation Sensibilisation aux Gestes Qui Sauvent",
   metaDescription:
-    "Sur une courte durée, acquérir et maîtriser les gestes de secours essentiels pour porter les premiers secours à une victime.",
+    "Formation aux gestes qui sauvent : en quelques heures, acquérir les gestes de secours essentiels face à une victime. Dans vos locaux, à Lyon et dans l'Ain.",
   heroEyebrow: "Formation Sécurité · Certifiante",
   titleHighlight: "Gestes Qui Sauvent",
   heroDescription:
@@ -454,7 +456,7 @@ export const lancerDynamiserReunion: FormationData = {
   category: "qvct",
   metaTitle: "Formation Lancer et dynamiser une réunion",
   metaDescription:
-    "Lancer ses réunions avec un icebreaker qui capte l'attention, crée du lien et met de l'énergie dès les premières minutes.",
+    "Formation lancer et dynamiser une réunion : des icebreakers qui captent l'attention et créent du lien dès les premières minutes. Intra-entreprise, Lyon et Ain.",
   heroEyebrow: "Formation QVCT",
   titleHighlight: "Lancer & dynamiser",
   titleSuffix: "une réunion",
@@ -526,7 +528,7 @@ export const techniqueAnimation: FormationData = {
   category: "qvct",
   metaTitle: "Formation Technique d'animation",
   metaDescription:
-    "Donner vie à ses réunions pour capter l'attention, créer du lien et garder le cap jusqu'aux résultats.",
+    "Formation technique d'animation : donner vie à vos réunions, capter l'attention et garder le cap jusqu'aux résultats. Dans vos locaux, à Lyon et dans l'Ain.",
   heroEyebrow: "Formation QVCT",
   titleHighlight: "Technique",
   titleSuffix: "d'animation",
@@ -599,7 +601,7 @@ export const communicationNonViolente: FormationData = {
   category: "qvct",
   metaTitle: "Formation Communication Non Violente",
   metaDescription:
-    "Renforcer ses compétences relationnelles pour des échanges respectueux et constructifs, même en situation de tension.",
+    "Formation CNV en entreprise : des échanges respectueux et constructifs, même sous tension. Intra-entreprise à Lyon, dans l'Ain et en Auvergne-Rhône-Alpes.",
   heroEyebrow: "Formation QVCT",
   titleHighlight: "Communication",
   titleSuffix: "Non Violente",
@@ -666,12 +668,13 @@ export const communicationNonViolente: FormationData = {
 export const santeMentaleModule1: FormationData = {
   slug: "formation-qvct-sante-mentale-agressivite-verbale",
   category: "qvct",
-  metaTitle: "Formation Santé Mentale · Module 1 : Gestion de l'agressivité verbale",
+  metaTitle: "Formation santé mentale : gérer l'agressivité verbale",
   metaDescription:
-    "Prévenir les escalades verbales et garantir un cadre d'intervention sécurisant, en particulier pour les professionnels du domicile.",
-  heroEyebrow: "Formation QVCT · Santé mentale",
-  titleHighlight: "Santé Mentale",
-  titleSuffix: "· Module 1",
+    "Formation santé mentale : prévenir les escalades verbales et sécuriser vos interventions, notamment à domicile. Intra-entreprise à Lyon et dans l'Ain.",
+  heroEyebrow: "Formation santé mentale · Module 1",
+  titlePrefix: "Gérer",
+  titleHighlight: "l'agressivité",
+  titleSuffix: "verbale",
   heroDescription:
     "Module 1 : gestion de l'agressivité verbale. Renforcez les compétences relationnelles et émotionnelles de vos équipes pour prévenir les escalades verbales et garantir un cadre d'intervention sécurisant.",
   heroImage: "/images/stress-management-confidence-workshop.webp",
@@ -733,12 +736,13 @@ export const santeMentaleModule1: FormationData = {
 export const santeMentaleModule2: FormationData = {
   slug: "formation-qvct-sante-mentale-situations-dangereuses",
   category: "qvct",
-  metaTitle: "Formation Santé Mentale · Module 2 : Se préserver face aux situations dangereuses",
+  metaTitle: "Formation santé mentale : se préserver des situations à risque",
   metaDescription:
-    "Adopter une posture relationnelle régulée et sécurisante pour se préserver face à l'agressivité verbale.",
-  heroEyebrow: "Formation QVCT · Santé mentale",
-  titleHighlight: "Santé Mentale",
-  titleSuffix: "· Module 2",
+    "Formation santé mentale : adopter une posture régulée et sécurisante pour se préserver face aux situations à risque. Intra-entreprise à Lyon et dans l'Ain.",
+  heroEyebrow: "Formation santé mentale · Module 2",
+  titlePrefix: "Se préserver face aux",
+  titleHighlight: "situations",
+  titleSuffix: "dangereuses",
   heroDescription:
     "Module 2 : se préserver face aux situations dangereuses. Apprenez à adopter une posture relationnelle régulée et sécurisante pour vous préserver face à l'agressivité verbale.",
   heroImage: "/images/atelier-CNV-agressivite-physique.webp",
@@ -800,12 +804,12 @@ export const santeMentaleModule2: FormationData = {
 export const santeMentaleModule3: FormationData = {
   slug: "formation-qvct-sante-mentale-detecter-mal-etre",
   category: "qvct",
-  metaTitle: "Formation Santé Mentale · Module 3 : Détecter une personne en détresse",
+  metaTitle: "Formation santé mentale : détecter une personne en détresse",
   metaDescription:
-    "Repérer les premiers signes de mal-être, écouter avec justesse et réagir de manière adaptée pour prévenir les risques psychosociaux.",
-  heroEyebrow: "Formation QVCT · Santé mentale",
-  titleHighlight: "Santé Mentale",
-  titleSuffix: "· Module 3",
+    "Formation santé mentale : repérer les signes de mal-être, écouter et réagir pour prévenir les RPS. Intra-entreprise à Lyon, dans l'Ain et en Rhône-Alpes.",
+  heroEyebrow: "Formation santé mentale · Module 3",
+  titlePrefix: "Détecter une personne en",
+  titleHighlight: "détresse",
   heroDescription:
     "Module 3 : détecter une personne en détresse ou en situation de mal-être. Développez une posture pour repérer les premiers signes, écouter avec justesse et réagir de manière adaptée.",
   heroImage: "/images/podium_organisme_formation_atelier_sophrologie-min.webp",
@@ -869,7 +873,7 @@ export const valoriserPosture: FormationData = {
   category: "qvct",
   metaTitle: "Formation Valoriser sa posture professionnelle",
   metaDescription:
-    "Découvrir les codes de l'entreprise et apprendre à se positionner vis-à-vis de ses collègues et de sa hiérarchie.",
+    "Formation posture professionnelle : comprendre les codes de l'entreprise et trouver sa place face à ses collègues et sa hiérarchie. À Lyon et dans l'Ain.",
   heroEyebrow: "Formation QVCT",
   titleHighlight: "Valoriser sa posture",
   titleSuffix: "pro",
