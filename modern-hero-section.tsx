@@ -53,7 +53,7 @@ export default function ModernHeroSection() {
           <div className="grid lg:grid-cols-[1.8fr_1.2fr] gap-4">
             <div className="relative h-[300px] lg:h-[440px] rounded-[28px] overflow-hidden shadow-[0_30px_80px_rgba(6,25,82,0.16)]">
               <Image
-                src="/images/page-accueil-atelier-podium.jpg"
+                src="/images/page-accueil-atelier-podium.webp"
                 alt="Atelier Podium animé en entreprise"
                 fill
                 className="object-cover"
