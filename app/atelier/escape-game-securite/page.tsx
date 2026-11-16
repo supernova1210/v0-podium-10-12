@@ -4,9 +4,11 @@ import AtelierApproche from "@/components/atelier/atelier-approche"
 import AtelierProgramme from "@/components/atelier/atelier-programme"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import RelatedOffers from "@/components/related-offers"
+import FAQ from "@/components/formation/formation-faq"
+import { ateliersFaq } from "@/lib/ateliers-faq"
 import Breadcrumb from "@/components/seo/breadcrumb"
 import JsonLd from "@/components/seo/json-ld"
-import { atelierMetadata, atelierPath, atelierServiceLd, breadcrumbLd, graphLd, type Crumb } from "@/lib/seo"
+import { atelierMetadata, atelierPath, atelierServiceLd, breadcrumbLd, faqLd, graphLd, type Crumb } from "@/lib/seo"
 
 const escapeGame = {
   slug: "escape-game-securite",
@@ -21,13 +23,14 @@ const crumbs: Crumb[] = [
   { label: "Ateliers", href: "/nos-ateliers" },
   { label: "Escape Game Sécurité", href },
 ]
+const faq = ateliersFaq[escapeGame.slug]
 
 export const metadata: Metadata = atelierMetadata(escapeGame)
 
 export default function EscapeGameSecuritePage() {
   return (
     <main>
-      <JsonLd data={graphLd(atelierServiceLd(escapeGame), breadcrumbLd(crumbs))} />
+      <JsonLd data={graphLd(atelierServiceLd(escapeGame), breadcrumbLd(crumbs), faqLd(faq))} />
       <AtelierHero
         breadcrumb={<Breadcrumb items={crumbs} />}
         accent="jaune"
@@ -86,6 +89,7 @@ export default function EscapeGameSecuritePage() {
         ]}
         pdfHref="/documents/programme-atelier-escape-game.pdf"
       />
+      <FAQ faqData={faq} />
       <RelatedOffers href={href} />
       <ContactezNousSection />
     </main>

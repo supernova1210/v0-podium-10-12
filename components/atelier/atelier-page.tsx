@@ -6,9 +6,11 @@ import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 import AtelierProgramme from "./atelier-programme"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import RelatedOffers from "@/components/related-offers"
+import FAQ from "@/components/formation/formation-faq"
+import { ateliersFaq } from "@/lib/ateliers-faq"
 import Breadcrumb from "@/components/seo/breadcrumb"
 import JsonLd from "@/components/seo/json-ld"
-import { atelierPath, atelierServiceLd, breadcrumbLd, graphLd, type Crumb } from "@/lib/seo"
+import { atelierPath, atelierServiceLd, breadcrumbLd, faqLd, graphLd, type Crumb } from "@/lib/seo"
 import type { AtelierData } from "@/lib/ateliers"
 import type { AtelierAccent } from "./atelier-accents"
 
@@ -35,7 +37,8 @@ export default function AtelierPage({ data }: { data: AtelierData }) {
     { label: "Ateliers", href: "/nos-ateliers" },
     { label: data.cardTitle, href },
   ]
-  const ld = graphLd(atelierServiceLd(data), breadcrumbLd(crumbs))
+  const faq = ateliersFaq[data.slug] ?? []
+  const ld = graphLd(atelierServiceLd(data), breadcrumbLd(crumbs), ...(faq.length ? [faqLd(faq)] : []))
 
   return (
     <main>
@@ -81,6 +84,7 @@ export default function AtelierPage({ data }: { data: AtelierData }) {
         modalites={modalites}
         pdfHref={data.pdf}
       />
+      {faq.length ? <FAQ faqData={faq} /> : null}
       {RESSOURCES_PUBLIQUES && data.ressource ? (
         <RessourceTeaser
           href={data.ressource.href}
