@@ -4,7 +4,10 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    // Pas d'optimiseur Vercel : variantes 640 / 1080 px pré-générées, voir lib/image-loader.ts
+    loader: "custom",
+    loaderFile: "./lib/image-loader.ts",
+    deviceSizes: [640, 1080, 1920],
   },
  
   eslint: {
