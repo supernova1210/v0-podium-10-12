@@ -56,6 +56,7 @@ export default function ModernHeroSection() {
                 src="/images/page-accueil-atelier-podium.webp"
                 alt="Atelier Podium animé en entreprise"
                 fill
+                sizes="(min-width: 1024px) 60vw, 100vw"
                 className="object-cover"
                 priority
               />

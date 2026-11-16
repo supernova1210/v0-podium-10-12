@@ -120,7 +120,7 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-sm text-white/60">
           <p>
             Copyright ©2026 O.F PODIUM (PODIUM), tous droits réservés.{" "}
-            <Link href="/mentions-legales" className="text-[#FFD25D] hover:underline">
+            <Link href="/mentions-legales" className="text-[#FFD25D] underline underline-offset-2 hover:no-underline">
               Mentions légales &amp; RGPD
             </Link>
             <span className="mx-2 text-white/30">·</span>

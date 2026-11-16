@@ -104,10 +104,10 @@ export default function JourneeSeminairePage() {
           title="Pourquoi travailler avec Podium ?"
           description="Un séminaire d'entreprise réussi, c'est une journée qui fait sens, crée du lien et donne envie d'avancer ensemble. Podium conçoit et anime vos séminaires avec des ateliers sur mesure : cohésion d'équipe, prise de parole, intelligence collective, bien-être au travail. Quand l'animation est vivante et le rythme bien cadencé, chaque participant repart avec plus d'énergie et de motivation."
           items={[
-            { icon: "/images/Picto_Evolution.png", title: "Animation de réunion", alt: "Icône animation de réunion" },
-            { icon: "/images/picto-participants.png", title: "Rythme de la journée", alt: "Icône rythme de la journée" },
-            { icon: "/images/picto-cartes.png", title: "Diversité des ateliers", alt: "Icône diversité des ateliers" },
-            { icon: "/images/picto-de.png", title: "Qualité des intervenants", alt: "Icône qualité des intervenants" },
+            { icon: "/images/Picto_Evolution.webp", title: "Animation de réunion", alt: "Icône animation de réunion" },
+            { icon: "/images/picto-participants.webp", title: "Rythme de la journée", alt: "Icône rythme de la journée" },
+            { icon: "/images/picto-cartes.webp", title: "Diversité des ateliers", alt: "Icône diversité des ateliers" },
+            { icon: "/images/picto-de.webp", title: "Qualité des intervenants", alt: "Icône qualité des intervenants" },
           ]}
         />
       </div>

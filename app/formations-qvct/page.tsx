@@ -93,7 +93,7 @@ const schemas = [
 
 export default function FormationsQVCTPage() {
   return (
-    <div>
+    <main>
       {schemas.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -110,6 +110,6 @@ export default function FormationsQVCTPage() {
       <QvctProcess />
       <FormationFAQ faqData={faqData} />
       <ContactezNousSection />
-    </div>
+    </main>
   )
 }

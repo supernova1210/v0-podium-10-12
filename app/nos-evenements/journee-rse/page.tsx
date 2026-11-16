@@ -108,9 +108,9 @@ export default function JourneeRsePage() {
           title="Pourquoi travailler avec Podium ?"
           description="Transformez votre journée RSE en un événement marquant et fédérateur. Nos ateliers ludiques, immersifs et personnalisés créent un vrai déclic chez vos équipes : vous sensibilisez efficacement tout en renforçant la cohésion et l'engagement."
           items={[
-            { icon: "/images/Picto_cocher.png", title: "Ancrer la RSE", alt: "Icône ancrer la RSE" },
+            { icon: "/images/Picto_cocher.webp", title: "Ancrer la RSE", alt: "Icône ancrer la RSE" },
             { icon: "/images/Pictogrammes_RSE.webp", title: "Renforcer l'engagement", alt: "Icône renforcer l'engagement" },
-            { icon: "/images/Picto_Safety.png", title: "Valoriser son image", alt: "Icône valoriser son image" },
+            { icon: "/images/Picto_Safety.webp", title: "Valoriser son image", alt: "Icône valoriser son image" },
           ]}
         />
       </div>

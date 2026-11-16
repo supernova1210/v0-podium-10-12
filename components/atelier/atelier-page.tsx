@@ -20,15 +20,15 @@ export default function AtelierPage({ data }: { data: AtelierData }) {
 
   const badges = [
     { icon: "/images/picto-temps.webp", label: "Durée", value: data.duree },
-    { icon: "/images/picto-participants.png", label: "Participants", value: data.participants },
-    { icon: "/images/picto-zone.png", label: "Lieu", value: "Dans vos locaux" },
+    { icon: "/images/picto-participants.webp", label: "Participants", value: data.participants },
+    { icon: "/images/picto-zone.webp", label: "Lieu", value: "Dans vos locaux" },
   ]
 
   const modalites = [
-    { icon: "/images/picto_interactif.png", title: "Atelier", subtitle: "intra-entreprise" },
+    { icon: "/images/picto_interactif.webp", title: "Atelier", subtitle: "intra-entreprise" },
     { icon: "/images/picto-temps.webp", title: "Durée", subtitle: data.duree },
-    { icon: "/images/picto-participants.png", title: "Participants", subtitle: data.participants },
-    { icon: "/images/picto_prix.png", title: "Sur devis", subtitle: "tarif adapté" },
+    { icon: "/images/picto-participants.webp", title: "Participants", subtitle: data.participants },
+    { icon: "/images/picto_prix.webp", title: "Sur devis", subtitle: "tarif adapté" },
   ]
 
   const href = atelierPath(data.slug)

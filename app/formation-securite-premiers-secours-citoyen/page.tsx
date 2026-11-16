@@ -27,8 +27,8 @@ export const metadata: Metadata = formationMetadata(data)
 
 const badges = [
   { icon: "/images/picto-temps.webp", label: "Durée", value: "7 heures" },
-  { icon: "/images/picto-participants.png", label: "Participants", value: "2 à 10 personnes" },
-  { icon: "/images/picto-zone.png", label: "Lieu", value: "Intra-entreprise" },
+  { icon: "/images/picto-participants.webp", label: "Participants", value: "2 à 10 personnes" },
+  { icon: "/images/picto-zone.webp", label: "Lieu", value: "Intra-entreprise" },
 ]
 
 export default function FormationPremiersSecoursCitoyenPage() {

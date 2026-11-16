@@ -111,10 +111,10 @@ export default function JourneeSecuritePage() {
           title="Pourquoi travailler avec Podium ?"
           description="Transformez votre journée sécurité en un événement marquant et fédérateur. Nos ateliers ludiques, immersifs et personnalisés créent un vrai déclic chez vos équipes : vous sensibilisez efficacement tout en renforçant la cohésion et l'engagement."
           items={[
-            { icon: "/images/Picto_Evolution.png", title: "Expérience", alt: "Icône expérience" },
-            { icon: "/images/picto-participants.png", title: "Accompagnement", alt: "Icône accompagnement" },
-            { icon: "/images/picto-cartes.png", title: "Innovation", alt: "Icône innovation" },
-            { icon: "/images/picto-de.png", title: "Ludique", alt: "Icône ludique" },
+            { icon: "/images/Picto_Evolution.webp", title: "Expérience", alt: "Icône expérience" },
+            { icon: "/images/picto-participants.webp", title: "Accompagnement", alt: "Icône accompagnement" },
+            { icon: "/images/picto-cartes.webp", title: "Innovation", alt: "Icône innovation" },
+            { icon: "/images/picto-de.webp", title: "Ludique", alt: "Icône ludique" },
           ]}
         />
       </div>

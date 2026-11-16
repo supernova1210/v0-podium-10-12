@@ -93,7 +93,7 @@ const schemas = [
 
 export default function FormationsSecuritePage() {
   return (
-    <div>
+    <main>
       {schemas.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
@@ -110,6 +110,6 @@ export default function FormationsSecuritePage() {
       <SecuriteProcess />
       <FormationFAQ faqData={faqData} />
       <ContactezNousSection />
-    </div>
+    </main>
   )
 }

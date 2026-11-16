@@ -89,7 +89,7 @@ const faqSchema = {
 
 export default function Page() {
   return (
-    <div>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -117,6 +117,6 @@ export default function Page() {
       <HomepageFAQSection />
       <ContactezNousSection />
       <NosPartenairesSection />
-    </div>
+    </main>
   )
 }

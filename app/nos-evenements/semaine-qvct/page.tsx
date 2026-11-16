@@ -110,10 +110,10 @@ export default function SemaineQvctPage() {
           title="Pourquoi travailler avec Podium ?"
           description="Transformez votre semaine QVCT en un événement fédérateur et impactant. Profitez de la semaine de la QVCT pour prendre du recul, renforcer la prévention et créer du lien entre vos collaborateurs. Construisez avec Podium des ateliers adaptés à vos métiers, vos horaires, vos postes de travail et vos contraintes terrain."
           items={[
-            { icon: "/images/Picto_Evolution.png", title: "Ateliers sur mesure", alt: "Icône ateliers sur mesure" },
-            { icon: "/images/picto-participants.png", title: "Formats adaptés à vos équipes", alt: "Icône formats adaptés" },
-            { icon: "/images/picto-cartes.png", title: "Pédagogie active et ludique", alt: "Icône pédagogie active" },
-            { icon: "/images/picto-de.png", title: "Intervenants experts terrain", alt: "Icône intervenants experts" },
+            { icon: "/images/Picto_Evolution.webp", title: "Ateliers sur mesure", alt: "Icône ateliers sur mesure" },
+            { icon: "/images/picto-participants.webp", title: "Formats adaptés à vos équipes", alt: "Icône formats adaptés" },
+            { icon: "/images/picto-cartes.webp", title: "Pédagogie active et ludique", alt: "Icône pédagogie active" },
+            { icon: "/images/picto-de.webp", title: "Intervenants experts terrain", alt: "Icône intervenants experts" },
           ]}
         />
       </div>

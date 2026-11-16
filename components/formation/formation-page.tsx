@@ -15,15 +15,15 @@ import type { FormationData } from "@/lib/formations"
 export default function FormationPage({ data }: { data: FormationData }) {
   const badges = [
     { icon: "/images/picto-temps.webp", label: "Durée", value: data.duree },
-    { icon: "/images/picto-participants.png", label: "Participants", value: data.participantsFull },
-    { icon: "/images/picto-zone.png", label: "Lieu", value: "Intra-entreprise" },
+    { icon: "/images/picto-participants.webp", label: "Participants", value: data.participantsFull },
+    { icon: "/images/picto-zone.webp", label: "Lieu", value: "Intra-entreprise" },
   ]
 
   const modalites = [
-    { icon: "/images/picto_interactif.png", title: "Formation", subtitle: "intra-entreprise" },
+    { icon: "/images/picto_interactif.webp", title: "Formation", subtitle: "intra-entreprise" },
     { icon: "/images/picto-temps.webp", title: "Durée", subtitle: data.duree },
-    { icon: "/images/picto-participants.png", title: data.participantsTitle, subtitle: data.participantsSub },
-    { icon: "/images/picto_prix.png", title: "Sur devis", subtitle: "tarif adapté" },
+    { icon: "/images/picto-participants.webp", title: data.participantsTitle, subtitle: data.participantsSub },
+    { icon: "/images/picto_prix.webp", title: "Sur devis", subtitle: "tarif adapté" },
   ]
 
   const href = formationPath(data.slug)

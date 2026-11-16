@@ -264,7 +264,8 @@ export default function Navigation() {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-3 rounded-xl text-[#061952] hover:text-[#FFD25D] hover:bg-gray-50 transition-all duration-200 border border-gray-200"
-            aria-label="Toggle menu"
+            aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -298,6 +299,7 @@ export default function Navigation() {
           <button
             onClick={() => setIsMenuOpen(false)}
             className="p-2 rounded-lg text-[#061952] hover:text-[#FFD25D] hover:bg-white transition-all duration-200"
+            aria-label="Fermer le menu"
           >
             <X className="h-6 w-6" />
           </button>

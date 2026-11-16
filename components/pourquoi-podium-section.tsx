@@ -17,7 +17,7 @@ const pillars = [
     invert: true,
   },
   {
-    icon: "/images/picto-personne-etoile.png",
+    icon: "/images/picto-personne-etoile.webp",
     alt: "Formats immersifs",
     title: "Des formats immersifs et participatifs",
     description:
@@ -28,7 +28,7 @@ const pillars = [
     invert: false,
   },
   {
-    icon: "/images/picto-puzzle.png",
+    icon: "/images/picto-puzzle.webp",
     alt: "Marque employeur",
     title: "Un levier concret pour votre marque employeur",
     description:
@@ -89,7 +89,8 @@ export default function PourquoiPodiumSection() {
                 <span
                   key={index}
                   className="inline-block mr-3 transition-all duration-300"
-                  style={{ color: `rgba(6, 25, 82, ${0.2 + wordProgress * 0.8})` }}
+                  // Opacité mini 0,5 : contraste 3,3:1, le minimum pour un grand titre (WCAG AA)
+                  style={{ color: `rgba(6, 25, 82, ${0.5 + wordProgress * 0.5})` }}
                 >
                   {word}
                 </span>

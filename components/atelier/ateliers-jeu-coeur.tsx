@@ -3,35 +3,35 @@ import Reveal from "@/components/reveal"
 
 const types = [
   {
-    icon: "/images/picto-de.png",
+    icon: "/images/picto-de.webp",
     title: "Jeu de plateau",
     alt: "Icône jeu de plateau",
     ring: "group-hover:ring-[#FFD25D]",
     text: "text-[#FFD25D]",
   },
   {
-    icon: "/images/picto-mur-digital.png",
+    icon: "/images/picto-mur-digital.webp",
     title: "Mur digital",
     alt: "Icône mur digital",
     ring: "group-hover:ring-[#57B3B7]",
     text: "text-[#7ECDD1]",
   },
   {
-    icon: "/images/pictogrammes-casque-pause.png",
+    icon: "/images/pictogrammes-casque-pause.webp",
     title: "Blind test",
     alt: "Icône blind test",
     ring: "group-hover:ring-[#C9426B]",
     text: "text-[#E88AA6]",
   },
   {
-    icon: "/images/picto-jeux.png",
+    icon: "/images/picto-jeux.webp",
     title: "Jeu sur table",
     alt: "Icône jeu sur table",
     ring: "group-hover:ring-[#FFD25D]",
     text: "text-[#FFD25D]",
   },
   {
-    icon: "/images/picto-bienetre-travail.png",
+    icon: "/images/picto-bienetre-travail.webp",
     title: "Pratique sportive",
     alt: "Icône pratique sportive",
     ring: "group-hover:ring-[#57B3B7]",
