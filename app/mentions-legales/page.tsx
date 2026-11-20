@@ -117,16 +117,19 @@ export default function MentionsLegalesPage() {
             <p>
               <strong className="text-[#061952]">Données collectées :</strong> lorsque vous utilisez le formulaire de
               contact, nous recueillons votre prénom, votre nom, votre adresse email, le nom de votre entreprise et
-              votre message.
+              votre message. Lorsque vous demandez un mémo, nous recueillons votre prénom, votre nom, votre adresse
+              email et le nom de votre entreprise.
             </p>
             <p>
-              <strong className="text-[#061952]">Finalité :</strong> ces informations servent uniquement à répondre à
-              votre demande et, le cas échéant, à établir une proposition commerciale. Elles ne sont ni revendues ni
-              cédées à des tiers.
+              <strong className="text-[#061952]">Finalité :</strong> ces informations servent à répondre à votre
+              demande ou à vous envoyer le mémo demandé et, le cas échéant, à vous recontacter au sujet de nos
+              formations ou à établir une proposition commerciale. Vous pouvez vous opposer à tout moment à être
+              recontacté, sur simple demande. Elles ne sont ni revendues ni cédées à des tiers.
             </p>
             <p>
               <strong className="text-[#061952]">Base légale :</strong> les mesures précontractuelles prises à votre
-              demande et notre intérêt légitime à répondre aux sollicitations reçues.
+              demande et notre intérêt légitime à répondre aux sollicitations reçues et à présenter nos formations aux
+              professionnels qui s&apos;y intéressent.
             </p>
             <p>
               <strong className="text-[#061952]">Durée de conservation :</strong> 3 ans à compter de notre dernier
@@ -134,7 +137,7 @@ export default function MentionsLegalesPage() {
             </p>
             <p>
               <strong className="text-[#061952]">Prestataires techniques :</strong> Vercel (hébergement du site),
-              Resend (acheminement des emails du formulaire) et, uniquement avec votre accord, Google (mesure
+              Resend (acheminement des emails des formulaires) et, uniquement avec votre accord, Google (mesure
               d&apos;audience). Ces prestataires agissent pour notre compte et n&apos;utilisent pas vos données à
               leurs propres fins.
             </p>

@@ -5,6 +5,7 @@ import Reveal from "@/components/reveal"
 import RessourceHero from "@/components/ressource/ressource-hero"
 import RessourceCta from "@/components/ressource/ressource-cta"
 import TriptyqueViewer from "@/components/ressource/triptyque-viewer"
+import MemoForm from "@/components/ressource/memo-form"
 import { ChiffresCles, TmsChart, EtapesAggravation } from "@/components/ressource/ressource-blocks"
 import FormationFAQ from "@/components/formation/formation-faq"
 import {
@@ -132,7 +133,7 @@ export default function ReveilMusculaireRessourcePage() {
         readingTime={meta.readingTime}
         image="/images/reveil-musculaire-podium-atelier.webp"
         imageAlt="Séance de réveil musculaire animée par Podium en entreprise"
-        pdfHref={meta.pdf?.href}
+        memoAnchor={meta.memo ? "#recevoir-le-memo" : undefined}
       />
 
       {/* Pourquoi s'échauffer */}
@@ -405,13 +406,18 @@ export default function ReveilMusculaireRessourcePage() {
               Le mémo à feuilleter
             </h2>
             <p className="text-lg text-gray-600">
-              Le support que nous remettons aux participants de nos formations. Feuilletez-le ici ou téléchargez-le
-              librement.
+              Le support que nous remettons aux participants de nos formations. Feuilletez-le ici, puis recevez la
+              version PDF par email pour l&apos;imprimer ou la partager.
             </p>
           </Reveal>
           <Reveal delay={120}>
-            <TriptyqueViewer volets={reveilVolets} title="Mémo Réveil Musculaire Podium" pdfHref={meta.pdf?.href} />
+            <TriptyqueViewer volets={reveilVolets} title="Mémo Réveil Musculaire Podium" />
           </Reveal>
+          {meta.memo ? (
+            <div className="mt-10">
+              <MemoForm ressource={meta.slug} memoTitle={meta.memo.title} />
+            </div>
+          ) : null}
         </div>
       </section>
 

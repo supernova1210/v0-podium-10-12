@@ -14,8 +14,21 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 
+  experimental: {
+    // Les mémos PDF (hors de public/) doivent être embarqués avec la route qui les envoie
+    outputFileTracingIncludes: {
+      "/api/memo": ["./private/memos/**"],
+    },
+  },
+
   async redirects() {
     return [
+      // Le mémo n'est plus en téléchargement libre : on renvoie vers le formulaire
+      {
+        source: "/documents/memo-reveil-musculaire-podium.pdf",
+        destination: "/ressources/reveil-musculaire-en-entreprise#recevoir-le-memo",
+        permanent: true,
+      },
       {
         source: "/formations-management",
         destination: "/formations-securite",

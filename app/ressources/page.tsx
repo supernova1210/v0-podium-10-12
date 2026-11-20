@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { OG_BASE } from "@/lib/seo"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, BookOpen, Clock, Download } from "lucide-react"
+import { ArrowRight, BookOpen, Clock, FileText } from "lucide-react"
 import Reveal from "@/components/reveal"
 import { ContactezNousSection } from "@/components/contactez-nous-section"
 import { allRessources, RESSOURCES_PUBLIQUES } from "@/lib/ressources"
@@ -98,9 +98,9 @@ export default function RessourcesPage() {
                       <BookOpen className="w-3.5 h-3.5" />
                       {r.categoryLabel}
                     </span>
-                    {r.pdf ? (
+                    {r.memo ? (
                       <span className="absolute top-4 right-4 inline-flex items-center gap-1.5 font-poppins font-semibold text-xs px-3 py-1.5 rounded-full bg-white/90 text-[#061952]">
-                        <Download className="w-3.5 h-3.5" />
+                        <FileText className="w-3.5 h-3.5" />
                         PDF
                       </span>
                     ) : null}

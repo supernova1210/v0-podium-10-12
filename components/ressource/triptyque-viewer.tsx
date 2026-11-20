@@ -2,15 +2,14 @@
 
 import Image from "next/image"
 import { useCallback, useEffect, useState } from "react"
-import { ChevronLeft, ChevronRight, X, Maximize2, Download } from "lucide-react"
+import { ChevronLeft, ChevronRight, X, Maximize2 } from "lucide-react"
 
 interface TriptyqueViewerProps {
   volets: string[]
   title: string
-  pdfHref?: string
 }
 
-export default function TriptyqueViewer({ volets, title, pdfHref }: TriptyqueViewerProps) {
+export default function TriptyqueViewer({ volets, title }: TriptyqueViewerProps) {
   const [index, setIndex] = useState(0)
   const [zoom, setZoom] = useState(false)
 
@@ -106,18 +105,6 @@ export default function TriptyqueViewer({ volets, title, pdfHref }: TriptyqueVie
             ))}
           </div>
 
-          {pdfHref ? (
-            <div className="text-center mt-7">
-              <a
-                href={pdfHref}
-                target="_blank"
-                className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-[15px] px-7 py-3.5 rounded-full bg-[#FFD25D] text-[#061952] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
-              >
-                Télécharger le mémo complet (PDF)
-                <Download className="w-[18px] h-[18px]" />
-              </a>
-            </div>
-          ) : null}
         </div>
       </div>
 

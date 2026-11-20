@@ -21,7 +21,11 @@ export interface RessourceMeta {
   /** Formation vers laquelle la ressource convertit */
   formation: { label: string; href: string }
   atelier?: { label: string; href: string }
-  pdf?: { href: string; label: string }
+  /**
+   * Mémo PDF envoyé par email via le formulaire (app/api/memo), jamais en téléchargement direct.
+   * `file` : nom du fichier dans private/memos/ (hors de public/, donc sans URL publique).
+   */
+  memo?: { file: string; filename: string; title: string }
 }
 
 export const reveilMusculaireMeta: RessourceMeta = {
@@ -38,7 +42,11 @@ export const reveilMusculaireMeta: RessourceMeta = {
   readingTime: "6 min de lecture",
   formation: { label: "Formation Ambassadeur Réveil Musculaire", href: "/formation-securite-reveil-musculaire" },
   atelier: { label: "Atelier Réveil musculaire ludique", href: "/atelier/reveil-musculaire-ludique" },
-  pdf: { href: "/documents/memo-reveil-musculaire-podium.pdf", label: "Télécharger le mémo (PDF)" },
+  memo: {
+    file: "memo-reveil-musculaire-podium.pdf",
+    filename: "Memo-reveil-musculaire-Podium.pdf",
+    title: "le mémo Réveil musculaire",
+  },
 }
 
 export const gestesEtPosturesMeta: RessourceMeta = {

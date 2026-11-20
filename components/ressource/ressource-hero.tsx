@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, BookOpen, Clock, Download } from "lucide-react"
+import { ArrowRight, BookOpen, Clock, Mail } from "lucide-react"
 
 interface RessourceHeroProps {
   categoryLabel: string
@@ -11,7 +11,8 @@ interface RessourceHeroProps {
   readingTime: string
   image: string
   imageAlt: string
-  pdfHref?: string
+  /** Ancre du formulaire « Recevoir le mémo » (le PDF n'est plus en lien direct) */
+  memoAnchor?: string
 }
 
 export default function RessourceHero({
@@ -23,7 +24,7 @@ export default function RessourceHero({
   readingTime,
   image,
   imageAlt,
-  pdfHref,
+  memoAnchor,
 }: RessourceHeroProps) {
   return (
     <section className="relative overflow-hidden bg-white pt-8 pb-12 lg:pt-12 lg:pb-16">
@@ -68,14 +69,13 @@ export default function RessourceHero({
               <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">{chapo}</p>
 
               <div className="flex flex-wrap gap-3.5">
-                {pdfHref ? (
+                {memoAnchor ? (
                   <a
-                    href={pdfHref}
-                    target="_blank"
+                    href={memoAnchor}
                     className="inline-flex items-center justify-center gap-2.5 font-poppins font-semibold text-base px-8 py-4 rounded-full bg-[#FFD25D] text-[#061952] shadow-[0_10px_26px_rgba(255,210,93,0.45)] transition-all duration-300 hover:bg-[#FFC940] hover:-translate-y-0.5"
                   >
-                    Télécharger le mémo
-                    <Download className="w-[18px] h-[18px]" />
+                    Recevoir le mémo
+                    <Mail className="w-[18px] h-[18px]" />
                   </a>
                 ) : null}
                 <a
