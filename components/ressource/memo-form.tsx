@@ -103,6 +103,7 @@ export default function MemoForm({ ressource, memoTitle }: { ressource: string; 
             </div>
           ) : (
             <form onSubmit={handleSubmit(onSubmit)} noValidate className="grid gap-4">
+              <p className="text-sm text-gray-500 -mb-1">Tous les champs sont obligatoires.</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="grid gap-1.5">
                   <label htmlFor="memo-prenom" className="font-poppins font-semibold text-sm text-[#061952]">
@@ -112,6 +113,7 @@ export default function MemoForm({ ressource, memoTitle }: { ressource: string; 
                     id="memo-prenom"
                     autoComplete="given-name"
                     className={inputClass}
+                    aria-required="true"
                     aria-invalid={Boolean(errors.prenom)}
                     {...register("prenom", { required: "Indiquez votre prénom" })}
                   />
@@ -125,6 +127,7 @@ export default function MemoForm({ ressource, memoTitle }: { ressource: string; 
                     id="memo-nom"
                     autoComplete="family-name"
                     className={inputClass}
+                    aria-required="true"
                     aria-invalid={Boolean(errors.nom)}
                     {...register("nom", { required: "Indiquez votre nom" })}
                   />
@@ -142,7 +145,8 @@ export default function MemoForm({ ressource, memoTitle }: { ressource: string; 
                   autoComplete="email"
                   placeholder="prenom.nom@entreprise.fr"
                   className={inputClass}
-                  aria-invalid={Boolean(errors.email)}
+                  aria-required="true"
+                    aria-invalid={Boolean(errors.email)}
                   {...register("email", {
                     required: "Indiquez l'adresse qui recevra le mémo",
                     pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/, message: "Cette adresse email semble incomplète" },
@@ -159,7 +163,8 @@ export default function MemoForm({ ressource, memoTitle }: { ressource: string; 
                   id="memo-entreprise"
                   autoComplete="organization"
                   className={inputClass}
-                  aria-invalid={Boolean(errors.entreprise)}
+                  aria-required="true"
+                    aria-invalid={Boolean(errors.entreprise)}
                   {...register("entreprise", { required: "Indiquez le nom de votre entreprise" })}
                 />
                 {errors.entreprise ? <p className="text-sm text-[#C9426B]">{errors.entreprise.message}</p> : null}

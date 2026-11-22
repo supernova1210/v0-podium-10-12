@@ -46,8 +46,8 @@ export function layout(title: string, body: string) {
     <tr><td align="center">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;border-radius:18px;overflow:hidden;">
         <tr><td style="background:#061952;padding:26px 32px;">
-          <span style="font-size:22px;font-weight:800;letter-spacing:3px;color:#FFD25D;">PODIUM</span>
-          <div style="font-size:13px;color:rgba(255,255,255,0.75);margin-top:4px;">${esc(title)}</div>
+          <img src="${SITE}/images/email/podium-logo-white.png" width="150" height="75" alt="Podium, organisme de formation" style="display:block;width:150px;height:auto;border:0;outline:none;text-decoration:none;color:#FFD25D;font-size:22px;font-weight:bold;" />
+          <div style="font-size:13px;color:rgba(255,255,255,0.75);margin-top:10px;">${esc(title)}</div>
         </td></tr>
         <tr><td style="height:5px;background:#FFD25D;line-height:5px;font-size:0;">&nbsp;</td></tr>
         <tr><td style="padding:32px;font-size:15px;line-height:1.6;">
