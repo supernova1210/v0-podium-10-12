@@ -6,6 +6,9 @@ import SecondaryNav from "../components/secondary-nav"
 import Navigation from "../components/navigation"
 import Footer from "../components/footer"
 import CookieConsent from "../components/cookie-consent"
+import LinkedinInvite from "../components/linkedin-invite"
+import APartirDe from "../components/a-partir-de"
+import { LANCEMENT_23_NOV } from "@/lib/planning"
 import "./globals.css"
 import { OG_BASE, ORG_ID } from "@/lib/seo"
 
@@ -167,6 +170,9 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <CookieConsent />
+        <APartirDe date={LANCEMENT_23_NOV}>
+          <LinkedinInvite />
+        </APartirDe>
       </body>
     </html>
   )

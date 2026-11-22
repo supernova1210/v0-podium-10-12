@@ -13,6 +13,8 @@ export const CONSENT_KEY = "podium-consent-v1"
 export const CONSENT_MAX_AGE_MS = 1000 * 60 * 60 * 24 * 182
 /** Événement global pour rouvrir le bandeau (lien "Gestion des cookies"). */
 export const OPEN_CONSENT_EVENT = "podium:open-cookie-settings"
+/** Événement global émis quand le visiteur vient de faire son choix (Accepter / Refuser). */
+export const CONSENT_UPDATED_EVENT = "podium:consent-updated"
 
 export type ConsentValue = { analytics: boolean; date: string }
 
@@ -42,6 +44,7 @@ export function writeConsent(analytics: boolean): ConsentValue {
   } catch {
     /* stockage indisponible : le choix vaut pour la session */
   }
+  window.dispatchEvent(new Event(CONSENT_UPDATED_EVENT))
   return value
 }
 

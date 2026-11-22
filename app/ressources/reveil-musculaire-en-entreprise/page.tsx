@@ -6,6 +6,9 @@ import RessourceHero from "@/components/ressource/ressource-hero"
 import RessourceCta from "@/components/ressource/ressource-cta"
 import TriptyqueViewer from "@/components/ressource/triptyque-viewer"
 import MemoForm from "@/components/ressource/memo-form"
+import RessourcePhoto from "@/components/ressource/ressource-photo"
+import APartirDe from "@/components/a-partir-de"
+import { LANCEMENT_23_NOV } from "@/lib/planning"
 import { ChiffresCles, TmsChart, EtapesAggravation } from "@/components/ressource/ressource-blocks"
 import FormationFAQ from "@/components/formation/formation-faq"
 import {
@@ -168,6 +171,16 @@ export default function ReveilMusculaireRessourcePage() {
             ))}
           </div>
 
+          <APartirDe date={LANCEMENT_23_NOV}>
+            <div className="mt-12">
+              <RessourcePhoto
+                src="/images/formation-podium-seance-participants.webp"
+                alt="Trois participants autour d'une table manipulent des cartes pendant une formation Podium en entreprise"
+                caption="En formation avec Podium : on apprend en manipulant, en échangeant et en construisant ensemble."
+              />
+            </div>
+          </APartirDe>
+
           <div className="mt-12">
             <Reveal className="mb-6">
               <h3 className="font-poppins font-bold text-[#061952] text-2xl">Les chiffres clés</h3>
@@ -195,6 +208,16 @@ export default function ReveilMusculaireRessourcePage() {
               Les troubles musculo-squelettiques ne touchent pas que le dos. Voici où ils se logent réellement.
             </p>
           </Reveal>
+
+          <APartirDe date={LANCEMENT_23_NOV}>
+            <div className="mb-12 max-w-5xl mx-auto">
+              <RessourcePhoto
+                src="/images/sensibilisation-tms-formateur-podium.webp"
+                alt="Un formateur Podium devant un kakémono présentant les chiffres clés des TMS"
+                caption="Les chiffres clés des TMS, au cœur de nos interventions de prévention en entreprise."
+              />
+            </div>
+          </APartirDe>
 
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <Reveal>

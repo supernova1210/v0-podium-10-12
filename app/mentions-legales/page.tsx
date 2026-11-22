@@ -178,6 +178,11 @@ export default function MentionsLegalesPage() {
               Tant que vous n&apos;avez pas cliqué sur « Accepter », aucun cookie de mesure n&apos;est déposé. Votre
               choix est conservé 6 mois, puis nous vous le redemandons.
             </p>
+            <p>
+              Si vous fermez l&apos;invitation à suivre notre page LinkedIn, votre navigateur s&apos;en souvient pour ne
+              pas vous la reproposer avant 30 jours. Cette information reste sur votre appareil et ne sert à rien
+              d&apos;autre.
+            </p>
             <div className="pt-2">
               <CookieSettingsButton className="font-poppins font-semibold text-[15px] px-6 py-3 rounded-full bg-[#061952] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0b2470]">
                 Modifier mes choix
