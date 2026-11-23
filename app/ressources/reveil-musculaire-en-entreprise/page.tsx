@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { OG_BASE } from "@/lib/seo"
 import { Building2, HeartPulse, Moon, Apple, Smile, Armchair } from "lucide-react"
 import Reveal from "@/components/reveal"
@@ -6,9 +7,6 @@ import RessourceHero from "@/components/ressource/ressource-hero"
 import RessourceCta from "@/components/ressource/ressource-cta"
 import TriptyqueViewer from "@/components/ressource/triptyque-viewer"
 import MemoForm from "@/components/ressource/memo-form"
-import RessourcePhoto from "@/components/ressource/ressource-photo"
-import APartirDe from "@/components/a-partir-de"
-import { LANCEMENT_23_NOV } from "@/lib/planning"
 import { ChiffresCles, TmsChart, EtapesAggravation } from "@/components/ressource/ressource-blocks"
 import FormationFAQ from "@/components/formation/formation-faq"
 import {
@@ -155,31 +153,43 @@ export default function ReveilMusculaireRessourcePage() {
             </h2>
           </Reveal>
 
-          <div className="grid gap-4">
-            {reveilPourquoi.map((p, i) => (
-              <Reveal key={p.title} delay={i * 80} y={30}>
-                <div className="group flex items-start gap-5 bg-white border border-gray-200 rounded-[22px] px-6 py-5 shadow-[0_4px_18px_rgba(6,25,82,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_40px_rgba(6,25,82,0.12)]">
-                  <span className="flex-shrink-0 w-11 h-11 rounded-2xl bg-[#57B3B7] text-white font-poppins font-bold flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
-                    {i + 1}
-                  </span>
-                  <div>
-                    <h3 className="font-poppins font-semibold text-lg text-[#061952] leading-snug">{p.title}</h3>
-                    <p className="text-[15px] text-gray-600 mt-1">{p.description}</p>
+          <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 lg:gap-12 items-start">
+            <div className="grid gap-4">
+              {reveilPourquoi.map((p, i) => (
+                <Reveal key={p.title} delay={i * 80} y={30}>
+                  <div className="group flex items-start gap-5 bg-white border border-gray-200 rounded-[22px] px-6 py-5 shadow-[0_4px_18px_rgba(6,25,82,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_14px_40px_rgba(6,25,82,0.12)]">
+                    <span className="flex-shrink-0 w-11 h-11 rounded-2xl bg-[#57B3B7] text-white font-poppins font-bold flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                      {i + 1}
+                    </span>
+                    <div>
+                      <h3 className="font-poppins font-semibold text-lg text-[#061952] leading-snug">{p.title}</h3>
+                      <p className="text-[15px] text-gray-600 mt-1">{p.description}</p>
+                    </div>
                   </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-
-          <APartirDe date={LANCEMENT_23_NOV}>
-            <div className="mt-12">
-              <RessourcePhoto
-                src="/images/formation-podium-seance-participants.webp"
-                alt="Trois participants autour d'une table manipulent des cartes pendant une formation Podium en entreprise"
-                caption="En formation avec Podium : on apprend en manipulant, en échangeant et en construisant ensemble."
-              />
+                </Reveal>
+              ))}
             </div>
-          </APartirDe>
+
+            <Reveal delay={120} className="lg:sticky lg:top-36">
+              <div className="relative pb-4 pl-4">
+                <div aria-hidden className="absolute bottom-0 left-0 w-28 h-28 rounded-[26px] bg-[#57B3B7]" />
+                <div aria-hidden className="absolute -top-3 right-6 w-16 h-16 rounded-[18px] bg-[#FFD25D]" />
+                <figure className="relative m-0 overflow-hidden rounded-[28px] aspect-[4/3] lg:aspect-[4/5] shadow-[0_24px_60px_rgba(6,25,82,0.18)]">
+                  <Image
+                    src="/images/podium_organisme_formation_atelier_sophrologie-min.webp"
+                    alt="Un groupe de participants debout, bras levés, s'étire pendant un atelier collectif Podium"
+                    fill
+                    sizes="(min-width: 1024px) 400px, 100vw"
+                    className="object-cover object-[50%_35%]"
+                  />
+                  <figcaption className="absolute left-4 right-4 bottom-4 inline-flex items-center gap-2 self-start rounded-full bg-white/90 backdrop-blur px-4 py-2 font-poppins font-semibold text-[13px] text-[#061952] w-fit max-w-[calc(100%-2rem)]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C9426B] shrink-0" />
+                    Atelier collectif animé par Podium
+                  </figcaption>
+                </figure>
+              </div>
+            </Reveal>
+          </div>
 
           <div className="mt-12">
             <Reveal className="mb-6">
@@ -208,16 +218,6 @@ export default function ReveilMusculaireRessourcePage() {
               Les troubles musculo-squelettiques ne touchent pas que le dos. Voici où ils se logent réellement.
             </p>
           </Reveal>
-
-          <APartirDe date={LANCEMENT_23_NOV}>
-            <div className="mb-12 max-w-5xl mx-auto">
-              <RessourcePhoto
-                src="/images/sensibilisation-tms-formateur-podium.webp"
-                alt="Un formateur Podium devant un kakémono présentant les chiffres clés des TMS"
-                caption="Les chiffres clés des TMS, au cœur de nos interventions de prévention en entreprise."
-              />
-            </div>
-          </APartirDe>
 
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <Reveal>
@@ -367,6 +367,28 @@ export default function ReveilMusculaireRessourcePage() {
                   d&apos;épaules, étirements des bras, du dos ou des jambes.
                 </p>
               </div>
+            </Reveal>
+
+            {/* La routine en situation : complète la dernière ligne de la grille */}
+            <Reveal delay={200} y={40} scale={0.96} className="sm:col-span-2 lg:col-span-1">
+              <figure className="relative m-0 h-full min-h-[260px] overflow-hidden rounded-[22px]">
+                <Image
+                  src="/images/podium-atelier-cohesion-concentration.webp"
+                  alt="Des salariés, dont un en gilet haute visibilité, bras tendus devant eux sur leur lieu de travail avec un animateur Podium"
+                  fill
+                  sizes="(min-width: 1024px) 380px, 100vw"
+                  className="object-cover object-[40%_50%]"
+                />
+                <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-[#061952]/90 via-[#061952]/25 to-transparent" />
+                <figcaption className="absolute left-6 right-6 bottom-6">
+                  <span className="block font-poppins font-semibold text-xs tracking-[0.14em] uppercase text-[#FFD25D]">
+                    Sur le terrain
+                  </span>
+                  <span className="block mt-1.5 font-poppins font-semibold text-lg text-white leading-snug">
+                    Sur le lieu de travail, en tenue : 5 à 8 minutes suffisent.
+                  </span>
+                </figcaption>
+              </figure>
             </Reveal>
           </div>
         </div>
