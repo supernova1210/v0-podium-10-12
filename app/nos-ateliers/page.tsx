@@ -33,7 +33,7 @@ const faqData = [
   {
     question: "Quels ateliers QVT Podium propose-t-il ?",
     answer:
-      "Podium propose 19 ateliers : escape game sécurité, réveil musculaire, gestes et postures, théâtre d'improvisation santé mentale, prévention des addictions, yoga bulle d'oxygène, quiz sur-mesure et bien d'autres. Chaque atelier est conçu pour allier apprentissage concret et expérience mémorable.",
+      "Podium propose 18 ateliers : escape game sécurité, réveil musculaire, gestes et postures, théâtre d'improvisation santé mentale, secourir sans panique, yoga bulle d'oxygène, quiz sur-mesure et bien d'autres. Chaque atelier est conçu pour allier apprentissage concret et expérience mémorable.",
   },
   {
     question: "Combien de participants peuvent participer à un atelier QVT ?",

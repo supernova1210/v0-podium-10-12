@@ -35,7 +35,7 @@ const faqData = [
   {
     question: "Quels ateliers de prévention peut-on intégrer à la journée ?",
     answer:
-      "Podium propose une large sélection d'ateliers : escape game sécurité, gestes et postures, mur des addictions, secourir sans panique, sensibilisation au handicap, réveil musculaire et bien d'autres. Nous construisons le programme selon vos priorités et votre secteur.",
+      "Podium propose une large sélection d'ateliers : escape game sécurité, gestes et postures, secourir sans panique, sensibilisation au handicap, réveil musculaire et bien d'autres. Nous construisons le programme selon vos priorités et votre secteur.",
   },
   {
     question: "Peut-on adapter le format en demi-journée ?",
@@ -99,7 +99,7 @@ export default function JourneeSecuritePage() {
           ]}
           images={[
             { src: "/images/journee-securite-evenement-podium.webp", alt: "Journée sécurité en entreprise animée par Podium" },
-            { src: "/images/mur-digital-addiction.webp", alt: "Atelier interactif de prévention avec mur digital des addictions" },
+            { src: "/images/podium-atelier-participatif.webp", alt: "Atelier de prévention des risques animé par Podium auprès d'équipes de terrain" },
             { src: "/images/atelier-sst-podium-securite.webp", alt: "Atelier de prévention sécurité au travail" },
           ]}
           floatTitle="Coordinateur dédié"
@@ -157,7 +157,7 @@ export default function JourneeSecuritePage() {
         <EvenementAteliers
           title="Top 4 de nos ateliers en journée sécurité"
           subtitle="Découvrez notre sélection d'ateliers spécifiquement adaptés pour une journée sécurité."
-          slugs={["atelier-bulle-oxygene", "le-mur-des-addictions", "quiz-sur-mesure", "reveil-musculaire-ludique"]}
+          slugs={["atelier-bulle-oxygene", "secourir-sans-panique", "quiz-sur-mesure", "reveil-musculaire-ludique"]}
         />
       </div>
       <div id="benefices" className="scroll-mt-52">
@@ -207,7 +207,7 @@ export default function JourneeSecuritePage() {
                   icon: "lightbulb",
                   title: "Sortez des sentiers battus",
                   description:
-                    "Nos journées sécurité n'ont rien d'une conférence classique. Escape game, mur des addictions, réveil musculaire, secourir sans panique : des formats inattendus qui marquent les esprits et donnent envie de participer.",
+                    "Nos journées sécurité n'ont rien d'une conférence classique. Escape game, réveil musculaire, secourir sans panique, gestes et postures : des formats inattendus qui marquent les esprits et donnent envie de participer.",
                 },
                 {
                   id: "collaborateurs-2",

@@ -9,7 +9,7 @@ const evenements = [
   {
     title: "Journée Sécurité",
     description:
-      "Escape game, gestes qui sauvent, mur des addictions : une journée qui ancre durablement les réflexes de prévention.",
+      "Escape game, gestes qui sauvent, gestes et postures : une journée qui ancre durablement les réflexes de prévention.",
     image: "/images/journee-securite-evenement-podium.webp",
     href: "/nos-evenements/journee-securite",
   },
@@ -113,7 +113,7 @@ const details = [
     id: "journee-securite",
     title: "Journée Sécurité",
     description:
-      "Organisez une journée sécurité en entreprise qui marque les esprits. Podium conçoit des formats ludiques et interactifs (escape game sécurité, gestes qui sauvent, mur des addictions, gestes et postures) pour ancrer durablement les réflexes de prévention des risques professionnels. Intervention sur site à Lyon et dans toute la région Rhône-Alpes, pour toutes les tailles d'équipes.",
+      "Organisez une journée sécurité en entreprise qui marque les esprits. Podium conçoit des formats ludiques et interactifs (escape game sécurité, gestes qui sauvent, gestes et postures, réveil musculaire) pour ancrer durablement les réflexes de prévention des risques professionnels. Intervention sur site à Lyon et dans toute la région Rhône-Alpes, pour toutes les tailles d'équipes.",
     image: "/images/journee-securite-evenement-podium.webp",
     imageAlt: "Journée sécurité en entreprise animée par Podium à Lyon",
     href: "/nos-evenements/journee-securite",

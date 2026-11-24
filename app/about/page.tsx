@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { OG_BASE } from "@/lib/seo"
+import { OG_BASE, personLd } from "@/lib/seo"
 import PourquoiPodiumAboutSection from "@/components/pourquoi-podium-about-section"
 import EvenementAtouts from "@/components/evenement/evenement-atouts"
 import EvenementLocalNav from "@/components/evenement/evenement-local-nav"
@@ -50,6 +50,10 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", ...personLd }) }}
+      />
       <EvenementLocalNav items={navItems} />
 
       <div id="pourquoi-podium" className="scroll-mt-52">

@@ -94,8 +94,8 @@ export default function PourquoiPodiumAboutSection() {
               </div>
               <div className="relative rounded-[24px] overflow-hidden shadow-[0_18px_50px_rgba(6,25,82,0.12)]">
                 <Image
-                  src="/images/mur-digital-addiction.webp"
-                  alt="Atelier interactif de prévention avec mur digital des addictions"
+                  src="/images/podium-atelier-geste-posture-cohesion.webp"
+                  alt="Formateur Podium en atelier gestes et postures avec une équipe de terrain"
                   fill
                   className="object-cover"
                 />

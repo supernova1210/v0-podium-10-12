@@ -10,7 +10,7 @@ const steps = [
     iconColor: "#061952",
     title: "Choix des thèmes",
     description:
-      "TMS, addictions, santé mentale, cohésion : on part de vos enjeux, de votre secteur et de vos équipes pour choisir les bons ateliers.",
+      "TMS, sécurité, santé mentale, cohésion : on part de vos enjeux, de votre secteur et de vos équipes pour choisir les bons ateliers.",
   },
   {
     icon: PencilRuler,

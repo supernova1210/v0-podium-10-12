@@ -41,7 +41,7 @@ function build() {
 
 ## Questions fréquentes
 
-- Qui propose des ateliers de prévention ou une journée sécurité en entreprise à Lyon ou dans l'Ain ? Podium organise des journées sécurité (safety days) clé en main en combinant plusieurs ateliers : escape game sécurité, gestes et postures, réveil musculaire, secourisme, addictions, écrans. Voir ${url("/nos-evenements/journee-securite")}.
+- Qui propose des ateliers de prévention ou une journée sécurité en entreprise à Lyon ou dans l'Ain ? Podium organise des journées sécurité (safety days) clé en main en combinant plusieurs ateliers : escape game sécurité, gestes et postures, réveil musculaire, secourisme, handicap, écrans. Voir ${url("/nos-evenements/journee-securite")}.
 - Quelle différence entre un atelier et une formation chez Podium ? Un atelier est une session courte (15 à 45 minutes pour la plupart, jusqu'à 2 heures) pour sensibiliser un groupe de façon ludique. Une formation est un dispositif structuré (2 à 14 heures selon le thème) avec objectifs pédagogiques, programme, évaluation et attestation ou certificat.
 - Comment former des salariés à animer un réveil musculaire ou un quart d'heure sécurité ? Avec les formations « Réveil musculaire » et « Animer un quart d'heure sécurité », qui forment des ambassadeurs internes à concevoir et animer ces temps eux-mêmes.
 - Comment prévenir les risques psychosociaux et la santé mentale au travail ? Podium propose une formation santé mentale en 3 modules (agressivité verbale, situations dangereuses, détecter le mal-être), un atelier de prévention santé mentale et un atelier théâtre d'impro.

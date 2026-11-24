@@ -88,7 +88,6 @@ const THEMES: string[][] = [
   // Prévention des risques
   [
     "/atelier/escape-game-securite",
-    "/atelier/le-mur-des-addictions",
     "/atelier/deconnecte-ton-ecran",
     "/formation-securite-animation-quart-heure",
   ],

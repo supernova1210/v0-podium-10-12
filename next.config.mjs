@@ -23,6 +23,9 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // Atelier retiré du catalogue (demande de Nicolas, novembre 2026)
+      { source: "/atelier/le-mur-des-addictions", destination: "/nos-ateliers", permanent: true },
+      { source: "/documents/atelier-le-mur-des-addictions-securite.pdf", destination: "/nos-ateliers", permanent: true },
       // Le mémo n'est plus en téléchargement libre : on renvoie vers le formulaire
       {
         source: "/documents/memo-reveil-musculaire-podium.pdf",

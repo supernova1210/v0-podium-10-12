@@ -86,24 +86,6 @@ export const ateliersFaq: Record<string, FaqItem[]> = {
     },
   ],
 
-  "le-mur-des-addictions": [
-    {
-      question: "À quoi servent les lunettes de simulation ?",
-      answer:
-        "Elles reproduisent les effets d'une consommation (alcool, cannabis) ou de la fatigue sur la vision, la coordination et les réflexes. Chaque participant réalise un même défi sans puis avec les lunettes : la comparaison des scores rend le risque concret, sans discours moralisateur.",
-    },
-    {
-      question: "Comment aborder les addictions au travail sans stigmatiser ?",
-      answer:
-        "En passant par le jeu. Les addictions restent un sujet tabou en entreprise : l'atelier les aborde par des défis minutés, en équipe, dans la bonne humeur. Le message de prévention passe d'autant mieux qu'il est vécu par chacun plutôt qu'expliqué devant tout le monde.",
-    },
-    {
-      question: "Combien de personnes peuvent passer, et que faut-il prévoir ?",
-      answer:
-        "Une partie dure en moyenne une minute, ce qui permet de faire passer beaucoup de monde sur 15 à 45 minutes. Prévoyez un espace d'environ 5 m x 5 m, en intérieur ou en extérieur, avec des prises de courant. Il fait partie des ateliers proposés pour les journées sécurité, à Lyon comme dans l'Ain.",
-    },
-  ],
-
   "reveil-musculaire-ludique": [
     {
       question: "Quelle différence entre l'atelier et la formation Réveil musculaire ?",

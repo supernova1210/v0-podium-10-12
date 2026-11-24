@@ -116,8 +116,8 @@ export default function MentionsLegalesPage() {
             </p>
             <p>
               <strong className="text-[#061952]">Données collectées :</strong> lorsque vous utilisez le formulaire de
-              contact, nous recueillons votre prénom, votre nom, votre adresse email, le nom de votre entreprise et
-              votre message. Lorsque vous demandez un mémo, nous recueillons votre prénom, votre nom, votre adresse
+              contact, nous recueillons votre prénom, votre nom, votre adresse email, votre téléphone (facultatif), le
+              nom de votre entreprise, l&apos;objet de votre demande (facultatif) et votre message. Lorsque vous demandez un mémo, nous recueillons votre prénom, votre nom, votre adresse
               email et le nom de votre entreprise.
             </p>
             <p>

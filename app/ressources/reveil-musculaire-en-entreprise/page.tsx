@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { OG_BASE } from "@/lib/seo"
+import { graphLd, ressourceArticleLd, ressourceMetadata } from "@/lib/seo"
 import { Building2, HeartPulse, Moon, Apple, Smile, Armchair } from "lucide-react"
 import Reveal from "@/components/reveal"
 import RessourceHero from "@/components/ressource/ressource-hero"
@@ -23,14 +23,9 @@ import {
   RESSOURCES_PUBLIQUES,
 } from "@/lib/ressources"
 
-const URL = `https://www.ofpodium.fr/ressources/${meta.slug}`
-
 export const metadata: Metadata = {
+  ...ressourceMetadata(meta),
   robots: { index: RESSOURCES_PUBLIQUES, follow: RESSOURCES_PUBLIQUES },
-  title: meta.metaTitle,
-  description: meta.metaDescription,
-  alternates: { canonical: URL },
-  openGraph: { ...OG_BASE, title: meta.metaTitle, description: meta.metaDescription, url: URL, type: "article" },
 }
 
 const faqData = [
@@ -66,25 +61,9 @@ const faqData = [
   },
 ]
 
-const schemas = [
+const schema = graphLd(
+  ...ressourceArticleLd(meta),
   {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: meta.metaTitle,
-    description: meta.metaDescription,
-    author: { "@type": "Organization", name: "Podium", url: "https://www.ofpodium.fr" },
-    publisher: {
-      "@type": "Organization",
-      name: "Podium",
-      url: "https://www.ofpodium.fr",
-      logo: { "@type": "ImageObject", url: "https://www.ofpodium.fr/images/podium-logo.webp" },
-    },
-    mainEntityOfPage: URL,
-    image: `https://www.ofpodium.fr${meta.cardImage}`,
-    inLanguage: "fr-FR",
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "HowTo",
     name: "Routine de réveil musculaire en entreprise",
     description:
@@ -98,7 +77,6 @@ const schemas = [
     })),
   },
   {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqData.map((f) => ({
       "@type": "Question",
@@ -106,25 +84,14 @@ const schemas = [
       acceptedAnswer: { "@type": "Answer", text: f.answer },
     })),
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.ofpodium.fr" },
-      { "@type": "ListItem", position: 2, name: "Ressources", item: "https://www.ofpodium.fr/ressources" },
-      { "@type": "ListItem", position: 3, name: meta.cardTitle, item: URL },
-    ],
-  },
-]
+)
 
 const PILIER_ICONS = [Moon, Apple, Smile]
 
 export default function ReveilMusculaireRessourcePage() {
   return (
     <main>
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <RessourceHero
         categoryLabel={meta.categoryLabel}
@@ -132,6 +99,7 @@ export default function ReveilMusculaireRessourcePage() {
         titleHighlight="en entreprise"
         chapo="Quelques minutes pour préparer son corps, réveiller son esprit et se sentir bien avant de penser au travail. Un temps de recentrage, comme avant un match : on se connecte à soi pour mieux se mobiliser ensemble. Voici pourquoi ça marche, et la routine complète en 7 exercices."
         readingTime={meta.readingTime}
+        dateModified={meta.dateModified}
         image="/images/reveil-musculaire-podium-atelier.webp"
         imageAlt="Séance de réveil musculaire animée par Podium en entreprise"
         memoAnchor={meta.memo ? "#recevoir-le-memo" : undefined}

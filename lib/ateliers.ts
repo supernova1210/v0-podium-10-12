@@ -233,52 +233,6 @@ export const gesteEtPosturePetanque: AtelierData = {
     "La pétanque pour ressentir l'impact des mauvaises postures et intégrer les bons réflexes en s'amusant.",
 }
 
-export const murDesAddictions: AtelierData = {
-  slug: "le-mur-des-addictions",
-  category: "securite",
-  metaTitle: "Atelier Le Mur des Addictions",
-  metaDescription:
-    "Sensibilisation aux addictions au travail avec lunettes de simulation et mises en situation percutantes. Atelier prévention en entreprise, Rhône-Alpes.",
-  titlePrefix: "Le mur des",
-  titleHighlight: "addictions",
-  heroDescription:
-    "Un atelier ludique et percutant qui sensibilise aux impacts des addictions à travers des mises en situation dynamiques et l'usage de lunettes de simulation.",
-  heroImage: "/images/atelier-le-mur-des-addictions-image-2.webp",
-  duree: "15 à 45 min",
-  participants: "à partir de 4",
-  espace: "5m x 5m en intérieur ou extérieur, prises de courant à disposition",
-  approcheHeadingPre: "Aborder un sujet tabou",
-  approcheHeadingHighlight: "par le jeu et le ressenti.",
-  approcheParagraphs: [
-    "Alcool, cannabis, fatigue : les lunettes de simulation font ressentir physiquement les effets d'une addiction sur la coordination, la vision et les réflexes. Le comparatif de scores avec et sans effet parle de lui-même.",
-    "Sessions minutées, défis rythmés, fous rires garantis : le message de prévention passe d'autant mieux qu'il est vécu plutôt que subi.",
-  ],
-  stats: [
-    { n: "1min", l: "par passage" },
-    { n: "100%", l: "ludique" },
-    { n: "4+", l: "participants" },
-  ],
-  objectifs: [
-    "Découvrir l'impact qu'une addiction peut avoir sur notre quotidien.",
-    "Aborder des thèmes souvent tabous sous un angle ludique.",
-    "Placer le pratiquant dans une situation de stress lié au temps et à l'enjeu afin de développer sa réactivité d'action.",
-  ],
-  deroule: [
-    "Des sessions minutées pour des passages sans perte de temps et d'attention.",
-    "Des comparatifs de scores entre les parties sans et sous effet, grâce à des lunettes de simulation.",
-    "Du fun et des rires pour faire passer votre message de prévention de manière efficace et originale.",
-  ],
-  methodes: [
-    "Pédagogie active et ludique : une partie dynamique dure en moyenne 1 minute.",
-    "Travail collaboratif.",
-    "Mise en pratique avec du matériel spécifique (lunettes de simulation d'addiction) permettant de ressentir les méfaits d'une addiction sur le corps.",
-  ],
-  pdf: "/documents/atelier-le-mur-des-addictions-securite.pdf",
-  cardTitle: "Le mur des addictions",
-  cardDescription:
-    "Lunettes de simulation et défis minutés pour faire ressentir les effets des addictions et faire passer le message.",
-}
-
 export const reveilMusculaireLudique: AtelierData = {
   slug: "reveil-musculaire-ludique",
   category: "securite",
@@ -912,7 +866,6 @@ export const securiteAteliers: AtelierData[] = [
   sensibiliserHandicapAuditif,
   sensibiliserHandicapVisuel,
   gesteEtPosturePetanque,
-  murDesAddictions,
   reveilMusculaireLudique,
   deconnecteTonEcran,
 ]
@@ -944,7 +897,6 @@ export const allAteliers: AtelierData[] = [
   preventionSanteMentale,
   gesteEtPosturePetanque,
   yogaBulleOxygene,
-  murDesAddictions,
   reveilMusculaireLudique,
   quizSurMesure,
   jeuDePlateauGeant,

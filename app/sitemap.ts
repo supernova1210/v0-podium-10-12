@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { RESSOURCES_PUBLIQUES } from "@/lib/ressources"
+import { RESSOURCES_PUBLIQUES, allRessources } from "@/lib/ressources"
 
 const BASE_URL = "https://www.ofpodium.fr"
 
@@ -30,8 +30,12 @@ const formationRoutes = [
   "/formation-qvct-valoriser-posture-professionnelle",
 ]
 
+const derniereMajRessources = allRessources.map((r) => r.dateModified).sort().at(-1)
 const ressourceRoutes = RESSOURCES_PUBLIQUES
-  ? ["/ressources", "/ressources/reveil-musculaire-en-entreprise", "/ressources/gestes-et-postures"]
+  ? [
+      { route: "/ressources", lastModified: derniereMajRessources },
+      ...allRessources.map((r) => ({ route: `/ressources/${r.slug}`, lastModified: r.dateModified })),
+    ]
   : []
 
 const evenementRoutes = [
@@ -52,7 +56,6 @@ const atelierRoutes = [
   "/atelier/geste-et-posture-petanque",
   "/atelier/gestion-des-emotions-sophrologie",
   "/atelier/jeu-de-plateau-geant",
-  "/atelier/le-mur-des-addictions",
   "/atelier/posture-pro-defi-flash",
   "/atelier/prevention-sante-mentale",
   "/atelier/quiz-sur-mesure",
@@ -80,8 +83,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
-    ...ressourceRoutes.map((route) => ({
+    ...ressourceRoutes.map(({ route, lastModified }) => ({
       url: `${BASE_URL}${route}`,
+      lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

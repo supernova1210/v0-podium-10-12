@@ -8,9 +8,11 @@ import { CONTACT_FROM, CONTACT_TO, PHONE, PHONE_HREF, SITE, bcc, esc, layout, nl
 export const runtime = "nodejs"
 
 const schema = z.object({
+  sujet: z.enum(["Formation", "Atelier", "Événement", "Autre"]).optional().nullable(),
   prenom: z.string().trim().min(1).max(80),
   nom: z.string().trim().min(1).max(80),
   email: z.string().trim().email().max(160),
+  telephone: z.string().trim().max(30).optional(),
   entreprise: z.string().trim().min(1).max(160),
   message: z.string().trim().min(1).max(5000),
   // Pot de miel anti-robots : champ invisible, doit rester vide
@@ -30,7 +32,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "invalid_fields" }, { status: 400 })
   }
 
-  const { prenom, nom, email, entreprise, message, website } = parsed.data
+  const { sujet, prenom, nom, email, telephone, entreprise, message, website } = parsed.data
 
   // Robot détecté : on répond OK sans rien envoyer
   if (website && website.trim() !== "") {
@@ -52,7 +54,7 @@ export async function POST(request: Request) {
     to: [CONTACT_TO],
     ...bcc,
     replyTo: email,
-    subject: `Nouvelle demande de contact · ${entreprise} (${fullName})`,
+    subject: `Nouvelle demande${sujet ? ` (${sujet.toLowerCase()})` : ""} · ${entreprise} · ${fullName}`,
     html: layout(
       "Nouvelle demande depuis le site",
       `<p style="margin:0 0 18px;font-size:17px;font-weight:700;color:#061952;">Un prospect vient de remplir le formulaire de contact.</p>
@@ -60,12 +62,14 @@ export async function POST(request: Request) {
          ${row("Nom", esc(fullName))}
          ${row("Entreprise", esc(entreprise))}
          ${row("Email", `<a href="mailto:${esc(email)}" style="color:#061952;">${esc(email)}</a>`)}
+         ${telephone ? row("Téléphone", `<a href="tel:${esc(telephone.replace(/[^+0-9]/g, ""))}" style="color:#061952;">${esc(telephone)}</a>`) : ""}
+         ${sujet ? row("Demande", esc(sujet)) : ""}
        </table>
        <div style="font-size:13px;color:#6b7280;margin-bottom:6px;">Message</div>
        <div style="background:#fafbfe;border-left:4px solid #FFD25D;border-radius:8px;padding:16px 18px;color:#1f2937;">${nl2br(message)}</div>
        <p style="margin:22px 0 0;font-size:13px;color:#6b7280;">Pour répondre, utilisez simplement « Répondre » : le message partira vers ${esc(email)}.</p>`,
     ),
-    text: `Nouvelle demande de contact\n\nNom : ${fullName}\nEntreprise : ${entreprise}\nEmail : ${email}\n\nMessage :\n${message}`,
+    text: `Nouvelle demande de contact\n\nNom : ${fullName}\nEntreprise : ${entreprise}\nEmail : ${email}${telephone ? `\nTéléphone : ${telephone}` : ""}${sujet ? `\nDemande : ${sujet}` : ""}\n\nMessage :\n${message}`,
   })
 
   if (notif.error) {

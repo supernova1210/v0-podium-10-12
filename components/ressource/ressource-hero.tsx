@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, BookOpen, Clock, Mail } from "lucide-react"
+import { AUTEUR_RESSOURCES, dateFr } from "@/lib/seo"
 
 interface RessourceHeroProps {
   categoryLabel: string
@@ -13,6 +14,8 @@ interface RessourceHeroProps {
   imageAlt: string
   /** Ancre du formulaire « Recevoir le mémo » (le PDF n'est plus en lien direct) */
   memoAnchor?: string
+  /** Date ISO de dernière mise à jour, affichée sous le chapô avec l'auteur */
+  dateModified: string
 }
 
 export default function RessourceHero({
@@ -25,6 +28,7 @@ export default function RessourceHero({
   image,
   imageAlt,
   memoAnchor,
+  dateModified,
 }: RessourceHeroProps) {
   return (
     <section className="relative overflow-hidden bg-white pt-8 pb-12 lg:pt-12 lg:pb-16">
@@ -66,7 +70,31 @@ export default function RessourceHero({
                 {titleSuffix ? ` ${titleSuffix}` : ""}
               </h1>
 
-              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-8">{chapo}</p>
+              <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-6">{chapo}</p>
+
+              {/* Auteur et fraîcheur : signaux de confiance pour les lecteurs et les moteurs */}
+              <div className="flex items-center gap-3 mb-8">
+                <Image
+                  src={AUTEUR_RESSOURCES.avatar}
+                  alt=""
+                  width={44}
+                  height={44}
+                  className="w-11 h-11 rounded-full object-cover ring-2 ring-[#FFD25D]"
+                />
+                <p className="text-sm leading-snug text-gray-600">
+                  Par{" "}
+                  <Link
+                    href={AUTEUR_RESSOURCES.href}
+                    rel="author"
+                    className="font-poppins font-semibold text-[#061952] underline underline-offset-2 decoration-[#FFD25D] decoration-2 hover:decoration-[#061952]"
+                  >
+                    {AUTEUR_RESSOURCES.name}
+                  </Link>
+                  , {AUTEUR_RESSOURCES.role.charAt(0).toLowerCase() + AUTEUR_RESSOURCES.role.slice(1)}
+                  <br />
+                  Mis à jour le <time dateTime={dateModified}>{dateFr(dateModified)}</time>
+                </p>
+              </div>
 
               <div className="flex flex-wrap gap-3.5">
                 {memoAnchor ? (

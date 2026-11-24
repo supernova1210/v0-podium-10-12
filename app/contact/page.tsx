@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { OG_BASE } from "@/lib/seo"
+import { OG_BASE, ORG_ID } from "@/lib/seo"
 import { ContactHeroSection } from "@/components/contact-hero-section"
 import { ContactFormSection } from "@/components/contact-form-section"
 
@@ -18,9 +18,20 @@ export const metadata: Metadata = {
   },
 }
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact et devis Podium",
+  url: "https://www.ofpodium.fr/contact",
+  inLanguage: "fr-FR",
+  about: { "@id": ORG_ID },
+  mainEntity: { "@id": ORG_ID },
+}
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <ContactHeroSection />
       <ContactFormSection />
     </main>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import type { FormationData } from "@/lib/formations"
 import type { AtelierData } from "@/lib/ateliers"
+import type { RessourceMeta } from "@/lib/ressources"
 
 export const SITE_URL = "https://www.ofpodium.fr"
 export const ORG_ID = `${SITE_URL}/#organisation`
@@ -145,4 +146,85 @@ export function atelierServiceLd(data: {
 
 export function graphLd(...nodes: object[]) {
   return { "@context": "https://schema.org", "@graph": nodes }
+}
+
+/* ============ Ressources (articles) ============ */
+
+/** Auteur des ressources : Nicolas Billard, présenté sur /about (mot du dirigeant). */
+export const AUTEUR_RESSOURCES = {
+  name: "Nicolas Billard",
+  role: "Dirigeant de Podium",
+  href: "/about#nicolas-billard",
+  avatar: "/images/nicolas-billard-avatar.webp",
+}
+
+export const personLd = {
+  "@type": "Person",
+  "@id": `${SITE_URL}/about#nicolas-billard`,
+  name: AUTEUR_RESSOURCES.name,
+  jobTitle: AUTEUR_RESSOURCES.role,
+  url: `${SITE_URL}${AUTEUR_RESSOURCES.href}`,
+  image: `${SITE_URL}/images/nicolas-billard-dirigeant.jpg`,
+  worksFor: { "@id": ORG_ID },
+}
+
+export function ressourceUrl(slug: string) {
+  return `${SITE_URL}/ressources/${slug}`
+}
+
+export function ressourceMetadata(meta: RessourceMeta): Metadata {
+  const url = ressourceUrl(meta.slug)
+  return {
+    title: meta.metaTitle,
+    description: meta.metaDescription,
+    alternates: { canonical: url },
+    authors: [{ name: AUTEUR_RESSOURCES.name, url: `${SITE_URL}${AUTEUR_RESSOURCES.href}` }],
+    openGraph: {
+      ...OG_BASE,
+      type: "article",
+      url,
+      title: `${meta.metaTitle} | Podium`,
+      description: meta.metaDescription,
+      publishedTime: meta.datePublished,
+      modifiedTime: meta.dateModified,
+      authors: [AUTEUR_RESSOURCES.name],
+      images: [{ url: `/og/ressource-${meta.slug}.jpg`, width: 1200, height: 630, alt: meta.cardTitle }],
+    },
+  }
+}
+
+/** Article + auteur (Person) + fil d'ariane, en un seul graphe JSON-LD. */
+export function ressourceArticleLd(meta: RessourceMeta) {
+  const url = ressourceUrl(meta.slug)
+  return [
+    {
+      "@type": "Article",
+      "@id": `${url}#article`,
+      headline: meta.metaTitle,
+      description: meta.metaDescription,
+      datePublished: meta.datePublished,
+      dateModified: meta.dateModified,
+      author: { "@id": personLd["@id"] },
+      publisher: { "@id": ORG_ID },
+      mainEntityOfPage: url,
+      image: [`${SITE_URL}/og/ressource-${meta.slug}.jpg`, `${SITE_URL}${meta.cardImage}`],
+      articleSection: meta.categoryLabel,
+      inLanguage: "fr-FR",
+      isAccessibleForFree: true,
+    },
+    personLd,
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Ressources", item: `${SITE_URL}/ressources` },
+        { "@type": "ListItem", position: 3, name: meta.cardTitle, item: url },
+      ],
+    },
+  ]
+}
+
+/** « 24 novembre 2026 » */
+export function dateFr(iso: string) {
+  return new Date(`${iso}T12:00:00Z`).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" })
 }

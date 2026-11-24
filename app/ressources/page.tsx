@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { OG_BASE } from "@/lib/seo"
+import { OG_BASE, ORG_ID, personLd } from "@/lib/seo"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, BookOpen, Clock, FileText } from "lucide-react"
@@ -9,7 +9,7 @@ import { allRessources, RESSOURCES_PUBLIQUES } from "@/lib/ressources"
 
 export const metadata: Metadata = {
   robots: { index: RESSOURCES_PUBLIQUES, follow: RESSOURCES_PUBLIQUES },
-  title: "Ressources gratuites QVCT, prévention et sécurité au travail",
+  title: "Ressources gratuites : prévention et sécurité au travail",
   description:
     "Les mémos et guides pratiques de Podium en accès libre : réveil musculaire en entreprise, gestes et postures, prévention des TMS. Les supports que nous remettons à nos participants.",
   alternates: { canonical: "https://www.ofpodium.fr/ressources" },
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       "Mémos et guides pratiques en accès libre : réveil musculaire, gestes et postures, prévention des TMS.",
     url: "https://www.ofpodium.fr/ressources",
     type: "website",
+    images: [{ url: "/og/ressources.jpg", width: 1200, height: 630, alt: "Ressources gratuites Podium" }],
   },
 }
 
@@ -30,11 +31,17 @@ const schema = {
   description:
     "Mémos et guides pratiques en accès libre sur la QVCT, la prévention des TMS et la sécurité au travail.",
   url: "https://www.ofpodium.fr/ressources",
+  inLanguage: "fr-FR",
+  publisher: { "@id": ORG_ID },
   hasPart: allRessources.map((r) => ({
     "@type": "Article",
+    "@id": `https://www.ofpodium.fr/ressources/${r.slug}#article`,
     headline: r.metaTitle,
     description: r.metaDescription,
     url: `https://www.ofpodium.fr/ressources/${r.slug}`,
+    datePublished: r.datePublished,
+    dateModified: r.dateModified,
+    author: { "@id": personLd["@id"] },
   })),
 }
 
@@ -133,7 +140,7 @@ export default function RessourcesPage() {
                 D&apos;autres mémos arrivent bientôt
               </p>
               <p className="text-[15px] text-gray-600">
-                Santé mentale, communication non violente, prévention des addictions : nous publions progressivement
+                Santé mentale, communication non violente, gestion des émotions : nous publions progressivement
                 nos supports de formation.
               </p>
             </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { OG_BASE } from "@/lib/seo"
+import { graphLd, ressourceArticleLd, ressourceMetadata } from "@/lib/seo"
 import { Check, Sunrise, Activity, Home, Zap, Battery, TrendingUp } from "lucide-react"
 import Reveal from "@/components/reveal"
 import RessourceHero from "@/components/ressource/ressource-hero"
@@ -17,14 +17,9 @@ import {
   RESSOURCES_PUBLIQUES,
 } from "@/lib/ressources"
 
-const URL = `https://www.ofpodium.fr/ressources/${meta.slug}`
-
 export const metadata: Metadata = {
+  ...ressourceMetadata(meta),
   robots: { index: RESSOURCES_PUBLIQUES, follow: RESSOURCES_PUBLIQUES },
-  title: meta.metaTitle,
-  description: meta.metaDescription,
-  alternates: { canonical: URL },
-  openGraph: { ...OG_BASE, title: meta.metaTitle, description: meta.metaDescription, url: URL, type: "article" },
 }
 
 const faqData = [
@@ -60,25 +55,9 @@ const faqData = [
   },
 ]
 
-const schemas = [
+const schema = graphLd(
+  ...ressourceArticleLd(meta),
   {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: meta.metaTitle,
-    description: meta.metaDescription,
-    author: { "@type": "Organization", name: "Podium", url: "https://www.ofpodium.fr" },
-    publisher: {
-      "@type": "Organization",
-      name: "Podium",
-      url: "https://www.ofpodium.fr",
-      logo: { "@type": "ImageObject", url: "https://www.ofpodium.fr/images/podium-logo.webp" },
-    },
-    mainEntityOfPage: URL,
-    image: `https://www.ofpodium.fr${meta.cardImage}`,
-    inLanguage: "fr-FR",
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "HowTo",
     name: "Porter une charge sans se blesser : les 5 règles de base",
     description:
@@ -91,7 +70,6 @@ const schemas = [
     })),
   },
   {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: faqData.map((f) => ({
       "@type": "Question",
@@ -99,16 +77,7 @@ const schemas = [
       acceptedAnswer: { "@type": "Answer", text: f.answer },
     })),
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.ofpodium.fr" },
-      { "@type": "ListItem", position: 2, name: "Ressources", item: "https://www.ofpodium.fr/ressources" },
-      { "@type": "ListItem", position: 3, name: meta.cardTitle, item: URL },
-    ],
-  },
-]
+)
 
 const HABITUDE_ICONS = [Sunrise, Activity, Home]
 const BENEFICE_ICONS = [Zap, Battery, TrendingUp]
@@ -116,9 +85,7 @@ const BENEFICE_ICONS = [Zap, Battery, TrendingUp]
 export default function GestesEtPosturesRessourcePage() {
   return (
     <main>
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <RessourceHero
         categoryLabel={meta.categoryLabel}
@@ -126,6 +93,7 @@ export default function GestesEtPosturesRessourcePage() {
         titleHighlight="les 5 règles de base"
         chapo="Un mauvais geste répété aujourd'hui peut devenir une douleur chronique demain. Voici les cinq réflexes qui protègent votre dos lors d'un port de charge, comment préparer votre corps avant l'effort, et pourquoi la prévention se joue autant en dehors du travail qu'au poste."
         readingTime={meta.readingTime}
+        dateModified={meta.dateModified}
         image="/images/atelier-geste-et-posture-petanque-4.webp"
         imageAlt="Atelier gestes et postures animé par Podium en entreprise"
       />

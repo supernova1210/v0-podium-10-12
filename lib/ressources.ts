@@ -6,7 +6,7 @@
  *          Elles restent accessibles par URL directe (partage privé).
  * true   = rubrique publique et indexable.
  */
-export const RESSOURCES_PUBLIQUES = false
+export const RESSOURCES_PUBLIQUES = true
 
 export interface RessourceMeta {
   slug: string
@@ -18,6 +18,10 @@ export interface RessourceMeta {
   cardDescription: string
   cardImage: string
   readingTime: string
+  /** Dates ISO (AAAA-MM-JJ) : affichées en haut de page et reprises dans les données structurées.
+   *  Mettre à jour `dateModified` à chaque modification réelle du contenu. */
+  datePublished: string
+  dateModified: string
   /** Formation vers laquelle la ressource convertit */
   formation: { label: string; href: string }
   atelier?: { label: string; href: string }
@@ -32,14 +36,16 @@ export const reveilMusculaireMeta: RessourceMeta = {
   slug: "reveil-musculaire-en-entreprise",
   category: "securite",
   categoryLabel: "Prévention des TMS",
-  metaTitle: "Réveil musculaire en entreprise : le guide complet et les 7 exercices",
+  metaTitle: "Réveil musculaire en entreprise : guide et 7 exercices",
   metaDescription:
-    "Pourquoi et comment mettre en place un réveil musculaire en entreprise : les bénéfices, les chiffres clés sur les TMS et une routine complète en 7 exercices, à faire debout ou assis. Mémo gratuit à télécharger.",
+    "Pourquoi et comment mettre en place un réveil musculaire en entreprise : les bénéfices, les chiffres clés sur les TMS et une routine complète en 7 exercices, à faire debout ou assis. Mémo PDF gratuit envoyé par email.",
   cardTitle: "Le réveil musculaire en entreprise",
   cardDescription:
     "Pourquoi s'échauffer avant de travailler, ce que ça change vraiment, et une routine complète en 7 exercices à faire debout ou assis.",
   cardImage: "/images/reveil-musculaire-podium-atelier.webp",
   readingTime: "6 min de lecture",
+  datePublished: "2026-11-24",
+  dateModified: "2026-11-24",
   formation: { label: "Formation Ambassadeur Réveil Musculaire", href: "/formation-securite-reveil-musculaire" },
   atelier: { label: "Atelier Réveil musculaire ludique", href: "/atelier/reveil-musculaire-ludique" },
   memo: {
@@ -53,14 +59,16 @@ export const gestesEtPosturesMeta: RessourceMeta = {
   slug: "gestes-et-postures",
   category: "securite",
   categoryLabel: "Manutention & prévention",
-  metaTitle: "Gestes et postures : les 5 règles de base pour porter une charge",
+  metaTitle: "Gestes et postures : 5 règles pour porter une charge",
   metaDescription:
-    "Les 5 règles de base pour manipuler une charge sans se blesser, comment préparer son corps avant l'effort et les fondamentaux de la prévention des TMS. Le mémo Podium en accès libre.",
+    "Les 5 règles de base pour manipuler une charge sans se blesser, comment préparer son corps avant l'effort et les fondamentaux de la prévention des TMS, par un organisme de formation sécurité.",
   cardTitle: "Gestes et postures : les 5 règles de base",
   cardDescription:
     "Se positionner, éviter les torsions, garder le dos droit, fléchir les jambes, rapprocher la charge : les réflexes qui protègent votre dos.",
   cardImage: "/images/atelier-geste-et-posture-petanque-4.webp",
   readingTime: "5 min de lecture",
+  datePublished: "2026-11-24",
+  dateModified: "2026-11-24",
   formation: { label: "Formation Geste et Posture", href: "/formation-securite-geste-et-posture" },
   atelier: { label: "Atelier Geste et posture pétanque", href: "/atelier/geste-et-posture-petanque" },
 }

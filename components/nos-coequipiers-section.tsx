@@ -51,8 +51,8 @@ export default function NosCoequipiersSection() {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        {/* Part 1 - Mot du dirigeant */}
-        <div className="mb-20">
+        {/* Part 1 - Mot du dirigeant (ancre citée comme page auteur des ressources) */}
+        <div id="nicolas-billard" className="mb-20 scroll-mt-52">
           <h3 className="font-poppins font-bold tracking-tight text-3xl md:text-4xl text-[#061952] mb-12 text-center">Mot du dirigeant</h3>
 
           <div className="grid md:grid-cols-[300px_1fr] gap-8 md:gap-12 items-start">
